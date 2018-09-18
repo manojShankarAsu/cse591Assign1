@@ -1,19 +1,21 @@
 from flask import Flask
+from flask import request
+#from forms import LoginForm, RegistrationForm
 from flask import render_template, flash, redirect, url_for
 from config import Config
-from forms import LoginForm
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from flask_login import LoginManager, login_required
 from flask_login import current_user, login_user, logout_user
 from werkzeug.security import generate_password_hash, check_password_hash
+from werkzeug.urls import url_parse
 from flask_login import UserMixin
 import sqlite3
 from datetime import datetime
+from flask_wtf import FlaskForm
+from wtforms import StringField, PasswordField, BooleanField, SubmitField
+from wtforms.validators import ValidationError, DataRequired, Email, EqualTo
 
-
-user = {'username': 'Manoj'}
-# EB looks for an 'application' callable by default.
 application = Flask(__name__)
 application.config.from_object(Config)
 db = SQLAlchemy(application)
@@ -21,8 +23,6 @@ migrate = Migrate(application, db)
 login = LoginManager(application)
 login.login_view = 'login'
 
-def create_tables():
-    db.create_all()
 
 class User(UserMixin,db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -40,6 +40,29 @@ class User(UserMixin,db.Model):
     def check_password(self, password):
         return check_password_hash(self.password_hash, password)
 
+class LoginForm(FlaskForm):
+    username = StringField('Username', validators=[DataRequired()])
+    password = PasswordField('Password', validators=[DataRequired()])
+    remember_me = BooleanField('Remember Me')
+    submit = SubmitField('Sign In')
+
+class RegistrationForm(FlaskForm):
+    username = StringField('Username', validators=[DataRequired()])
+    email = StringField('Email', validators=[DataRequired(), Email()])
+    password = PasswordField('Password', validators=[DataRequired()])
+    password2 = PasswordField(
+        'Repeat Password', validators=[DataRequired(), EqualTo('password')])
+    submit = SubmitField('Register')
+
+    def validate_username(self, username):
+        user = User.query.filter_by(username=username.data).first()
+        if user is not None:
+            raise ValidationError('Please use a different username.')
+
+    def validate_email(self, email):
+        user = User.query.filter_by(email=email.data).first()
+        if user is not None:
+            raise ValidationError('Please use a different email address.')
 
 class Post(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -49,6 +72,15 @@ class Post(db.Model):
 
     def __repr__(self):
         return '<Post {}>'.format(self.body)
+
+
+
+user = {'username': 'Manoj'}
+# EB looks for an 'application' callable by default.
+
+def create_tables():
+    db.create_all()
+
 
 @login.user_loader
 def load_user(id):
@@ -84,6 +116,20 @@ def login():
 def logout():
     logout_user()
     return redirect(url_for('index'))
+
+@application.route('/register', methods=['GET', 'POST'])
+def register():
+    if current_user.is_authenticated:
+        return redirect(url_for('index'))
+    form = RegistrationForm()
+    if form.validate_on_submit():
+        user = User(username=form.username.data, email=form.email.data)
+        user.set_password(form.password.data)
+        db.session.add(user)
+        db.session.commit()
+        flash('Congratulations, you are now a registered user!')
+        return redirect(url_for('login'))
+    return render_template('register.html', title='Register', form=form)
 
 # run the app.
 if __name__ == "__main__":
