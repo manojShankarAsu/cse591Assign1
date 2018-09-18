@@ -4,7 +4,7 @@ from config import Config
 from forms import LoginForm
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
-from flask_login import LoginManager
+from flask_login import LoginManager, login_required
 from flask_login import current_user, login_user, logout_user
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import UserMixin
@@ -19,6 +19,7 @@ application.config.from_object(Config)
 db = SQLAlchemy(application)
 migrate = Migrate(application, db)
 login = LoginManager(application)
+login.login_view = 'login'
 
 def create_tables():
     db.create_all()
@@ -55,7 +56,12 @@ def load_user(id):
 
 
 # add a rule for the index page.
-application.add_url_rule('/', 'index', (lambda: render_template('index.html', title='Home', user=user)))
+
+@application.route('/')
+@application.route('/index')
+@login_required
+def index():
+    return render_template('index.html', title='Home', user=user)
 
 @application.route('/login', methods=['GET', 'POST'])
 def login():
