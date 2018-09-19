@@ -13,9 +13,10 @@ from flask_login import UserMixin
 import sqlite3
 from datetime import datetime
 from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, BooleanField, SubmitField
-from wtforms.validators import ValidationError, DataRequired, Email, EqualTo
+from wtforms import StringField, PasswordField, BooleanField, SubmitField,TextAreaField
+from wtforms.validators import ValidationError, DataRequired, Email, EqualTo, Length
 from hashlib import md5
+from flask_bootstrap import Bootstrap
 
 application = Flask(__name__)
 application.config.from_object(Config)
@@ -23,7 +24,7 @@ db = SQLAlchemy(application)
 migrate = Migrate(application, db)
 login = LoginManager(application)
 login.login_view = 'login'
-
+bootstrap = Bootstrap(application)
 
 class User(UserMixin,db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -71,6 +72,11 @@ class RegistrationForm(FlaskForm):
         user = User.query.filter_by(email=email.data).first()
         if user is not None:
             raise ValidationError('Please use a different email address.')
+
+class EditProfileForm(FlaskForm):
+    username = StringField('Username', validators=[DataRequired()])
+    about_me = TextAreaField('About me', validators=[Length(min=0, max=140)])
+    submit = SubmitField('Submit')
 
 class Post(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -154,6 +160,23 @@ def user(username):
         {'author': user, 'body': 'Test post #2'}
     ]
     return render_template('user.html', user=user, posts=posts)
+
+
+@application.route('/edit_profile', methods=['GET', 'POST'])
+@login_required
+def edit_profile():
+    form = EditProfileForm()
+    if form.validate_on_submit():
+        current_user.username = form.username.data
+        current_user.about_me = form.about_me.data
+        db.session.commit()
+        flash('Your changes have been saved.')
+        return redirect(url_for('edit_profile'))
+    elif request.method == 'GET':
+        form.username.data = current_user.username
+        form.about_me.data = current_user.about_me
+    return render_template('edit_profile.html', title='Edit Profile',
+                           form=form)
 
 # run the app.
 if __name__ == "__main__":
