@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+    <h1>Hi, {{ current_user.username }}!</h1>
+    {% if form %}
+    {{ wtf.quick_form(form) }}
+    <br>
+    {% endif %}
+    <div>
+    	<h3>Social Visualization on User Behavior</h3>
+    </div>
+    
+    <div id="chart1"/>
+    
+{% endblock %}
+
+{% block scripts %}
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js">
+</script>
+<script type="text/javascript">
+        google.charts.load('current', {packages: ['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+      // Define the chart to be drawn.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Element');
+      data.addColumn('number', 'Percentage');
+      data.addRows([
+        ['Nitrogen', 0.78],
+        ['Oxygen', 0.21],
+        ['Other', 0.01]
+      ]);
+      var options = {
+      'legend':'left',
+      'title':'My Big Pie Chart',
+      'is3D':true,
+      'width':400,
+      'height':300
+    }
+      // Instantiate and draw the chart.
+      var chart = new google.visualization.PieChart(document.getElementById('chart1'));
+      chart.draw(data, options);
+    }
+    </script>
+{% endblock %}

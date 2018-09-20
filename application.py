@@ -200,6 +200,13 @@ def history(username):
         logs = user.logins.order_by(LoginHistory.timestamp.desc()).offset(1)
     return render_template('user.html', user=user, logs=logs)
 
+@application.route('/dataviz')
+@login_required
+def dataviz():
+    if current_user.is_authenticated:
+        return render_template('dataviz.html')
+    return redirect(url_for('login'))
+
 
 @application.route('/edit_profile', methods=['GET', 'POST'])
 @login_required
