@@ -213,6 +213,13 @@ def dataviz():
         return render_template('dataviz.html')
     return redirect(url_for('login'))
 
+@application.route('/socialviz')
+@login_required
+def socialviz():
+    if current_user.is_authenticated:
+        return render_template('socialviz.html')
+    return redirect(url_for('login'))
+
 
 @application.route('/edit_profile', methods=['GET', 'POST'])
 @login_required
@@ -258,6 +265,24 @@ def getActionCounts():
         data['ques_clicked']=getNoOfRows(current_user,7)
         json_data = json.dumps(data)
         return json_data
+
+@application.route('/getSocialCounts',methods=['GET'])
+def getSocialCounts():
+    if current_user.is_authenticated:
+        data={}
+        ukey=current_user.username+'_ques_clicked'
+        data[ukey]=getNoOfRows(current_user,7)
+        others = User.query.filter(User.id != current_user.id).all()
+        for u in others:
+            #key1 = u.username+"_ques_asked"
+            key2 = u.username+"_ques_clicked"
+            #key3 = u.username+"_pages"
+            #data[key1]= getNoOfRows(u,6)
+            data[key2]= getNoOfRows(u,7)
+            #data[key3]= getNoOfRows(u,4)
+        json_data = json.dumps(data)
+        return json_data
+
 
 # run the app.
 if __name__ == "__main__":

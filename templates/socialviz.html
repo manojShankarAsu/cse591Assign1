@@ -13,7 +13,8 @@
     
     <table >
       <tr>
-        <td><div id="piechart2" style="width: 900px; height: 500px;"></div></td>
+
+        <td><div id="piechart" style="width: 900px; height: 500px;"></div></td>
       </tr>
     </table>
     
@@ -28,7 +29,6 @@
 
 
         function drawChart() {
-
         	var barchar_resp ;
         	var jax = new XMLHttpRequest();
         	jax.onreadystatechange = function() {
@@ -36,28 +36,24 @@
     	    	barchar_resp = jax.responseText;
     	    	console.log(barchar_resp);
     	    	data_bar = JSON.parse(barchar_resp);
-
-
       var data = google.visualization.arrayToDataTable([
-        ['Actions', 'No of actions'],
-        ['Upvotes', data_bar['upvotes']],
-        ['Downvotes', data_bar['downvotes']],
-        ['Questions Read', data_bar['ques_clicked']],
-        ['Answers posted', data_bar['answers_posted']],
-        ['Questions Asked', data_bar['ques_asked']]
-      ]);
+          ['User', 'Questions clicked'],
+          ['AAA',     data_bar['aaa_ques_clicked']],
+          ['BBB',     data_bar['bbb_ques_clicked']],
+          ['CCC',     data_bar['ccc_ques_clicked']]
+        ]);
 
-              var options = {
-          title: 'Your Actions in Stack Overflow',
+        var options = {
+          title: 'Your Question Reads compared with others users',
           is3D: true,
         };
-        var chart = new google.visualization.PieChart(document.getElementById('piechart2'));
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
 
         chart.draw(data, options);
 
     			}
 			}
-    		jax.open("GET","http://localhost:5000/getActionCounts");
+    		jax.open("GET","http://localhost:5000/getSocialCounts");
   			jax.send();  			
     }
     </script>
