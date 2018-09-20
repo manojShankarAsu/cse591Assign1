@@ -14,7 +14,8 @@
     <table >
       <tr>
 
-        <td><div id="piechart" style="width: 900px; height: 500px;"></div></td>
+        <td><div id="piechart" style="width: 700px; height: 500px;"></div></td>
+        <td><div id="piechart3" style="width: 700px; height: 500px;"></div></td>
       </tr>
     </table>
     
@@ -47,11 +48,24 @@
           title: 'Your Question Reads compared with others users',
           is3D: true,
         };
+
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-
         chart.draw(data, options);
+        //
+        var data3 = google.visualization.arrayToDataTable([
+          ['User', 'Questions asked'],
+          ['AAA',     data_bar['aaa_ques_asked']],
+          ['BBB',     data_bar['bbb_ques_asked']],
+          ['CCC',     data_bar['ccc_ques_asked']]
+        ]);
 
-    			}
+        var options = {
+          title: 'No of Questions asked by you compared with others users',
+          is3D: true,
+        };
+        var chart3 = new google.visualization.PieChart(document.getElementById('piechart3'));
+        chart3.draw(data3, options);
+    		}
 			}
     		jax.open("GET","http://localhost:5000/getSocialCounts");
   			jax.send();  			
