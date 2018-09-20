@@ -39,7 +39,7 @@ class User(UserMixin,db.Model):
     password_hash = db.Column(db.String(128))
     posts = db.relationship('Post', backref='author', lazy='dynamic')
     logins = db.relationship('LoginHistory',backref='user',lazy='dynamic')
-    #behlogs = db.relationship('BehaviorLogs',backref='user',lazy='dynamic')
+    actionlogs = db.relationship('ActionLogs',backref='user',lazy='dynamic')
     about_me = db.Column(db.String(140))
     last_seen = db.Column(db.DateTime, default=datetime.utcnow)
 
@@ -100,8 +100,6 @@ class ActionLogs(db.Model):
     timestamp=db.Column(db.DateTime,index=True,default=datetime.utcnow)
     context = db.Column(db.String(140))
     user_id = db.Column(db.Integer,db.ForeignKey('user.id'))
-    
-
 
 class Post(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -223,15 +221,15 @@ def trackevents():
     if current_user.is_authenticated:
         data = request.data
         data_str = data.decode("utf-8")
-        # params = data_str.split(';')
-        # clicktype = action_type.get(params[0],"click")
-        # contextval = clicktype
-        # if len(params) > 1:
-        #     contextval = params[1]
-        # timeentry = datetime.utcnow()
-        # behav_log = BehaviorLogs(clicktype = clicktype,timestamp = timeentry, user_id=current_user.id,context=contextval)
-        # db.session.add(behav_log)
-        # db.session.commit()
+        params = data_str.split(';')
+        clicktype = action_type.get(params[0],"click")
+        contextval = params[0]
+        if len(params) > 1:
+            contextval = params[1]
+        timeentry = datetime.utcnow()
+        behav_log = ActionLogs(clicktype = clicktype,timestamp = timeentry, user_id=current_user.id,context=contextval)
+        db.session.add(behav_log)
+        db.session.commit()
         return "SUCCESS"
 
 # run the app.
