@@ -1,6 +1,5 @@
 from flask import Flask
 from flask import request
-#from forms import LoginForm, RegistrationForm
 from flask import render_template, flash, redirect, url_for
 from config import Config
 from flask_sqlalchemy import SQLAlchemy
@@ -30,6 +29,9 @@ login.login_view = 'login'
 bootstrap = Bootstrap(application)
 moment = Moment(application)
 
+action_type={"up vote":1,"down vote":"2","submit-button":3,"scroll":4,"doubleclick":5,"askQuestion":6,"questionClicked":7}
+
+
 class User(UserMixin,db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(64), index=True, unique=True)
@@ -37,6 +39,7 @@ class User(UserMixin,db.Model):
     password_hash = db.Column(db.String(128))
     posts = db.relationship('Post', backref='author', lazy='dynamic')
     logins = db.relationship('LoginHistory',backref='user',lazy='dynamic')
+    #behlogs = db.relationship('BehaviorLogs',backref='user',lazy='dynamic')
     about_me = db.Column(db.String(140))
     last_seen = db.Column(db.DateTime, default=datetime.utcnow)
 
@@ -90,6 +93,15 @@ class LoginHistory(db.Model):
 
     def __repr__(self):
         return '<Loginss {}>'.format(self.timestamp)
+
+class ActionLogs(db.Model):
+    id=db.Column(db.Integer,primary_key=True)
+    clicktype=db.Column(db.Integer,index=True)
+    timestamp=db.Column(db.DateTime,index=True,default=datetime.utcnow)
+    context = db.Column(db.String(140))
+    user_id = db.Column(db.Integer,db.ForeignKey('user.id'))
+    
+
 
 class Post(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -206,6 +218,21 @@ def edit_profile():
         form.about_me.data = current_user.about_me
     return render_template('edit_profile.html', title='Edit Profile',
                            form=form)
+@application.route('/trackevents',methods=['POST'])
+def trackevents():
+    if current_user.is_authenticated:
+        data = request.data
+        data_str = data.decode("utf-8")
+        # params = data_str.split(';')
+        # clicktype = action_type.get(params[0],"click")
+        # contextval = clicktype
+        # if len(params) > 1:
+        #     contextval = params[1]
+        # timeentry = datetime.utcnow()
+        # behav_log = BehaviorLogs(clicktype = clicktype,timestamp = timeentry, user_id=current_user.id,context=contextval)
+        # db.session.add(behav_log)
+        # db.session.commit()
+        return "SUCCESS"
 
 # run the app.
 if __name__ == "__main__":
