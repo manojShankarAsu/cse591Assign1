@@ -11,12 +11,13 @@
                 
                 {% if user == current_user %}
                 <p><a href="{{ url_for('edit_profile') }}">Edit your profile</a></p>
+                <p><a href="{{ url_for('history', username=current_user.username) }}">Login history</a></p>
                 {% endif %}
             </td>
         </tr>
     </table>
-    {% for log in logs %}
-        {% include '_logins.html' %}
+    {% for post in posts %}
+        {% include '_post.html' %}
     {% endfor %}
     <nav aria-label="...">
         <ul class="pager">

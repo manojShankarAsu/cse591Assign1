@@ -17,6 +17,9 @@ from wtforms import StringField, PasswordField, BooleanField, SubmitField,TextAr
 from wtforms.validators import ValidationError, DataRequired, Email, EqualTo, Length
 from hashlib import md5
 from flask_bootstrap import Bootstrap
+from flask_moment import Moment
+from flask import make_response
+
 
 application = Flask(__name__)
 application.config.from_object(Config)
@@ -25,6 +28,7 @@ migrate = Migrate(application, db)
 login = LoginManager(application)
 login.login_view = 'login'
 bootstrap = Bootstrap(application)
+moment = Moment(application)
 
 class User(UserMixin,db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -32,6 +36,7 @@ class User(UserMixin,db.Model):
     email = db.Column(db.String(120), index=True, unique=True)
     password_hash = db.Column(db.String(128))
     posts = db.relationship('Post', backref='author', lazy='dynamic')
+    logins = db.relationship('LoginHistory',backref='user',lazy='dynamic')
     about_me = db.Column(db.String(140))
     last_seen = db.Column(db.DateTime, default=datetime.utcnow)
 
@@ -77,6 +82,14 @@ class EditProfileForm(FlaskForm):
     username = StringField('Username', validators=[DataRequired()])
     about_me = TextAreaField('About me', validators=[Length(min=0, max=140)])
     submit = SubmitField('Submit')
+
+class LoginHistory(db.Model):
+    id = db.Column(db.Integer,primary_key=True)
+    timestamp = db.Column(db.DateTime,index=True,default=datetime.utcnow)
+    user_id = db.Column(db.Integer,db.ForeignKey('user.id'))
+
+    def __repr__(self):
+        return '<Loginss {}>'.format(self.timestamp)
 
 class Post(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -126,16 +139,24 @@ def login():
             flash('Invalid username or password')
             return redirect(url_for('login'))
         login_user(user, remember=form.remember_me.data)
+        log_entry=LoginHistory(timestamp=datetime.utcnow(),user_id=user.id)
+        db.session.add(log_entry)
+        db.session.commit()
         next_page = request.args.get('next')
         if not next_page or url_parse(next_page).netloc != '':
             next_page = url_for('index')
-        return redirect(next_page)
+        resp = make_response(render_template('index.html', title='Home', user=user))
+        resp.set_cookie('adaptive_user', user.username)
+        return resp
     return render_template('login.html', title='Sign In', form=form)
 
 @application.route('/logout')
 def logout():
     logout_user()
-    return redirect(url_for('index'))
+    redir = redirect(url_for('index'))
+    resp = make_response(redir)
+    resp.set_cookie('adaptive_user','',expires=0)
+    return resp
 
 @application.route('/register', methods=['GET', 'POST'])
 def register():
@@ -160,6 +181,14 @@ def user(username):
         {'author': user, 'body': 'Test post #2'}
     ]
     return render_template('user.html', user=user, posts=posts)
+
+@application.route('/history/<username>')
+@login_required
+def history(username):
+    user = User.query.filter_by(username=username).first_or_404()
+    if user is not None:
+        logs = user.logins.order_by(LoginHistory.timestamp.desc()).offset(1)
+    return render_template('user.html', user=user, logs=logs)
 
 
 @application.route('/edit_profile', methods=['GET', 'POST'])
