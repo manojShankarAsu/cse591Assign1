@@ -1,0 +1,15 @@
+<table class="table table-hover">
+        <tr>
+            <td width="70px">
+                <a href="{{ url_for('user', username=user.username) }}">
+                    <img src="{{ user.avatar(35) }}" />
+                </a>
+            </td>
+            <td>
+                Time in time : {{moment(action.timestamp).format('LLL')}}
+            </td>
+            <td>
+                 {{action.context}}
+            </td>
+        </tr>
+</table>

@@ -206,6 +206,15 @@ def history(username):
         logs = user.logins.order_by(LoginHistory.timestamp.desc()).offset(1)
     return render_template('user.html', user=user, logs=logs)
 
+@application.route('/belogs/<username>')
+@login_required
+def belogs(username):
+    user = User.query.filter_by(username=username).first_or_404()
+    if user is not None:
+        logs = user.actionlogs.order_by(ActionLogs.timestamp.desc())
+    return render_template('user.html', user=user, actions=logs)
+
+
 @application.route('/dataviz')
 @login_required
 def dataviz():
