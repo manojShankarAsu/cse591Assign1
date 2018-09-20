@@ -18,18 +18,38 @@
     {% for action in actions %}
         {% include '_actions.html' %}
     {% endfor %}
-    <nav aria-label="...">
-        <ul class="pager">
-            <li class="previous{% if not prev_url %} disabled{% endif %}">
-                <a href="{{ prev_url or '#' }}">
-                    <span aria-hidden="true">&larr;</span> Newer posts
-                </a>
-            </li>
-            <li class="next{% if not next_url %} disabled{% endif %}">
-                <a href="{{ next_url or '#' }}">
-                    Older posts <span aria-hidden="true">&rarr;</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
+    
+    {% if value %}
+    <div>
+        <p>
+        <b>Why did you decide to log these actions ?</b>
+        </p>
+        <p>
+            I have logged the following actions done by the User in StackOverflow: Upvotes, DownVotes, Questions Read, No of Questions asked, Page scrolls.
+            <li style="font-size:20px">
+                <b>
+            The reason for logging in the no of Questions Read is to identify how many questions and how much time the user is spending in the StackOverflow. After analyzing the data, I found that the more the Questions read correlates to more knowledge about Java increases for the user.
+        </b>
+        </li>
+        <li style="font-size:20px">
+            <b>
+            The reason for logging in the no of Upvotes and DownVotes Read is to identify how interactive and engaging is the user in the Stack Overflow page. A user can upvote aor downvote in StackOverflow only if he has enough credits / reputation in StackOverflow. So, Upvotes and Downvotes act as a measure of the reputation of the user in SatckOverflow.
+        </b>
+        </li>
+        <li style="font-size:20px">
+            <b>
+            The reason for logging in the no of Questions asked, is the more the no of Questions asked, the lesser the amount of knowledge the user has on the topic. So, this acts as a measure of knowledge on Java for the user.
+        </b>
+        </li>
+
+        <li style="font-size:20px">
+            <b>
+            The reason for logging in the Page scrolls, is the more the user scrolls and sees the different answers for a Question, the more knowledge improves for the user about the topic Java. There is a direct correlation between page scrolls and knowledge improvement. 
+            </b>
+        </li>
+
+        </p>
+
+    </div>
+    {% endif %}
 {% endblock %}

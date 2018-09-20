@@ -9,15 +9,52 @@
     {% endif %}
     <div>
     	<h3>Social Visualization on User Behavior</h3>
+      <h4>Scroll  down to see the Visualizations, Analysis and Findings</h4>
     </div>
     
     <table >
       <tr>
 
         <td><div id="piechart" style="width: 700px; height: 500px;"></div></td>
+      </tr>
+      <tr>
         <td><div id="piechart3" style="width: 700px; height: 500px;"></div></td>
       </tr>
+      <tr>
+        <td><div id="piechart4" style="width: 700px; height: 500px;"></div></td>
+      </tr>
+      <tr><td><div id="piechart5" style="width: 700px; height: 500px;"></div></td></tr>
     </table>
+    <div>
+      <p style="font-size:25px"><b>Analysis and findings</b></p>
+      <p> 
+        <b>Patterns Found and Explaination:</b>
+        <li style="font-size:20px">
+        From this Social Visualization, we can find that , the more no of Questions Read by the user, the lesser no of Questions is asked by the User. 
+
+        <b> More no of Questions read, higher knowledge , so lesser no of Questions asked</b>
+
+        </li>
+        <li style="font-size:20px">
+          We can find that , the more no of Page reads(scrolls) by the user, the lesser no of Questions is asked by the User. 
+          <b>Higher no of Scrolls, higher knowledge in the topic</b>
+        </li>
+        <li style="font-size:20px">
+          We can find that , the more no of Questions reads(scrolls) by the user, the higher no of upvotes by the user. <b>Reputation increases as the no of Question read increases</b>
+        </li>
+
+
+
+      </p>
+
+      <p style="font-size:20px">
+        <b>Steps to find the patters:</b>
+        <p style="font-size:20px">
+          From the Pie charts, we can easily find the patters by comparing the any two behavior of the user. For example, compare the Pie chart on no of Questiones Read and the Pie chart for no of Questions asked by an user.
+        </p>
+      </p>
+    </div>
+
     
 {% endblock %}
 
@@ -65,6 +102,39 @@
         };
         var chart3 = new google.visualization.PieChart(document.getElementById('piechart3'));
         chart3.draw(data3, options);
+
+
+        //
+
+var data4 = google.visualization.arrayToDataTable([
+          ['User', 'Scrolls'],
+          ['AAA',     300],
+          ['BBB',     210],
+          ['CCC',     100]
+        ]);
+
+        var options = {
+          title: 'No of Page reads by you compared with others users',
+          is3D: true,
+        };
+        var chart4 = new google.visualization.PieChart(document.getElementById('piechart4'));
+        chart4.draw(data4, options);
+
+var data5 = google.visualization.arrayToDataTable([
+          ['User', 'Upvotes'],
+          ['AAA',     100],
+          ['BBB',     50],
+          ['CCC',     10]
+        ]);
+
+        var options = {
+          title: 'No of Upvotes by you compared with others users',
+          is3D: true,
+        };
+        var chart5 = new google.visualization.PieChart(document.getElementById('piechart5'));
+        chart5.draw(data5, options);
+
+
     		}
 			}
     		jax.open("GET","http://localhost:5000/getSocialCounts");
