@@ -18,6 +18,7 @@ from hashlib import md5
 from flask_bootstrap import Bootstrap
 from flask_moment import Moment
 from flask import make_response
+import json
 
 
 application = Flask(__name__)
@@ -118,6 +119,11 @@ user = {'username': 'Manoj'}
 def create_tables():
     db.create_all()
 
+def getNoOfRows(user,click_type):
+    rows=  user.actionlogs.filter_by(clicktype=click_type)
+    if rows is not None:
+        return rows.count()
+    return 0
 
 @login.user_loader
 def load_user(id):
@@ -238,6 +244,20 @@ def trackevents():
         db.session.add(behav_log)
         db.session.commit()
         return "SUCCESS"
+
+
+@application.route('/getActionCounts',methods=['GET'])
+def getActionCounts():
+    if current_user.is_authenticated:
+        data={}
+        data['upvotes']=getNoOfRows(current_user,1)
+        data['downvotes']=getNoOfRows(current_user,2)
+        data['answers_posted']=getNoOfRows(current_user,3)
+        data['pages']=getNoOfRows(current_user,4)
+        data['ques_asked']=getNoOfRows(current_user,6)
+        data['ques_clicked']=getNoOfRows(current_user,7)
+        json_data = json.dumps(data)
+        return json_data
 
 # run the app.
 if __name__ == "__main__":

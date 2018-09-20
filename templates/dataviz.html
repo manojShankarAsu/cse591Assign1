@@ -11,7 +11,7 @@
     	<h3>Social Visualization on User Behavior</h3>
     </div>
     
-    <div id="chart1"/>
+    <div id="barchart"/>
     
 {% endblock %}
 
@@ -22,26 +22,46 @@
         google.charts.load('current', {packages: ['corechart']});
         google.charts.setOnLoadCallback(drawChart);
 
+
         function drawChart() {
-      // Define the chart to be drawn.
-      var data = new google.visualization.DataTable();
-      data.addColumn('string', 'Element');
-      data.addColumn('number', 'Percentage');
-      data.addRows([
-        ['Nitrogen', 0.78],
-        ['Oxygen', 0.21],
-        ['Other', 0.01]
+
+        	var barchar_resp ;
+        	var jax = new XMLHttpRequest();
+        	jax.onreadystatechange = function() {
+ 	   		if (jax.readyState == XMLHttpRequest.DONE) {
+    	    	barchar_resp = jax.responseText;
+    	    	console.log(barchar_resp);
+    	    	data_bar = JSON.parse(barchar_resp);
+      var data = google.visualization.arrayToDataTable([
+        ['Actions', 'No of actions', { role: 'style' }],
+        ['Upvotes', data_bar['upvotes'], 'color: gray'],
+        ['Downvotes', data_bar['downvotes'], 'color: #76A7FA'],
+        ['Questions Read', data_bar['ques_clicked'], 'color:red;fill-opacity: 0.7'],
+        ['Answers posted', data_bar['answers_posted'], 'stroke-color: #703593; stroke-width: 4; fill-color: #C5A5CF'],
+        ['Questions Asked', data_bar['ques_asked'], 'stroke-color: #871B47; stroke-opacity: 0.6; stroke-width: 8; fill-color: #BC5679; fill-opacity: 0.2']
       ]);
+      var view = new google.visualization.DataView(data);
+      view.setColumns([0, 1,
+                       { calc: "stringify",
+                         sourceColumn: 1,
+                         type: "string",
+                         role: "annotation" },
+                       2]);
+
       var options = {
-      'legend':'left',
-      'title':'My Big Pie Chart',
-      'is3D':true,
-      'width':400,
-      'height':300
-    }
-      // Instantiate and draw the chart.
-      var chart = new google.visualization.PieChart(document.getElementById('chart1'));
-      chart.draw(data, options);
+        title: "Actions made by you",
+        width: 600,
+        height: 400,
+        bar: {groupWidth: "95%"},
+        legend: { position: "none" },
+      };
+      var chart = new google.visualization.BarChart(document.getElementById("barchart"));
+      chart.draw(view, options);
+
+    			}
+			}
+    		jax.open("GET","http://localhost:5000/getActionCounts");
+  			jax.send();  			
     }
     </script>
 {% endblock %}
