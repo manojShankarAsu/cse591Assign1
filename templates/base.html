@@ -25,7 +25,7 @@
                     <li><a href="{{ url_for('login') }}">Login</a></li>
                     {% else %}
                     <li><a href="{{ url_for('user', username=current_user.username) }}">Profile</a></li> 
-                    <li><a href="{{ url_for('history', username=current_user.username) }}">History</a></li>
+                    <li><a href="{{ url_for('history', username=current_user.username) }}">Login History</a></li>
                     <li><a href="{{ url_for('dataviz') }}">Personal Visualization</a></li>
                     <li><a href="{{ url_for('socialviz') }}">Social Visualization</a></li>
             <li><a href="{{ url_for('belogs',username=current_user.username) }}">See my Behavior logs</a></li>
