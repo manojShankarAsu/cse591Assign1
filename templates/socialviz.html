@@ -30,17 +30,20 @@
       <p> 
         <b>Patterns Found and Explaination:</b>
         <li style="font-size:20px">
-        From this Social Visualization, we can find that , the more no of Questions Read by the user, the lesser no of Questions is asked by the User. 
+        From this Social Visualization, we can find that , the more no of Questions Read by the user, the lesser no of Questions is asked by the User. <b>e.g.</b> User aaa has more no of Question reads and correspondingly lesser no of Questions asked. On the other hand, User ccc has lesser no of question reads and hence higher no of Questions asked by user ccc.
 
-        <b> More no of Questions read, higher knowledge , so lesser no of Questions asked</b>
+        <b> Pattern found : More no of Questions read, higher knowledge , so lesser no of Questions asked. This will be useful to recommend relevant questions/answers on a topic to an user while he is asking a question on that topic so that he gets the answer without requiring to post a new question.</b>
 
         </li>
         <li style="font-size:20px">
-          We can find that , the more no of Page reads(scrolls) by the user, the lesser no of Questions is asked by the User. 
-          <b>Higher no of Scrolls, higher knowledge in the topic</b>
+          We can find that , the more no of Page scrolls by the user, the lesser no of Questions is asked by the User. 
+          <b>Pattern found : Higher no of page scrolls, the more diverse answers the user reads and hence higher knowledge in the topic. This will be useful to recommend the user to suggest variety of answers to a particular question/doubt he has on a topic to improve his knowledge.</b>
+          <b>e.g.</b> User bbb has more no of Question Page scrolls and correspondingly lesser no of Questions asked. On the other hand, User ccc has lesser no of page scrolls and hence higher no of Questions asked by user ccc.
         </li>
         <li style="font-size:20px">
-          We can find that , the more no of Questions reads(scrolls) by the user, the higher no of upvotes by the user. <b>Reputation increases as the no of Question read increases</b>
+          We can find that , the more no of Questions reads  and scrolls by the user, the higher no of upvotes by the user. <b>Pattern found :StackOverflow Reputation increases as the no of Question read and page scroll increases. This will be helpful to recommend the user to read more questions and read more answers related to a topic to improve his stack overflow reputation.</b>
+          <b>e.g.</b> User aaa has more no of Question reads and page scrolls and correspondingly higher no of Questions upvotes. On the other hand, User ccc has lesser no of page scrolls and hence lesser no of Questions upvotes.
+
         </li>
 
 
@@ -137,7 +140,7 @@ var data5 = google.visualization.arrayToDataTable([
 
     		}
 			}
-    		jax.open("GET","http://localhost:5000/getSocialCounts");
+    		jax.open("GET","http://flask-env.krw8mmdm27.us-east-2.elasticbeanstalk.com:80/getSocialCounts");
   			jax.send();  			
     }
     </script>
