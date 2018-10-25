@@ -19,7 +19,7 @@ from flask_bootstrap import Bootstrap
 from flask_moment import Moment
 from flask import make_response
 import json
-
+from search import add_to_index, remove_from_index, query_index
 
 application = Flask(__name__)
 application.config.from_object(Config)
@@ -29,6 +29,8 @@ login = LoginManager(application)
 login.login_view = 'login'
 bootstrap = Bootstrap(application)
 moment = Moment(application)
+application.elasticsearch = Elasticsearch([application.config['ELASTICSEARCH_URL']]) \
+        if application.config['ELASTICSEARCH_URL'] else None
 
 action_type={"up vote":1,"down vote":"2","submit-button":3,"scroll":4,"doubleclick":5,"askQuestion":6,"questionClicked":7}
 
@@ -110,6 +112,13 @@ class Post(db.Model):
 
     def __repr__(self):
         return '<Post {}>'.format(self.body)
+
+class IndexedFile(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(200))
+
+    def __repr__(self):
+        return '<File {}>'.format(self.name)
 
 
 
@@ -294,10 +303,18 @@ def getSocialCounts():
         return json_data
 
 
+def crawl_files():
+    pass
+
+def index_files():
+    pass
+
 # run the app.
 if __name__ == "__main__":
     # Setting debug to True enables debug output. This line should be
     # removed before deploying a production app.
     application.debug = True
     create_tables()
+    crawl_files()
+    index_file()
     application.run()
