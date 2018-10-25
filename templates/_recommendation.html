@@ -1,0 +1,13 @@
+<table class="table table-hover">
+        
+        <tr>
+            <b>recomm.source</b>
+        </tr>
+        <tr>
+        	{% if recomm.type == 'Text' %}
+        		recomm.content
+            {% elif recomm.type == 'Code'%}
+                recomm.content
+    		{% endif %}
+        </tr>>
+</table>

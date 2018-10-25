@@ -128,6 +128,11 @@ class IndexedFile(db.Model):
         return '<File {}>'.format(self.name)
 
 
+class JavaPost():
+    def __init__(self, content , code,recommendation_list=[]):
+        self.content = content
+        self.code = code
+        self.reclist = recommendation_list
 
 user = {'username': 'Manoj'}
 # EB looks for an 'application' callable by default.
@@ -156,9 +161,9 @@ def before_request():
 
 @application.route('/')
 @application.route('/index')
-@login_required
 def index():
-    return render_template('index.html', title='Home', user=user)
+    java_posts = read_queries()
+    return render_template('index.html', title='Home', posts =  java_posts)
 
 @application.route('/login', methods=['GET', 'POST'])
 def login():
@@ -346,12 +351,19 @@ def add_to_index(index, obj_id,filename,file_obj):
     if not application.elasticsearch:
         return    
     payload = {}
+    settings = {}
+    my_analyzer = {}
+    my_analyzer['type'] = 'standard'
+    my_analyzer['stopwords'] = '_english_'
+    analysis = {}
+    analysis['analyzer']=my_analyzer
+    settings['analysis'] = analyzer
     #content = content.encode('utf-8')
     try:
         payload['text']=file_obj.read()
         payload['name']=filename
         application.elasticsearch.index(index=index, doc_type=index, id=obj_id,
-                                    body=payload)
+                                    body=payload,settings=settings)
     except Exception as detail:
         application.logger.error('cannot index')
         application.logger.error(filename)
@@ -378,20 +390,24 @@ def read_queries():
     application.logger.info('Reading excel file ')
     query_dir = os.path.join(os.getcwd(),"queries")    
     files = os.listdir(query_dir)
+    java_posts = []
     for excel in files:
         file_path = os.path.join(query_dir,excel)
         xl = pd.read_excel(file_path)
         xl['text'] = xl['text'].fillna('')
         xl['code'] = xl['code'].fillna('')
         for index, row in xl.iterrows():            
-            print('Text')
-            print(row['text'])
-            print("Search result")
-            print(query_index('java2',row['text'],1,10))
-            print('Code')
-            print(row['code'])
-            print("Search result")
-            print(query_index('java2',row['code'],1,10))
+            java_post = JavaPost(row['text'],row['code'],[])
+            java_posts.append(java_post)
+            # print('Text')
+            # print(row['text'])
+            # print("Search result")
+            # print(query_index('java2',row['text'],1,10))
+            # print('Code')
+            # print(row['code'])
+            # print("Search result")
+            # print(query_index('java2',row['code'],1,10))
+    return java_posts
 
 if __name__ == "__main__":
     # Setting debug to True enables debug output. This line should be
@@ -412,8 +428,7 @@ if __name__ == "__main__":
      ))
     application.logger.addHandler(handler)
     application.logger.addHandler(file_handler)
-    application.logger.error('first test message...')
     crawl_files()
     #index_files()
-    read_queries()
-    #application.run(debug=True)
+    #read_queries()
+    application.run(debug=True)
