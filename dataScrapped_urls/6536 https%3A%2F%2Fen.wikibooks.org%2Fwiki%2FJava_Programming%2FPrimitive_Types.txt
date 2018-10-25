@@ -1,0 +1,2 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="kt">double</span> <span class="n">age</span> <span class="o">=</span> <span class="mf">10.5</span><span class="o">;</span>
+</pre>

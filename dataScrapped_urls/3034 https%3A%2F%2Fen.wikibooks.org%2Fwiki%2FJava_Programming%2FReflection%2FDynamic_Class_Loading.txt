@@ -1,0 +1,2 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="n">Class</span><span class="o">&lt;?&gt;</span> <span class="n">clazz</span> <span class="o">=</span> <span class="n">classLoader</span><span class="o">.</span><span class="na">load</span><span class="o">(</span><span class="s">"com.example.MyClass"</span><span class="o">);</span>
+</pre>

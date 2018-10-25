@@ -1,0 +1,15 @@
+Code-Block-AW3<pre>public class Bicycle {
+        
+    private int cadence;
+    private int gear;
+    private int speed;
+        
+    // <b>add an instance variable for the object ID</b>
+    private int id;
+    
+    // <b>add a class variable for the</b>
+    // <b>number of Bicycle objects instantiated</b>
+    private <b>static</b> int numberOfBicycles = 0;
+        ...
+}
+</pre>

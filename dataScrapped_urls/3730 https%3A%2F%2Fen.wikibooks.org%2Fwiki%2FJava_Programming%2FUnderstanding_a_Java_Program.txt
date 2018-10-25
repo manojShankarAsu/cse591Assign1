@@ -1,0 +1,1 @@
+In order to print, we invoke the println(). This is an instance method from java.io.PrintStream, which is the type of the static field out in the class java.lang.System. The Java VM binds System.out to the standard output stream when it starts a program.

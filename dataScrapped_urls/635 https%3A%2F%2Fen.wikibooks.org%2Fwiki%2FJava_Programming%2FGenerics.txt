@@ -1,0 +1,2 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="n">Comparator</span><span class="o">&lt;?</span> <span class="kd">super</span> <span class="n">Dog</span><span class="o">&gt;</span> <span class="n">myComparator</span><span class="o">;</span>
+</pre>

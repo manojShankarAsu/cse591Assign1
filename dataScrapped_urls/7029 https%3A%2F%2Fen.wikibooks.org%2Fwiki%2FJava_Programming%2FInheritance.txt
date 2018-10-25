@@ -1,0 +1,7 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Vehicle</span> <span class="o">{</span>
+<span class="lineno">2 </span>    <span class="c1">// ...</span>
+<span class="lineno">3 </span><span class="hll">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
+</span><span class="lineno">4 </span>        <span class="n">position</span> <span class="o">+=</span> <span class="n">speed</span><span class="o">;</span>
+<span class="lineno">5 </span>    <span class="o">}</span>
+<span class="lineno">6 </span><span class="o">}</span>
+</pre>

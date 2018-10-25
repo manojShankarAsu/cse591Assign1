@@ -1,0 +1,2 @@
+Code-Block-AW3<pre><span></span><span class="n">Animal</span> <span class="n">dog</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Animal</span><span class="o">();</span>
+</pre>

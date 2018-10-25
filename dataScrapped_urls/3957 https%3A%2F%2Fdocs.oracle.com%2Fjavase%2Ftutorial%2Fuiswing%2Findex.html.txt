@@ -1,0 +1,1 @@
+Performing Custom Painting gives you information on painting your own Swing components. It discusses painting issues specific to Swing components, provides an overview of painting concepts, and has examples of custom components that paint themselves.

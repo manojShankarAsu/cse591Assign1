@@ -1,0 +1,4 @@
+Code-Block-AW3<pre>public <b>static</b> int getNumberOfBicycles() {
+    return numberOfBicycles;
+}
+</pre>

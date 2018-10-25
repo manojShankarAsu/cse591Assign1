@@ -1,0 +1,25 @@
+Code-Block-AW3<pre><span style="color: purple"><b>public</b></span> <span style="color: purple"><b>class</b></span> <span style="color: grey">Distance</span> {
+   <span style="color: purple"><b>private</b></span> java.awt.<span style="color: grey">Point</span> <span style="color: grey">point0</span>, <span style="color: grey">point1</span>;
+
+   <span style="color: purple"><b>public</b></span> <span style="color: grey">Distance</span>(<span style="color: purple"><b>int</b></span> <span style="color: grey">x0</span>, <span style="color: purple"><b>int</b></span> <span style="color: grey">y0</span>, <span style="color: purple"><b>int</b></span> <span style="color: grey">x1</span>, <span style="color: purple"><b>int</b></span> <span style="color: grey">y1</span>) {
+     <span style="color: grey">point0</span> = <span style="color: purple"><b>new</b></span> java.awt.<span style="color: grey">Point</span>(<span style="color: grey">x0</span>, <span style="color: grey">y0</span>);
+     <span style="color: grey">point1</span> = <span style="color: purple"><b>new</b></span> java.awt.<span style="color: grey">Point</span>(<span style="color: grey">x1</span>, <span style="color: grey">y1</span>);
+   }
+
+   <span style="color: purple"><b>public</b></span> <span style="color: purple"><b>void</b></span> <span style="color: grey">printDistance</span>() {
+     <span style="color: grey">System</span>.<span style="color: grey">out</span>.<span style="color: grey">println</span>(<span style="color: blue">"Distance between "</span> <span style="color: red">+</span> <span style="color: grey">point0</span> <span style="color: red">+</span> <span style="color: blue">" and "</span> <span style="color: red">+</span> <span style="color: grey">point1</span>
+                     <span style="color: red">+</span> <span style="color: blue">" is "</span> <span style="color: red">+</span> <span style="color: grey">point0</span>.<span style="color: grey">distance</span>(<span style="color: grey">point1</span>));
+   }
+
+   <span style="color: purple"><b>public</b></span> <span style="color: purple"><b>static</b></span> <span style="color: purple"><b>void</b></span> <span style="color: grey">main</span>(<span style="color: grey">String</span>[] <span style="color: grey">args</span>) {
+     <span style="color: grey">Distance</span> <span style="color: grey">dist</span> = <span style="color: purple"><b>new</b></span> <span style="color: grey">Distance</span>(
+              <span style="color: grey">intValue</span>(<span style="color: grey">args</span>[<span style="color: orange">0</span>]), <span style="color: grey">intValue</span>(<span style="color: grey">args</span>[<span style="color: orange">1</span>]),
+              <span style="color: grey">intValue</span>(<span style="color: grey">args</span>[<span style="color: orange">2</span>]), <span style="color: grey">intValue</span>(<span style="color: grey">args</span>[<span style="color: orange">3</span>]));
+     <span style="color: grey">dist.<span style="color: grey">printDistance();
+   }
+
+   <span style="color: purple"><b>private</b></span> <span style="color: purple"><b>static</b></span> <span style="color: purple"><b>int</b></span> <span style="color: grey">intValue</span>(<span style="color: grey">String</span> <span style="color: grey">data</span>) {
+     <span style="color: purple"><b>return</b></span> <span style="color: grey">Integer</span>.<span style="color: grey">parseInt</span>(<span style="color: grey">data</span>);
+   }
+}
+</span></span></pre>

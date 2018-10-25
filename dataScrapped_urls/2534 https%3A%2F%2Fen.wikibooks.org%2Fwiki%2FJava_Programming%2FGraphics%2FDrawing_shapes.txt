@@ -1,0 +1,1 @@
+Try running the program while coding changes to colors for a different colored outline each time. Play around a bit with more colors. Look for the Color class API documentation in the external links at the bottom of the page.

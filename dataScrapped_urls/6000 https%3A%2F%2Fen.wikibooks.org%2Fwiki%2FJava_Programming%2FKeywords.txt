@@ -1,0 +1,1 @@
+It marks a critical section. A critical section is where one and only one thread is executing. So to enter into the marked code the threads are synchronized, only one can enter, the others have to wait. For more information see Synchronizing Threads Methods or [3].

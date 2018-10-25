@@ -1,0 +1,1 @@
+To order String objects, use the compareTo() method, which can be accessed wherever we use a String datatype. The compareTo() method returns a negative, zero, or positive number if the parameter is less than, equal to, or greater than the object on which it is called. Let's take a look at an example:

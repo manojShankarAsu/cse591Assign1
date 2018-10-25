@@ -1,0 +1,26 @@
+Code-Block-AW3<pre><span></span><span class="lineno"> 1 </span><span class="kn">import</span> <span class="nn">java.applet.Applet</span><span class="o">;</span>
+<span class="lineno"> 2 </span><span class="kn">import</span> <span class="nn">java.awt.CardLayout</span><span class="o">;</span>
+<span class="lineno"> 3 </span><span class="kn">import</span> <span class="nn">java.awt.Label</span><span class="o">;</span>
+<span class="lineno"> 4 </span>
+<span class="lineno"> 5 </span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">CardLayoutApplet</span> <span class="kd">extends</span> <span class="n">Applet</span> <span class="o">{</span>
+<span class="lineno"> 6 </span>
+<span class="lineno"> 7 </span>    <span class="kd">static</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">COMPONENT_POSITION_TOP</span> <span class="o">=</span> <span class="s">"TOP"</span><span class="o">;</span>
+<span class="lineno"> 8 </span>    <span class="kd">static</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">COMPONENT_POSITION_MIDDLE</span> <span class="o">=</span> <span class="s">"MIDDLE"</span><span class="o">;</span>
+<span class="lineno"> 9 </span>    <span class="kd">static</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">COMPONENT_POSITION_BOTTOM</span> <span class="o">=</span> <span class="s">"BOTTOM"</span><span class="o">;</span>
+<span class="lineno">10 </span>
+<span class="lineno">11 </span>    <span class="n">Label</span> <span class="n">topLabel</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Label</span><span class="o">(</span><span class="s">"At the top"</span><span class="o">);</span>
+<span class="lineno">12 </span>    <span class="n">Label</span> <span class="n">middleLabel</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Label</span><span class="o">(</span><span class="s">"In the middle"</span><span class="o">);</span>
+<span class="lineno">13 </span>    <span class="n">Label</span> <span class="n">bottomLabel</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Label</span><span class="o">(</span><span class="s">"At the bottom"</span><span class="o">);</span>
+<span class="lineno">14 </span>
+<span class="lineno">15 </span>    <span class="cm">/**</span>
+<span class="lineno">16 </span><span class="cm">     * Init.</span>
+<span class="lineno">17 </span><span class="cm">     */</span>
+<span class="lineno">18 </span>    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">init</span><span class="o">()</span> <span class="o">{</span>
+<span class="lineno">19 </span><span class="hll">        <span class="n">setLayout</span><span class="o">(</span><span class="k">new</span> <span class="n">CardLayout</span><span class="o">());</span>
+</span><span class="lineno">20 </span>        <span class="n">add</span><span class="o">(</span><span class="n">COMPONENT_POSITION_TOP</span><span class="o">,</span> <span class="n">topLabel</span><span class="o">);</span>
+<span class="lineno">21 </span>        <span class="n">add</span><span class="o">(</span><span class="n">COMPONENT_POSITION_MIDDLE</span><span class="o">,</span> <span class="n">middleLabel</span><span class="o">);</span>
+<span class="lineno">22 </span>        <span class="n">add</span><span class="o">(</span><span class="n">COMPONENT_POSITION_BOTTOM</span><span class="o">,</span> <span class="n">bottomLabel</span><span class="o">);</span>
+<span class="lineno">23 </span><span class="hll">        <span class="o">((</span><span class="n">CardLayout</span><span class="o">)</span><span class="n">getLayout</span><span class="o">()).</span><span class="na">show</span><span class="o">(</span><span class="k">this</span><span class="o">,</span> <span class="n">COMPONENT_POSITION_MIDDLE</span><span class="o">);</span>
+</span><span class="lineno">24 </span>    <span class="o">}</span>
+<span class="lineno">25 </span><span class="o">}</span>
+</pre>

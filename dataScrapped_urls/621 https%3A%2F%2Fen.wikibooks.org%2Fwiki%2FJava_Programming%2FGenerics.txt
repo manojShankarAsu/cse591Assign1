@@ -1,0 +1,5 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="hll"><span class="kd">public</span> <span class="o">&lt;</span><span class="n">D</span><span class="o">&gt;</span> <span class="n">D</span> <span class="nf">assign</span><span class="o">(</span><span class="n">Collection</span><span class="o">&lt;</span><span class="n">D</span><span class="o">&gt;</span> <span class="n">generic</span><span class="o">,</span> <span class="n">D</span> <span class="n">obj</span><span class="o">)</span> <span class="o">{</span>
+</span><span class="lineno">2 </span>  <span class="n">generic</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">obj</span><span class="o">);</span>
+<span class="lineno">3 </span>  <span class="k">return</span> <span class="n">obj</span><span class="o">;</span>
+<span class="lineno">4 </span><span class="o">}</span>
+</pre>

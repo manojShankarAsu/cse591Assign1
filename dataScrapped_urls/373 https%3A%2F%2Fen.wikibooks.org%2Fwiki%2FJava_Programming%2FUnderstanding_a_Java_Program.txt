@@ -1,0 +1,1 @@
+Java represents sequences of character data, or String, with the reference type java.lang.String which is most commonly referred to as String. String literals, such as "Distance between " are constants whose type is String.

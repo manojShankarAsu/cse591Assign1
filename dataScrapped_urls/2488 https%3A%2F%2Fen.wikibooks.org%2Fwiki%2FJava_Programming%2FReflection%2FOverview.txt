@@ -1,0 +1,14 @@
+Code-Block-AW3<pre><span></span><span class="lineno"> 1 </span><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">invokeMain</span><span class="o">()</span>
+<span class="lineno"> 2 </span>   <span class="kd">throws</span> <span class="n">ClassNotFoundException</span><span class="o">,</span>
+<span class="lineno"> 3 </span>   	<span class="n">ExceptionInInitializerError</span><span class="o">,</span>
+<span class="lineno"> 4 </span>   	<span class="n">IllegalAccessException</span><span class="o">,</span>
+<span class="lineno"> 5 </span>   	<span class="n">IllegalArgumentException</span><span class="o">,</span>
+<span class="lineno"> 6 </span>   	<span class="n">InvocationTargetException</span><span class="o">,</span>
+<span class="lineno"> 7 </span>   	<span class="n">NoSuchMethodException</span><span class="o">,</span>
+<span class="lineno"> 8 </span>   	<span class="n">SecurityException</span> <span class="o">{</span>
+<span class="lineno"> 9 </span><span class="hll">   <span class="n">Class</span><span class="o">&lt;?&gt;</span> <span class="n">distanceClass</span> <span class="o">=</span> <span class="n">Class</span><span class="o">.</span><span class="na">forName</span><span class="o">(</span><span class="s">"Distance"</span><span class="o">);</span>
+</span><span class="lineno">10 </span><span class="hll">   <span class="n">String</span><span class="o">[]</span> <span class="n">points</span> <span class="o">=</span> <span class="o">{</span><span class="s">"0"</span><span class="o">,</span> <span class="s">"0"</span><span class="o">,</span> <span class="s">"3"</span><span class="o">,</span> <span class="s">"4"</span><span class="o">};</span>
+</span><span class="lineno">11 </span><span class="hll">   <span class="n">Method</span> <span class="n">mainMethod</span> <span class="o">=</span> <span class="n">distanceClass</span><span class="o">.</span><span class="na">getMethod</span><span class="o">(</span><span class="s">"main"</span><span class="o">,</span> <span class="n">String</span><span class="o">[].</span><span class="na">class</span><span class="o">);</span>
+</span><span class="lineno">12 </span><span class="hll">   <span class="n">Object</span> <span class="n">result</span> <span class="o">=</span> <span class="n">mainMethod</span><span class="o">.</span><span class="na">invoke</span><span class="o">(</span><span class="kc">null</span><span class="o">,</span> <span class="o">(</span><span class="n">Object</span><span class="o">)</span> <span class="n">points</span><span class="o">);</span>
+</span><span class="lineno">13 </span><span class="o">}</span>
+</pre>

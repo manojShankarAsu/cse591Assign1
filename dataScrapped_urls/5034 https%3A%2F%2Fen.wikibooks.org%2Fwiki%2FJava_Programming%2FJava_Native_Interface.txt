@@ -1,0 +1,10 @@
+Code-Block-AW3<pre><span></span> <span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp"></span>
+ <span class="cp">#include</span> <span class="cpf">"HelloWorld.h"</span><span class="cp"></span>
+
+ <span class="n">JNIEXPORT</span> <span class="kt">void</span> <span class="n">JNICALL</span>
+ <span class="nf">Java_HelloWorld_print</span><span class="p">(</span><span class="n">JNIEnv</span> <span class="o">*</span><span class="n">env</span><span class="p">,</span> <span class="n">jobject</span> <span class="n">obj</span><span class="p">)</span>
+ <span class="p">{</span>
+     <span class="n">printf</span><span class="p">(</span><span class="s">"Hello World!</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+     <span class="k">return</span><span class="p">;</span>
+ <span class="p">}</span>
+</pre>

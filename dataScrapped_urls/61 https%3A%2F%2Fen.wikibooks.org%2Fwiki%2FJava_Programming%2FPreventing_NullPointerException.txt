@@ -1,0 +1,6 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="hll"><span class="n">File</span> <span class="n">file</span> <span class="o">=</span> <span class="k">new</span> <span class="n">File</span><span class="o">(</span><span class="s">"/etc"</span><span class="o">);</span>
+</span><span class="lineno">2 </span><span class="n">File</span><span class="o">[]</span> <span class="n">files</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="na">listFiles</span><span class="o">();</span>
+<span class="lineno">3 </span><span class="k">if</span> <span class="o">(</span><span class="n">files</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">4 </span>    <span class="n">stuff</span>
+<span class="lineno">5 </span><span class="o">}</span>
+</pre>

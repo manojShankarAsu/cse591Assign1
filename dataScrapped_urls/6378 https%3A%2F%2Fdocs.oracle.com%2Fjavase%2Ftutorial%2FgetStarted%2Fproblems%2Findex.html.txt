@@ -1,0 +1,1 @@
+One of the places java tries to find your bytecode file is your current directory. So, for example, if your bytecode file is in /home/jdoe/java, you should change your current directory to that. To change your directory, type the following command at the prompt and press Return:

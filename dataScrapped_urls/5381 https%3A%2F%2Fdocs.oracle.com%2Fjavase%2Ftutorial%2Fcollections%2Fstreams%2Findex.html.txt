@@ -1,0 +1,1 @@
+A pipeline is a sequence of aggregate operations. The following example prints the male members contained in the collection roster with a pipeline that consists of the aggregate operations filter and forEach:

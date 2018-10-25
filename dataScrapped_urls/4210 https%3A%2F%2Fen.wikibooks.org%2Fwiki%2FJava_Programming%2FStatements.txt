@@ -1,0 +1,6 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="n">String</span><span class="o">[]</span> <span class="n">days</span> <span class="o">=</span> <span class="o">{</span><span class="s">"Monday"</span><span class="o">,</span> <span class="s">"Tuesday"</span><span class="o">,</span> <span class="s">"Wednesday"</span><span class="o">,</span> <span class="s">"Thursday"</span><span class="o">,</span> <span class="s">"Friday"</span><span class="o">,</span> <span class="s">"Saturday"</span><span class="o">,</span> <span class="s">"Sunday"</span><span class="o">};</span>
+<span class="lineno">2 </span>
+<span class="lineno">3 </span><span class="k">for</span> <span class="o">(</span><span class="n">String</span> <span class="n">day</span> <span class="o">:</span> <span class="n">days</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">4 </span>  <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">day</span><span class="o">);</span>
+<span class="lineno">5 </span><span class="o">}</span>
+</pre>

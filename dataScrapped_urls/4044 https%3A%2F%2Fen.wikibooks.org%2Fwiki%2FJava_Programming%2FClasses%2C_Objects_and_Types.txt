@@ -1,0 +1,1 @@
+Unboxing uses the same process in reverse. Study the following code for a moment. The if statement requires a boolean primitive value, yet it was given a Boolean wrapper object. No problem! Java 1.5 will automatically unbox this.

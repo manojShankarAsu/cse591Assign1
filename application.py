@@ -129,10 +129,18 @@ class IndexedFile(db.Model):
 
 
 class JavaPost():
-    def __init__(self, content , code,recommendation_list=[]):
+    def __init__(self, id,content , code,recommendation_list=[]):
+        self.id = id
         self.content = content
         self.code = code
         self.reclist = recommendation_list
+
+class Recommendations():
+    def __init__(self,id,url,content,doc_type):
+        self.id=id
+        self.url = url
+        self.content = content
+        self.doc_type = doc_type
 
 user = {'username': 'Manoj'}
 # EB looks for an 'application' callable by default.
@@ -322,7 +330,7 @@ def add_file_to_index(files, directory, index_name):
     application.logger.info('Adding files to index')
     for file in files:
         filename = ''
-        if "Oracle" in file:
+        if "oracle" in file:
             filename = 'oracle'
         else:
             filename = 'wikibooks'
@@ -335,12 +343,12 @@ def add_file_to_index(files, directory, index_name):
         add_to_index(index_name,file_db.id,filename,file_obj)
 
 def index_files():
-    code_dir = os.path.join(os.getcwd(),"dataScrapped")
+    code_dir = os.path.join(os.getcwd(),"dataScrapped_urls")
     application.logger.info(code_dir)
     files = os.listdir(code_dir)
     application.logger.info('Started FIle indexing  ')
     application.logger.info(code_dir)
-    add_file_to_index(files , code_dir,'java2')
+    add_file_to_index(files , code_dir,'java3')
     application.logger.info('FIle indexing done ')
     application.logger.error('no of files not indexed ')
     application.logger.error(application.err_count)
@@ -357,13 +365,13 @@ def add_to_index(index, obj_id,filename,file_obj):
     my_analyzer['stopwords'] = '_english_'
     analysis = {}
     analysis['analyzer']=my_analyzer
-    settings['analysis'] = analyzer
+    settings['analysis'] = analysis
     #content = content.encode('utf-8')
     try:
         payload['text']=file_obj.read()
         payload['name']=filename
         application.elasticsearch.index(index=index, doc_type=index, id=obj_id,
-                                    body=payload,settings=settings)
+                                    body=payload)
     except Exception as detail:
         application.logger.error('cannot index')
         application.logger.error(filename)
@@ -381,9 +389,8 @@ def query_index(index, query, page, per_page):
         return [], 0
     search = application.elasticsearch.search(
         index=index, doc_type=index,
-        body={'query': {'multi_match': {'query': query, 'fields': ['*']}},
+        body={'query': {'match': {'text':query}},
               'from': (page - 1) * per_page, 'size': per_page})
-    ids = [int(hit['_id']) for hit in search['hits']['hits']]
     return search
 
 def read_queries():
@@ -396,17 +403,44 @@ def read_queries():
         xl = pd.read_excel(file_path)
         xl['text'] = xl['text'].fillna('')
         xl['code'] = xl['code'].fillna('')
+        idd=0
         for index, row in xl.iterrows():            
-            java_post = JavaPost(row['text'],row['code'],[])
-            java_posts.append(java_post)
+            idd  = idd + 1
+            java_post = JavaPost(idd,row['text'],row['code'],[])
             # print('Text')
             # print(row['text'])
-            # print("Search result")
-            # print(query_index('java2',row['text'],1,10))
+            # print("Search result")            
+            result = query_index('java3',row['text'],1,7)
+            strings = set()
+            for post in result['hits']['hits']:
+                # print('Name:')
+                # print(post['_source']['name'])
+                # print('Content')
+                # print(post['_source']['text'])    
+                if post['_source']['text'] not in strings:                    
+                    recommendation = Recommendations(post['_id'],post['_source']['name'], post['_source']['text'],'Text')
+                    strings.add(post['_source']['text'])
+                    java_post.reclist.append(recommendation)
             # print('Code')
             # print(row['code'])
             # print("Search result")
-            # print(query_index('java2',row['code'],1,10))
+            result = query_index('java3',row['code'],1,5)
+            doc_type = ''
+            for post in result['hits']['hits']:
+                # print('Name:')
+                # print(post['_source']['name'])
+                # print('Content')
+                # print(post['_source']['text'])
+                doc_type = 'Text'
+                if 'Code-Block-AW3' in post['_source']['text']:
+                    doc_type = 'Code'
+                if post['_source']['text'] not in strings:
+                    recommendation = Recommendations(post['_id'],post['_source']['name'], post['_source']['text'],doc_type)
+                    java_post.reclist.append(recommendation)
+                    strings.add(post['_source']['text'])
+            java_posts.append(java_post)
+            
+            
     return java_posts
 
 if __name__ == "__main__":
@@ -432,3 +466,4 @@ if __name__ == "__main__":
     #index_files()
     #read_queries()
     application.run(debug=True)
+

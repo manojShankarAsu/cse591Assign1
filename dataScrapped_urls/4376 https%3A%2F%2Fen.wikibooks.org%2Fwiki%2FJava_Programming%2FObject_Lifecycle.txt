@@ -1,0 +1,8 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="hll"><span class="kd">protected</span> <span class="kt">void</span> <span class="nf">finalize</span><span class="o">()</span> <span class="kd">throws</span> <span class="n">Throwable</span> <span class="o">{</span>
+</span><span class="lineno">2 </span>  <span class="k">try</span> <span class="o">{</span>
+<span class="lineno">3 </span>    <span class="n">doCleanup</span><span class="o">();</span>        <span class="c1">// Perform some cleanup.  If it fails for some reason, it is ignored.</span>
+<span class="lineno">4 </span>  <span class="o">}</span> <span class="k">finally</span> <span class="o">{</span>
+<span class="lineno">5 </span>    <span class="kd">super</span><span class="o">.</span><span class="na">finalize</span><span class="o">();</span> <span class="c1">// Call finalize on the parent object</span>
+<span class="lineno">6 </span>  <span class="o">}</span>
+<span class="lineno">7 </span><span class="o">}</span>
+</pre>

@@ -1,0 +1,24 @@
+Code-Block-AW3<pre><span></span><span class="kd">public</span> <span class="n">Customer</span> <span class="nf">findCustomer</span><span class="o">(</span> <span class="n">String</span> <span class="n">name</span> <span class="o">)</span> <span class="kd">throws</span> <span class="sc">'''</span><span class="n">CustomerNotFoundException</span><span class="sc">'''</span>
+ <span class="o">{</span>
+    <span class="n">Customer</span> <span class="n">custRet</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+ 
+    <span class="n">Iterator</span> <span class="n">iter</span> <span class="o">=</span> <span class="n">_customerList</span><span class="o">.</span><span class="na">iterator</span><span class="o">();</span>
+    <span class="k">while</span> <span class="o">(</span> <span class="n">iter</span><span class="o">.</span><span class="na">hasNext</span><span class="o">()</span> <span class="o">)</span>
+    <span class="o">{</span>
+        <span class="n">Customer</span> <span class="n">cust</span> <span class="o">=</span> <span class="o">(</span><span class="n">Customer</span><span class="o">)</span> <span class="n">iter</span><span class="o">.</span><span class="na">next</span><span class="o">();</span>
+        <span class="k">if</span> <span class="o">(</span> <span class="n">cust</span><span class="o">.</span><span class="na">getName</span><span class="o">().</span><span class="na">equals</span><span class="o">(</span> <span class="n">name</span> <span class="o">)</span> <span class="o">)</span>
+        <span class="o">{</span>
+           <span class="c1">// --- Customer find --</span>
+           <span class="n">custRet</span> <span class="o">=</span> <span class="n">cust</span><span class="o">;</span>
+           <span class="k">break</span><span class="o">;</span>
+        <span class="o">}</span>
+     <span class="o">}</span>
+     <span class="k">if</span> <span class="o">(</span> <span class="n">custRet</span> <span class="o">==</span> <span class="kc">null</span> <span class="o">)</span>
+     <span class="o">{</span>
+        <span class="c1">// --- Customer not found ---</span>
+        <span class="k">throw</span> <span class="k">new</span> <span class="sc">'''</span><span class="n">CustomerNotFoundException</span><span class="sc">'''</span><span class="o">(</span> <span class="s">"Customer "</span><span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s">" was not found"</span> <span class="o">);</span>
+     <span class="o">}</span>
+ 
+    <span class="k">return</span> <span class="n">custRet</span>
+  <span class="o">}</span>
+</pre>

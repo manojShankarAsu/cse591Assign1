@@ -1,0 +1,2 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">CONSTANT_VAR</span> <span class="o">=</span> <span class="s">"Const"</span><span class="o">;</span>
+</pre>

@@ -1,0 +1,1 @@
+This constructor accepts four parameters, named x0, y0, x1 and y1. Each parameter requires a parameter type declaration, which in this example is int for all four parameters. The parameters in the parameter list are separated by commas.

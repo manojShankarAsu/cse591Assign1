@@ -1,0 +1,3 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="kd">public</span> <span class="kd">interface</span> <span class="nc">Movable</span> <span class="kd">extends</span> <span class="n">Walkable</span><span class="o">,</span> <span class="n">Jumpable</span> <span class="o">{</span>
+<span class="lineno">2 </span><span class="o">}</span>
+</pre>

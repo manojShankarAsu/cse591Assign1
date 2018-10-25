@@ -1,0 +1,4 @@
+Code-Block-AW3<pre><code><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;"><a href="/wiki/Java_Programming/Keywords/private" title="Java Programming/Keywords/private">private</a></font></code> <code><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;"><a href="/wiki/Java_Programming/Keywords/volatile" title="Java Programming/Keywords/volatile">volatile</a></font></code> &lt;member-variable&gt;;
+or 
+<code><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;"><a href="/wiki/Java_Programming/Keywords/volatile" title="Java Programming/Keywords/volatile">volatile</a></font></code> <code><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;"><a href="/wiki/Java_Programming/Keywords/private" title="Java Programming/Keywords/private">private</a></font></code> &lt;member-variable&gt;;
+</pre>

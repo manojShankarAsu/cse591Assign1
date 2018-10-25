@@ -57,7 +57,12 @@
 {% block scripts %}
     {{ super() }}
     {{ moment.include_moment() }}
-    
+    <script type="text/javascript">
+        function displayAndShow(id) {
+            // body...
+            $('#'+id).find('#recommends').toggle()
+        }
+    </script>>
 {% endblock %}
 
 {% block javascript %}

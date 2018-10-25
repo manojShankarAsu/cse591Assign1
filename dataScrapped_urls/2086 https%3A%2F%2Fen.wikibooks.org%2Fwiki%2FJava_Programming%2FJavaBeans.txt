@@ -1,0 +1,23 @@
+Code-Block-AW3<pre><span></span><span class="lineno"> 1 </span><span class="kd">public</span> <span class="kd">static</span> <span class="n">Object</span> <span class="nf">getProperty</span><span class="o">(</span><span class="n">Object</span> <span class="n">o</span><span class="o">,</span> <span class="n">String</span> <span class="n">propertyName</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 2 </span>   <span class="k">if</span> <span class="o">(</span><span class="n">o</span> <span class="o">==</span> <span class="kc">null</span> <span class="o">||</span>
+<span class="lineno"> 3 </span>       <span class="n">propertyName</span> <span class="o">==</span> <span class="kc">null</span> <span class="o">||</span>
+<span class="lineno"> 4 </span>       <span class="n">propertyName</span><span class="o">.</span><span class="na">length</span><span class="o">()</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 5 </span>      <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
+<span class="lineno"> 6 </span>   <span class="o">}</span>
+<span class="lineno"> 7 </span>   <span class="c1">// Based on the property name build the getter method name</span>
+<span class="lineno"> 8 </span>   <span class="n">String</span> <span class="n">methodName</span> <span class="o">=</span> <span class="s">"get"</span> <span class="o">+</span>
+<span class="lineno"> 9 </span>                      <span class="n">propertyName</span><span class="o">.</span><span class="na">substring</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span><span class="mi">1</span><span class="o">).</span><span class="na">toUpperCase</span><span class="o">()</span> <span class="o">+</span>
+<span class="lineno">10 </span>                      <span class="n">propertyName</span><span class="o">.</span><span class="na">substring</span><span class="o">(</span><span class="mi">1</span><span class="o">);</span>
+<span class="lineno">11 </span>   <span class="n">Object</span> <span class="n">property</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+<span class="lineno">12 </span>   <span class="k">try</span> <span class="o">{</span>
+<span class="lineno">13 </span>      <span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">Class</span> <span class="n">c</span> <span class="o">=</span> <span class="n">o</span><span class="o">.</span><span class="na">getClass</span><span class="o">();</span>
+<span class="lineno">14 </span>      <span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">reflect</span><span class="o">.</span><span class="na">Method</span> <span class="n">m</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="na">getMethod</span><span class="o">(</span><span class="n">methodName</span><span class="o">,</span> <span class="kc">null</span><span class="o">);</span>
+<span class="lineno">15 </span>      <span class="n">property</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="na">invoke</span><span class="o">(</span><span class="n">o</span><span class="o">,</span> <span class="kc">null</span><span class="o">);</span>
+<span class="lineno">16 </span>   <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">NoSuchMethodException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">17 </span>     <span class="c1">// Handle exception</span>
+<span class="lineno">18 </span>   <span class="o">}</span>  <span class="k">catch</span> <span class="o">(</span><span class="n">SecurityException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">19 </span>     <span class="c1">// No permission; Handle exception</span>
+<span class="lineno">20 </span>   <span class="o">}</span>
+<span class="lineno">21 </span><span class="k">return</span> <span class="n">property</span><span class="o">;</span>
+<span class="lineno">22 </span><span class="o">}</span>
+</pre>

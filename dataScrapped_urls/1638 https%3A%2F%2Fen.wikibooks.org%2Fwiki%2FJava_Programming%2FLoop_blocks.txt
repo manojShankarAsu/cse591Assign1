@@ -1,0 +1,1 @@
+Arrays haven't been covered yet, but you'll want to know how to use the enhanced for loop, called the for-each loop. The for-each loop automatically iterates through a list or array and assigns the value of each index to a variable.

@@ -1,0 +1,1 @@
+The extension mechanism provides a standard, scalable way to make custom APIs available to all applications running on the Java platform. Java extensions are also referred to as optional packages. This trail may use both terms interchangeably.

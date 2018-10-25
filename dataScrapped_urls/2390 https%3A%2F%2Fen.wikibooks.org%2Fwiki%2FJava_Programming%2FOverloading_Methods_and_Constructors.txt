@@ -1,0 +1,1 @@
+Also another rule is that when you do an override, the visibility of the new method that overrides the super class method can not be reduced. The visibility can be increased, however. So if the super class method visibility is public, the override method can not be package, or private. An override method must throw the same exceptions as the super class, or their subexceptions.

@@ -1,21 +1,28 @@
 <table class="table table-hover">
+
         <tr>
             <td>          
-            Content:                                
-                {{ post.content }}
-            </td>
-            <td>    
-            	{% if post.code %}
-            Code:                                      
-                {{ post.code }}
-                {% endif %}
-            </td>
-        </tr>
-        <tr>
-        	{% if post.reclist %}
-	        	{% for recommendations in post.reclist %}
-	        		{% include '_recommendation.html' %}
-	    		{% endfor %}
-	    	{% endif %}
+            	<div id={{post.id}} onclick="displayAndShow('{{post.id}}')">
+
+		            <b>Java Post:                                </b>
+		                {{ post.content }}
+		            
+		            {% if post.code %}
+		          
+		            	<br>
+		            <b>Code:                                      </b>
+		                {{ post.code }}
+		                            
+		        	{% endif %}
+
+		        	<div id='recommends' style="display: none">
+			        {% if post.reclist %}
+			        	{% for recommendations in post.reclist %}
+			        		{% include '_recommendation.html' %}
+			    		{% endfor %}
+			    	{% endif %}
+			    	</div>
+	    		</div>
+        	</td>
         </tr>
 </table>

@@ -1,0 +1,1 @@
+You can notice that when you use System.out.println(), out is a static attribute of the System class. A static attribute is related to a class, not to any object instance. This is how Java achieves one universal output stream that we can use to print output. Here is a more complex use case:

@@ -1,0 +1,1 @@
+If you are not familiar with object-oriented programming, you should first read the book Object Oriented Programming. Other special purpose books on Java, such as Java Enterprise Edition programming, Java Persistence, or Java Swing programming, with more details, would complement this book nicely.

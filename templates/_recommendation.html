@@ -1,13 +1,14 @@
 <table class="table table-hover">
         
         <tr>
-            <b>recomm.source</b>
+        	<td>
+             {% if recommendations.doc_type == 'Text' %}
+                Text:<br>
+                {{ recommendations.content }}
+            {% elif recommendations.doc_type == 'Code'%}
+                Code:<br>
+                {{ recommendations.content }}
+            {% endif %}   
+            </td>
         </tr>
-        <tr>
-        	{% if recomm.type == 'Text' %}
-        		recomm.content
-            {% elif recomm.type == 'Code'%}
-                recomm.content
-    		{% endif %}
-        </tr>>
 </table>

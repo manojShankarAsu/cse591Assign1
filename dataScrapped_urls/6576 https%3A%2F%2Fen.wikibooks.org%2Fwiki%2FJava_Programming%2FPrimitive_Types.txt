@@ -1,0 +1,1 @@
+Altogether, using this method, 8 bits can hold numbers ranging from -128 to 127 (including zero) — a total of 256 numbers. Not a bad pay-off one might presume. The opposite to an unsigned integer is a signed integer that have the capability of holding both positive and negative values.

@@ -1,0 +1,1 @@
+The obj variable contains the object reference pointing to an object created from the MyObject class. The obj object reference is in scope inside the { }. After the } the object becomes garbage. Object references can be passed in to methods and can be returned from methods.

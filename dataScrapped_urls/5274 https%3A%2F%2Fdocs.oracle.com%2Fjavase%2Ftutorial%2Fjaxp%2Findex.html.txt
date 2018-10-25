@@ -1,0 +1,1 @@
+Simple API for XML introduces a concept used in the JAXP technology, the Simple API for XML (SAX): when to use SAX, how to parse an XML file, how to implement SAX validation, how to run the SAX parser, and how to handle lexical events. Links for further information are provided.

@@ -1,0 +1,8 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="hll"><span class="kn">import</span> <span class="nn">business.BusinessClass</span><span class="o">;</span>
+</span><span class="lineno">2 </span>
+<span class="lineno">3 </span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MyClass</span> <span class="o">{</span>
+<span class="lineno">4 </span>  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">5 </span>    <span class="n">BusinessClass</span> <span class="n">myBusinessClass</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BusinessClass</span><span class="o">();</span>
+<span class="lineno">6 </span>  <span class="o">}</span>
+<span class="lineno">7 </span><span class="o">}</span>
+</pre>

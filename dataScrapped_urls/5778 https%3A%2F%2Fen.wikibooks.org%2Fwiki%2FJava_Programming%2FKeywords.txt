@@ -1,0 +1,2 @@
+Code-Block-AW3<pre><span></span><span class="kt">float</span> <span class="n">price</span> <span class="o">=</span> <span class="mf">49.95</span><span class="o">;</span>
+</pre>

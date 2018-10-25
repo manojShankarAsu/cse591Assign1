@@ -1,0 +1,8 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="kt">double</span> <span class="n">decimalNumber</span> <span class="o">=</span> <span class="mf">5.0</span><span class="o">;</span>
+<span class="lineno">2 </span><span class="n">decimalNumber</span> <span class="o">=</span> <span class="mi">89</span><span class="n">d</span><span class="o">;</span>
+<span class="lineno">3 </span><span class="n">decimalNumber</span> <span class="o">=</span> <span class="mf">0.5</span><span class="o">;</span>
+<span class="lineno">4 </span><span class="n">decimalNumber</span> <span class="o">=</span> <span class="mi">10</span><span class="n">f</span><span class="o">;</span>
+<span class="lineno">5 </span><span class="n">decimalNumber</span> <span class="o">=</span> <span class="mf">3.14159e0</span><span class="o">;</span>
+<span class="lineno">6 </span><span class="n">decimalNumber</span> <span class="o">=</span> <span class="mf">2.718281828459045D</span><span class="o">;</span>
+<span class="lineno">7 </span><span class="n">decimalNumber</span> <span class="o">=</span> <span class="mf">1.0e-6D</span><span class="o">;</span>
+</pre>

@@ -1,0 +1,1 @@
+Some methods, such as getArea(), return a value. For methods that return a value, you can use the method invocation in expressions. You can assign the return value to a variable, use it to make decisions, or control a loop. This code assigns the value returned by getArea() to the variable areaOfRectangle:

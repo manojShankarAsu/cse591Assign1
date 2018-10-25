@@ -1,0 +1,6 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="o">{</span>
+<span class="lineno">2 </span>   <span class="kd">super</span><span class="o">();</span>
+<span class="lineno">3 </span>   <span class="n">point0</span> <span class="o">=</span> <span class="k">new</span> <span class="n">java</span><span class="o">.</span><span class="na">awt</span><span class="o">.</span><span class="na">Point</span><span class="o">(</span><span class="n">x0</span><span class="o">,</span> <span class="n">y0</span><span class="o">);</span>
+<span class="lineno">4 </span>   <span class="n">point1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">java</span><span class="o">.</span><span class="na">awt</span><span class="o">.</span><span class="na">Point</span><span class="o">(</span><span class="n">x1</span><span class="o">,</span> <span class="n">y1</span><span class="o">);</span>
+<span class="lineno">5 </span><span class="o">}</span>
+</pre>

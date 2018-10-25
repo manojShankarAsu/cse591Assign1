@@ -1,0 +1,11 @@
+Code-Block-AW3<pre><span></span><span class="lineno"> 1 </span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">SomeClass</span> <span class="o">{</span>
+<span class="lineno"> 2 </span>  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span> <span class="n">c</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+<span class="lineno"> 3 </span>  <span class="kd">public</span> <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="n">c</span><span class="o">;</span>
+<span class="lineno"> 4 </span>  <span class="kd">private</span> <span class="kt">int</span> <span class="n">b</span><span class="o">;</span>
+<span class="lineno"> 5 </span>
+<span class="lineno"> 6 </span>  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">someMethod</span><span class="o">(</span><span class="kt">int</span> <span class="n">d</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 7 </span>    <span class="n">d</span> <span class="o">=</span> <span class="n">c</span><span class="o">;</span>
+<span class="lineno"> 8 </span>    <span class="kt">int</span> <span class="n">e</span><span class="o">;</span>
+<span class="lineno"> 9 </span>  <span class="o">}</span>
+<span class="lineno">10 </span><span class="o">}</span>
+</pre>

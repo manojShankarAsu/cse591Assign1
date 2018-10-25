@@ -1,0 +1,2 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="kt">short</span> <span class="n">daysInYear</span> <span class="o">=</span> <span class="mi">365</span><span class="o">;</span>
+</pre>

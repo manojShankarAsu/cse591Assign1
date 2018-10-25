@@ -1,0 +1,1 @@
+Note: If you choose this option, each time you compile or run a program, you'll have to precede your javac and java commands with /usr/local/jdk1.8.0/. To avoid this extra typing, you could add this information to your PATH variable. The steps for doing so will vary depending on which shell you are currently running.

@@ -1,0 +1,1 @@
+In Java 1.5 (alias Java 5.0) Oracle added a mechanism called annotations. Annotations allow the addition of meta-data to Java source code, and even provide mechanisms to carry that meta-data into compiled .class files.

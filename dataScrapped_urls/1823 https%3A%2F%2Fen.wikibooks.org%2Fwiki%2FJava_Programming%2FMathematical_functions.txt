@@ -1,0 +1,1 @@
+The Math.exp(double) method, a special case of pow, returns e to the power of the parameter. In addition, double Math.expm1(double) returns (ex - 1). Both of these methods are more accurate and convenient in these special cases.

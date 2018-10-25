@@ -1,0 +1,12 @@
+Code-Block-AW3<pre><span></span><span class="ch">#!/bin/sh</span>
+
+<span class="c1"># openbsd 4.9</span>
+<span class="c1"># gcc 4.2.1</span>
+<span class="c1"># openjdk 1.7.0</span>
+<span class="nv">JAVA_HOME</span><span class="o">=</span><span class="k">$(</span>readlink -f /usr/bin/javac <span class="p">|</span> sed <span class="s2">"s:bin/javac::"</span><span class="k">)</span>
+<span class="nb">export</span> <span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span><span class="nv">$LD_LIBRARY_PATH</span>:.
+javac HelloWorld.java
+javah HelloWorld
+gcc -I<span class="si">${</span><span class="nv">JAVA_HOME</span><span class="si">}</span>/include -shared libHelloWorld.c -o libHelloWorld.so
+java HelloWorld
+</pre>

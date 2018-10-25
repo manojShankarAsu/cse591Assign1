@@ -1,0 +1,4 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="c1">// A comment to give an example</span>
+<span class="lineno">2 </span>
+<span class="lineno">3 </span><span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">10</span><span class="o">;</span> <span class="c1">// 10 articles</span>
+</pre>

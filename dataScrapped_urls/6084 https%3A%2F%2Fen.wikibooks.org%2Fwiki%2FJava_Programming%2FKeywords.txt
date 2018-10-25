@@ -1,0 +1,24 @@
+Code-Block-AW3<pre><span></span><span class="kd">public</span> <span class="kd">enum</span> <span class="n">DayOfWeek</span> <span class="o">{</span>
+  <span class="cm">/** Enumeration constants */</span>
+  <span class="n">MONDAY</span><span class="o">(</span><span class="mi">1</span><span class="o">),</span> <span class="n">TUESDAY</span><span class="o">(</span><span class="mi">2</span><span class="o">),</span> <span class="n">WEDNESDAY</span><span class="o">(</span><span class="mi">3</span><span class="o">),</span> <span class="n">THURSDAY</span><span class="o">(</span><span class="mi">4</span><span class="o">),</span> <span class="n">FRIDAY</span><span class="o">(</span><span class="mi">5</span><span class="o">),</span> <span class="n">SATURDAY</span><span class="o">(</span><span class="mi">6</span><span class="o">),</span> <span class="n">SUNDAY</span><span class="o">(</span><span class="mi">0</span><span class="o">);</span>
+
+  <span class="cm">/** Code for the days of the week */</span>
+  <span class="kd">private</span> <span class="kt">byte</span> <span class="n">dayCode</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+
+  <span class="cm">/**</span>
+<span class="cm">   * Private constructor</span>
+<span class="cm">   * @param VALUE  Value that stands for a day of the week.</span>
+<span class="cm">   */</span>
+  <span class="kd">private</span> <span class="nf">DayOfWeek</span><span class="o">(</span><span class="kd">final</span> <span class="kt">byte</span> <span class="n">VALUE</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">dayCode</span> <span class="o">=</span> <span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">Math</span><span class="o">.</span><span class="na">abs</span><span class="o">(</span><span class="n">VALUE</span><span class="o">%</span><span class="mi">7</span><span class="o">);</span>
+  <span class="o">}</span>
+ 
+  <span class="cm">/**</span>
+<span class="cm">   * Gets the day code</span>
+<span class="cm">   * @return  The day code</span>
+<span class="cm">   */</span>
+  <span class="kd">public</span> <span class="kt">byte</span> <span class="nf">getDayCode</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">dayCode</span><span class="o">;</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre>

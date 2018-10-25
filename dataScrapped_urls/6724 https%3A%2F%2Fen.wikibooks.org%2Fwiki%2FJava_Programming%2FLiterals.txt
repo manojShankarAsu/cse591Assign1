@@ -1,0 +1,1 @@
+String literals consist of the double quote character (") (ASCII 34, hex 0x22), zero or more characters (including Unicode characters), followed by a terminating double quote character ("), such as: "Ceci est une string."

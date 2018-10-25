@@ -1,0 +1,1 @@
+In rough order a list of topics that shall be taught in the book (though not necisarily the titles of indidvidual pages). I see the Beggining_Java section to be the part of the book that deals with the base structure of the Java Programming, so excludes topics concerning the API.

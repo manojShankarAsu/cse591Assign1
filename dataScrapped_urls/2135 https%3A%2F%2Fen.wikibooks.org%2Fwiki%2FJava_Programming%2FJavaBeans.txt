@@ -1,0 +1,25 @@
+Code-Block-AW3<pre><span></span><span class="lineno"> 1 </span><span class="kd">class</span> <span class="nc">Puppy</span> <span class="kd">implements</span> <span class="n">java</span><span class="o">.</span><span class="na">io</span><span class="o">.</span><span class="na">Serializable</span> <span class="o">{</span>
+<span class="lineno"> 2 </span>
+<span class="lineno"> 3 </span>  <span class="kd">private</span> <span class="kd">static</span> <span class="kd">final</span> <span class="kt">long</span> <span class="n">serialVersionUID</span> <span class="o">=</span> <span class="mi">348652158488L</span><span class="o">;</span>
+<span class="lineno"> 4 </span>
+<span class="lineno"> 5 </span>  <span class="kd">private</span> <span class="n">String</span> <span class="n">color</span><span class="o">;</span>
+<span class="lineno"> 6 </span>
+<span class="lineno"> 7 </span>  <span class="kd">private</span> <span class="kt">int</span> <span class="n">age</span><span class="o">;</span>
+<span class="lineno"> 8 </span>
+<span class="lineno"> 9 </span>  <span class="kd">public</span> <span class="n">String</span> <span class="nf">getColor</span><span class="o">()</span> <span class="o">{</span>
+<span class="lineno">10 </span>    <span class="k">return</span> <span class="n">color</span><span class="o">;</span>
+<span class="lineno">11 </span>  <span class="o">}</span>
+<span class="lineno">12 </span>
+<span class="lineno">13 </span>  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setColor</span><span class="o">(</span><span class="n">String</span> <span class="n">color</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">14 </span>    <span class="k">this</span><span class="o">.</span><span class="na">color</span> <span class="o">=</span> <span class="n">color</span><span class="o">;</span>
+<span class="lineno">15 </span>  <span class="o">}</span>
+<span class="lineno">16 </span>
+<span class="lineno">17 </span>  <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getAge</span><span class="o">()</span> <span class="o">{</span>
+<span class="lineno">18 </span>    <span class="k">return</span> <span class="n">age</span><span class="o">;</span>
+<span class="lineno">19 </span>  <span class="o">}</span>
+<span class="lineno">20 </span>
+<span class="lineno">21 </span>  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setAge</span><span class="o">(</span><span class="kt">int</span> <span class="n">age</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">22 </span>    <span class="k">this</span><span class="o">.</span><span class="na">age</span> <span class="o">=</span> <span class="n">age</span><span class="o">;</span>
+<span class="lineno">23 </span>  <span class="o">}</span>
+<span class="lineno">24 </span><span class="o">}</span>
+</pre>

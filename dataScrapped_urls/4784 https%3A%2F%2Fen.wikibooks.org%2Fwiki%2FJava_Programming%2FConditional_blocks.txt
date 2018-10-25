@@ -1,0 +1,13 @@
+Code-Block-AW3<pre><span></span><span class="lineno"> 1 </span><span class="hll"><span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">6</span><span class="o">;</span>
+</span><span class="lineno"> 2 </span><span class="hll"><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Hello!"</span><span class="o">);</span>
+</span><span class="lineno"> 3 </span>
+<span class="lineno"> 4 </span><span class="hll"><span class="k">if</span> <span class="o">(</span><span class="n">age</span> <span class="o">&lt;</span> <span class="mi">13</span><span class="o">)</span> <span class="o">{</span>
+</span><span class="lineno"> 5 </span><span class="hll">  <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"I'm a child."</span><span class="o">);</span>
+</span><span class="lineno"> 6 </span><span class="o">}</span>
+<span class="lineno"> 7 </span>
+<span class="lineno"> 8 </span><span class="hll"><span class="k">if</span> <span class="o">(</span><span class="n">age</span> <span class="o">&gt;</span> <span class="mi">20</span><span class="o">)</span> <span class="o">{</span>
+</span><span class="lineno"> 9 </span>  <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"I'm an adult."</span><span class="o">);</span>
+<span class="lineno">10 </span><span class="o">}</span>
+<span class="lineno">11 </span>
+<span class="lineno">12 </span><span class="hll"><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Bye!"</span><span class="o">);</span>
+</span></pre>

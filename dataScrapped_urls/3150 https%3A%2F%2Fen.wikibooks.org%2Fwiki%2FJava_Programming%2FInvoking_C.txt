@@ -1,0 +1,2 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="n">String</span> <span class="n">outlist</span><span class="o">[]</span> <span class="o">=</span> <span class="n">runCommand</span><span class="o">(</span><span class="s">"test"</span><span class="o">);</span>
+</pre>

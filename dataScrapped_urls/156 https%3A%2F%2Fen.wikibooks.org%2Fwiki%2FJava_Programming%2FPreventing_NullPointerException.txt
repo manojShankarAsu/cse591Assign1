@@ -1,0 +1,10 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="kd">public</span> <span class="n">Person</span> <span class="nf">getPerson</span><span class="o">(</span><span class="kt">boolean</span> <span class="n">isWoman</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">2 </span><span class="hll">  <span class="n">Person</span> <span class="n">person</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+</span><span class="lineno">3 </span>  <span class="k">if</span> <span class="o">(</span><span class="n">isWoman</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">4 </span>    <span class="n">person</span> <span class="o">=</span> <span class="n">createWoman</span><span class="o">();</span>
+<span class="lineno">5 </span>  <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+<span class="lineno">6 </span>    <span class="n">person</span> <span class="o">=</span> <span class="n">createMan</span><span class="o">();</span>
+<span class="lineno">7 </span>  <span class="o">}</span>
+<span class="lineno">8 </span>  <span class="k">return</span> <span class="n">person</span><span class="o">;</span>
+<span class="lineno">9 </span><span class="o">}</span>
+</pre>

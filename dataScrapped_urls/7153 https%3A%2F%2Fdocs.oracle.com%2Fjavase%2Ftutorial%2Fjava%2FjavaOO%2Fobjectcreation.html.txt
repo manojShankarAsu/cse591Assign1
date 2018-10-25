@@ -1,0 +1,4 @@
+Code-Block-AW3<pre><strong>Point originOne</strong> = new Point(23, 94);
+<strong>Rectangle rectOne</strong> = new Rectangle(originOne, 100, 200);
+<strong>Rectangle rectTwo</strong> = new Rectangle(50, 100);
+</pre>

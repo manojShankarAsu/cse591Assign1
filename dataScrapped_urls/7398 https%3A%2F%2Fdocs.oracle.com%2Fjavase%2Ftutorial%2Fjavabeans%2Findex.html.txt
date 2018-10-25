@@ -1,0 +1,1 @@
+Writing JavaBeans Components describes the coding patterns used for bean properties, methods, and events. It also outlines the use of a BeanInfo to customize the development experience in a builder tool.

@@ -1,0 +1,1 @@
+In order to maintain this contract, a class that overrides the equals method must also override the hashCode method, and vice versa, so that hashCode is based on the same properties (or a subset of the properties) as equals.

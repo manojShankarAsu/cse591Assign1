@@ -1,0 +1,8 @@
+Code-Block-AW3<pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Foo</span> <span class="kd">implements</span> <span class="n">Serializable</span>
+ <span class="o">{</span>
+   <span class="kd">private</span> <span class="n">String</span> <span class="n">saveMe</span><span class="o">;</span>
+   <span class="kd">private</span> <span class="kd">transient</span> <span class="n">String</span> <span class="n">dontSaveMe</span><span class="o">;</span>
+   <span class="kd">private</span> <span class="kd">transient</span> <span class="n">String</span> <span class="n">password</span><span class="o">;</span>
+   <span class="c1">//...</span>
+ <span class="o">}</span>
+</pre>

@@ -1,0 +1,1 @@
+I've been working with Seam recently (teaching myself) and figure that I could help others as well making a manual of sorts as I go along. I started one over at the JBoss Wiki, but their default syntax (CamelCase) is just brutal to work with. Any objections to having its root at Seam? Oberiko (talk) 03:07, 23 January 2008 (UTC)
