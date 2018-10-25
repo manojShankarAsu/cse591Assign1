@@ -1,0 +1,1 @@
+Note that the above associations are explicit. The objects them-self do not have any knowledge/information about that they are part in an association. But creating explicit associations between simple java objects is the main idea about using the aggregate/collection classes.

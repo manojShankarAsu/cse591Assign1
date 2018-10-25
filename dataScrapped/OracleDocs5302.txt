@@ -1,0 +1,7 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="n">Customer</span> <span class="n">cust1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Customer</span><span class="o">();</span>
+<span class="lineno">2 </span><span class="n">Customer</span> <span class="n">cust2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Customer</span><span class="o">();</span>
+<span class="lineno">3 </span><span class="c1">//...</span>
+<span class="lineno">4 </span><span class="hll"><span class="k">if</span> <span class="o">(</span><span class="n">cust1</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">cust2</span><span class="o">))</span> <span class="o">{</span>
+</span><span class="lineno">5 </span>    <span class="c1">// Two Customers are equal, by name and address</span>
+<span class="lineno">6 </span><span class="o">}</span>
+</pre>

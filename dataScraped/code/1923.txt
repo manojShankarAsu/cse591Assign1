@@ -1,0 +1,3 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="o">/*</span> <span class="n">This</span> <span class="n">is</span> <span class="n">a</span> <span class="n">comment</span><span class="o">.</span> <span class="err">\</span><span class="n">u002a</span><span class="err">\</span><span class="n">u002f</span>
+<span class="lineno">2 </span><span class="n">String</span> <span class="n">statement</span> <span class="o">=</span> <span class="s">"This is not a comment."</span><span class="o">;</span>
+</pre>

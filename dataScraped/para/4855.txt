@@ -1,0 +1,1 @@
+Advanced Topics for LDAP users A specialized lesson for the LDAP users. It talks about modeling JNDI as an LDAP API, how to perform LDAP authentication, SSL and managing connections in production environments.

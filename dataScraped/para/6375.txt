@@ -1,0 +1,1 @@
+Exceptions explains the exception mechanism and how it is used to handle errors and other exceptional conditions. This lesson describes what an exception is, how to throw and catch exceptions, what to do with an exception once it has been caught, and how to use the exception class hierarchy.

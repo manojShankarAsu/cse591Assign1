@@ -1,0 +1,1 @@
+Since the type of the args array element is String, and our constructor's parameters must be int, such a call would result in an error because Java will not automatically convert values of type String into int values.

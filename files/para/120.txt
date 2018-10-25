@@ -1,0 +1,1 @@
+These methods are very simple comparing functions. Instead of using if...else statements, one can use the Math.max(x1, x2) and Math.min(x1, x2) methods. The Math.max(x1, x2) simply returns the greater of the two values, while the Math.min(x1, x2) returns the lesser of the two. Acceptable types for these methods include int, long, float, and double.

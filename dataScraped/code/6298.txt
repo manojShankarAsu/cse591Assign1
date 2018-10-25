@@ -1,0 +1,12 @@
+Code-Block-AW3<pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MyCanvas</span> <span class="kd">extends</span> <span class="n">Canvas</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">init</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">setFont</span><span class="o">(</span><span class="s">"Times New Roman"</span><span class="o">,</span> <span class="n">Font</span><span class="o">.</span><span class="na">PLAIN</span><span class="o">,</span> <span class="mi">24</span><span class="o">);</span>
+        <span class="n">setColor</span><span class="o">(</span><span class="n">Color</span><span class="o">.</span><span class="na">white</span><span class="o">);</span>
+        <span class="n">setBackGroundColor</span><span class="o">(</span><span class="n">Color</span><span class="o">.</span><span class="na">black</span><span class="o">);</span>
+        <span class="n">setLayout</span><span class="o">(</span><span class="k">new</span> <span class="n">GridLayout</span><span class="o">());</span>
+ 
+        <span class="n">add</span><span class="o">(</span><span class="n">label</span><span class="o">);</span>
+        <span class="n">add</span><span class="o">(</span><span class="n">button</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre>

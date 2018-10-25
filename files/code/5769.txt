@@ -1,0 +1,22 @@
+Code-Block-AW3<pre>public class MountainBike extends Bicycle {
+        
+    // <b>the MountainBike subclass has</b>
+    // <b>one <i>field</i></b>
+    public int seatHeight;
+
+    // <b>the MountainBike subclass has</b>
+    // <b>one <i>constructor</i></b>
+    public MountainBike(int startHeight, int startCadence,
+                        int startSpeed, int startGear) {
+        super(startCadence, startSpeed, startGear);
+        seatHeight = startHeight;
+    }   
+        
+    // <b>the MountainBike subclass has</b>
+    // <b>one <i>method</i></b>
+    public void setHeight(int newValue) {
+        seatHeight = newValue;
+    }   
+
+}
+</pre>

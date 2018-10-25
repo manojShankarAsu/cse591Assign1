@@ -1,0 +1,1 @@
+This code won't compile because it can throw a checked exception. The compilation error can be resolved in either of two ways: By catching the exception and handling it, or by declaring that the exception can be thrown using the throws keyword.

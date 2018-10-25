@@ -1,0 +1,15 @@
+Code-Block-AW3<pre><span></span><span class="lineno"> 1 </span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">SortableCustomer</span> <span class="kd">implements</span> <span class="n">Comparable</span><span class="o">&lt;</span><span class="n">SortableCustomer</span><span class="o">&gt;</span> <span class="o">{</span>
+<span class="lineno"> 2 </span>    <span class="kd">private</span> <span class="n">String</span> <span class="n">name</span><span class="o">;</span>
+<span class="lineno"> 3 </span>    <span class="kd">private</span> <span class="n">String</span> <span class="n">address</span><span class="o">;</span>
+<span class="lineno"> 4 </span>    <span class="kd">private</span> <span class="n">String</span> <span class="n">description</span><span class="o">;</span>
+<span class="lineno"> 5 </span>    <span class="c1">// ...</span>
+<span class="lineno"> 6 </span><span class="hll">    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">compareTo</span><span class="o">(</span><span class="n">SortableCustomer</span> <span class="n">anotherCustomer</span><span class="o">)</span> <span class="o">{</span>
+</span><span class="lineno"> 7 </span><span class="hll">        <span class="k">if</span> <span class="o">(</span><span class="n">name</span><span class="o">.</span><span class="na">compareTo</span><span class="o">(</span><span class="n">anotherCustomer</span><span class="o">.</span><span class="na">getName</span><span class="o">())</span> <span class="o">==</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+</span><span class="lineno"> 8 </span><span class="hll">            <span class="k">return</span> <span class="n">address</span><span class="o">.</span><span class="na">compareTo</span><span class="o">(</span><span class="n">anotherCustomer</span><span class="o">.</span><span class="na">getAddress</span><span class="o">();</span>
+</span><span class="lineno"> 9 </span><span class="hll">        <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+</span><span class="lineno">10 </span><span class="hll">            <span class="k">return</span> <span class="n">name</span><span class="o">.</span><span class="na">compareTo</span><span class="o">(</span><span class="n">anotherCustomer</span><span class="o">.</span><span class="na">getName</span><span class="o">();</span>
+</span><span class="lineno">11 </span><span class="hll">        <span class="o">}</span>
+</span><span class="lineno">12 </span><span class="hll">    <span class="o">}</span>
+</span><span class="lineno">13 </span>
+<span class="lineno">14 </span><span class="o">}</span>
+</pre>

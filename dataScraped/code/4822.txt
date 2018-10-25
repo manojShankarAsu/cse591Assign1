@@ -1,0 +1,3 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="n">Repository</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">arithmeticRepository</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Repository</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;();</span>
+<span class="lineno">2 </span><span class="hll"><span class="n">arithmeticRepository</span><span class="o">.</span><span class="na">setItem</span><span class="o">(</span><span class="s">"Hello!"</span><span class="o">);</span>
+</span></pre>

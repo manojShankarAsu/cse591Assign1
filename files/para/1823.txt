@@ -1,0 +1,1 @@
+The code section 3.31 shows how to iterate with the for loop using multiple variables and the code section 3.32 shows how any of the parameters of a for loop can be skipped. Skip them all, and you have an infinitely repeating loop.

@@ -1,0 +1,1 @@
+In this example, Superclass has been explicitly annotated with both @ForEveryone and @JustForMe. Subclass hasn't been explicitly marked with either one; however, it inherits @ForEveryone because the latter is annotated with @Inherited. @JustForMe isn't annotated, so it isn't inherited by Subclass.

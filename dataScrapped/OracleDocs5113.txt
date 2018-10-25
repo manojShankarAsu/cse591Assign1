@@ -1,0 +1,9 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">2 </span>    <span class="n">doAction</span><span class="o">(</span><span class="k">new</span> <span class="n">ClassWithInterface</span><span class="o">());</span>
+<span class="lineno">3 </span>    <span class="n">doAction</span><span class="o">(</span><span class="k">new</span> <span class="n">AnotherClassWithInterface</span><span class="o">());</span>
+<span class="lineno">4 </span><span class="o">}</span>
+<span class="lineno">5 </span>
+<span class="lineno">6 </span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">doAction</span><span class="o">(</span><span class="n">SimpleInterface</span> <span class="n">anObject</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">7 </span><span class="hll">    <span class="n">anObject</span><span class="o">.</span><span class="na">method1</span><span class="o">(</span><span class="s">"Hello!"</span><span class="o">);</span>
+</span><span class="lineno">8 </span><span class="o">}</span>
+</pre>

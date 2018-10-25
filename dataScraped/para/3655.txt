@@ -1,0 +1,1 @@
+In the past, the decision of whether to deploy a Java rich internet application inside the browser as an applet, or outside the browser as a Java Web Start application, could significantly impact the design of the application. With the latest Java Plug-in, this decision has been greatly simplified.

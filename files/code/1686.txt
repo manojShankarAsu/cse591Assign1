@@ -1,0 +1,3 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="kd">class</span> <span class="nc">Dog</span> <span class="kd">extends</span> <span class="n">Animal</span> <span class="o">{</span>
+<span class="lineno">2 </span><span class="o">}</span>
+</pre>

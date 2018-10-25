@@ -1,0 +1,1 @@
+The Javadoc API documentations are well known. The Java JDK classes are coming with Javadoc API documentations. Most popular IDE tools automatically read Javadoc tags and wherever that class, attribute or method are used, the tags content are displayed automatically, when the mouse cursor is over the text.

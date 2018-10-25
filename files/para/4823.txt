@@ -1,0 +1,1 @@
+There is a problem, though. What if I put two different type of objects to the Set. I put an Apple and an Orange. They can not be compared. Calling the equals() method would cause a ClassCastException. There are two solutions to this:

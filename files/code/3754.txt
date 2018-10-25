@@ -1,0 +1,12 @@
+Code-Block-AW3<pre><span></span><span class="lineno"> 1 </span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">SubClass</span> <span class="kd">extends</span> <span class="n">SuperClass</span> <span class="o">{</span>
+<span class="lineno"> 2 </span>   <span class="kd">public</span> <span class="kt">void</span> <span class="nf">printHello</span><span class="o">()</span> <span class="o">{</span>
+<span class="lineno"> 3 </span><span class="hll">      <span class="kd">super</span><span class="o">.</span><span class="na">printHello</span><span class="o">();</span>
+</span><span class="lineno"> 4 </span>      <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Hello from SubClass"</span><span class="o">);</span>
+<span class="lineno"> 5 </span>      <span class="k">return</span><span class="o">;</span>
+<span class="lineno"> 6 </span>   <span class="o">}</span>
+<span class="lineno"> 7 </span>   <span class="kd">public</span> <span class="kd">static</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 8 </span>      <span class="n">SubClass</span> <span class="n">obj</span> <span class="o">=</span> <span class="k">new</span> <span class="n">SubClass</span><span class="o">();</span>
+<span class="lineno"> 9 </span>      <span class="n">obj</span><span class="o">.</span><span class="na">printHello</span><span class="o">();</span>
+<span class="lineno">10 </span>   <span class="o">}</span>
+<span class="lineno">11 </span><span class="o">}</span>
+</pre>

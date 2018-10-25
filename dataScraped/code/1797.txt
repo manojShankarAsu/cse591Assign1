@@ -1,0 +1,6 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="kt">int</span> <span class="n">squareHigherThan200</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+<span class="lineno">2 </span>
+<span class="lineno">3 </span><span class="k">while</span> <span class="o">(</span><span class="n">squareHigherThan200</span> <span class="o">*</span> <span class="n">squareHigherThan200</span> <span class="o">&lt;</span> <span class="mi">200</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">4 </span>  <span class="n">squareHigherThan200</span> <span class="o">=</span> <span class="n">squareHigherThan200</span> <span class="o">+</span> <span class="mi">1</span><span class="o">;</span>
+<span class="lineno">5 </span><span class="o">}</span>
+</pre>

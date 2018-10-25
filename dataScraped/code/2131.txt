@@ -1,0 +1,34 @@
+Code-Block-AW3<pre><span></span> <span class="cm">/**</span>
+<span class="cm">  * COM_DATA data structure </span>
+<span class="cm">  */</span>
+ <span class="kd">public</span> <span class="kd">class</span> <span class="nc">COM_DATA</span> <span class="kd">implements</span> <span class="n">Serializable</span>
+ <span class="o">{</span>
+  <span class="kd">public</span> <span class="n">String</span>  <span class="n">comData</span><span class="o">;</span>
+  <span class="kd">public</span> <span class="kt">boolean</span> <span class="n">bExit</span><span class="o">;</span>
+  <span class="kd">public</span> <span class="kt">int</span>     <span class="n">iRet</span><span class="o">;</span>
+    <span class="cm">/**</span>
+<span class="cm">     * --- Constants values can be passed in in iRet to the Server ---</span>
+<span class="cm">     */</span>
+    <span class="kd">static</span> <span class="kd">final</span> <span class="kt">int</span> <span class="n">WAIT_FOR_RESPONSE</span>    <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+    <span class="kd">static</span> <span class="kd">final</span> <span class="kt">int</span> <span class="n">NOWAIT_FOR_RESPONSE</span>  <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+   <span class="cm">/**</span>
+<span class="cm">    * Initialize the data structure</span>
+<span class="cm">    */</span>
+   <span class="kd">public</span> <span class="nf">COM_DATA</span><span class="o">()</span>
+   <span class="o">{</span>
+      <span class="n">comData</span>     <span class="o">=</span> <span class="s">""</span><span class="o">;</span>
+      <span class="n">bExit</span>       <span class="o">=</span> <span class="kc">false</span><span class="o">;</span>
+      <span class="n">iRet</span>        <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+   <span class="o">}</span> <span class="c1">// -- End of COM_DATA() Constructor --   </span>
+   <span class="cm">/**</span>
+<span class="cm">    * Copy over it contents </span>
+<span class="cm">    */</span>
+   <span class="kd">public</span> <span class="kt">void</span> <span class="nf">copy</span><span class="o">(</span> <span class="n">COM_DATA</span> <span class="n">tSrc</span> <span class="o">)</span>
+   <span class="o">{</span>
+      <span class="k">this</span><span class="o">.</span><span class="na">comData</span>     <span class="o">=</span> <span class="n">tSrc</span><span class="o">.</span><span class="na">comData</span><span class="o">;</span>
+      <span class="k">this</span><span class="o">.</span><span class="na">bExit</span>       <span class="o">=</span> <span class="n">tSrc</span><span class="o">.</span><span class="na">bExit</span><span class="o">;</span>
+      <span class="k">this</span><span class="o">.</span><span class="na">iRet</span>        <span class="o">=</span> <span class="n">tSrc</span><span class="o">.</span><span class="na">iRet</span><span class="o">;</span>
+    <span class="k">return</span><span class="o">;</span>
+   <span class="o">}</span> 
+ <span class="o">}</span> <span class="c1">// -- End of COM_DATA class --</span>
+</pre>

@@ -1,0 +1,1 @@
+The most widely available text editor on GNOME desktops is Gedit, while on the KDE desktops, one can find Kate. Both these editors support syntax highlighting and code completion and therefore are sufficient for our purposes.

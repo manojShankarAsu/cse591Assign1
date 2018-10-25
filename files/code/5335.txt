@@ -1,0 +1,51 @@
+Code-Block-AW3<pre><span></span><span class="lineno"> 1 </span><span class="kn">package</span> <span class="nn">com.test</span><span class="o">;</span>
+<span class="lineno"> 2 </span> 
+<span class="lineno"> 3 </span><span class="kn">import</span> <span class="nn">java.lang.reflect.Constructor</span><span class="o">;</span>
+<span class="lineno"> 4 </span><span class="kn">import</span> <span class="nn">java.lang.reflect.InvocationTargetException</span><span class="o">;</span>
+<span class="lineno"> 5 </span><span class="kn">import</span> <span class="nn">java.lang.reflect.Method</span><span class="o">;</span>
+<span class="lineno"> 6 </span> 
+<span class="lineno"> 7 </span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ReflectTest</span> <span class="o">{</span>
+<span class="lineno"> 8 </span>    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 9 </span>        <span class="k">try</span> <span class="o">{</span>
+<span class="lineno">10 </span>            <span class="n">Class</span><span class="o">&lt;?&gt;</span> <span class="n">dummyClass</span> <span class="o">=</span> <span class="n">Class</span><span class="o">.</span><span class="na">forName</span><span class="o">(</span><span class="s">"com.test.DummyTo"</span><span class="o">);</span>
+<span class="lineno">11 </span> 
+<span class="lineno">12 </span>            <span class="c1">// parameter types for methods</span>
+<span class="lineno">13 </span>            <span class="n">Class</span><span class="o">&lt;?&gt;[]</span> <span class="n">partypes</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Class</span><span class="o">[]{</span><span class="n">String</span><span class="o">.</span><span class="na">class</span><span class="o">};</span>
+<span class="lineno">14 </span> 
+<span class="lineno">15 </span>            <span class="c1">// Create method object. methodname and parameter types</span>
+<span class="lineno">16 </span>            <span class="n">Method</span> <span class="n">meth</span> <span class="o">=</span> <span class="n">dummyClass</span><span class="o">.</span><span class="na">getMethod</span><span class="o">(</span><span class="s">"toString"</span><span class="o">,</span> <span class="n">partypes</span><span class="o">);</span>
+<span class="lineno">17 </span> 
+<span class="lineno">18 </span>            <span class="c1">// parameter types for constructor</span>
+<span class="lineno">19 </span>            <span class="n">Class</span><span class="o">&lt;?&gt;[]</span> <span class="n">constrpartypes</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Class</span><span class="o">[]{</span><span class="n">String</span><span class="o">.</span><span class="na">class</span><span class="o">,</span> <span class="n">String</span><span class="o">.</span><span class="na">class</span><span class="o">};</span>
+<span class="lineno">20 </span> 
+<span class="lineno">21 </span>            <span class="c1">//Create constructor object. parameter types</span>
+<span class="lineno">22 </span>            <span class="n">Constructor</span><span class="o">&lt;?&gt;</span> <span class="n">constr</span> <span class="o">=</span> <span class="n">dummyClass</span><span class="o">.</span><span class="na">getConstructor</span><span class="o">(</span><span class="n">constrpartypes</span><span class="o">);</span>
+<span class="lineno">23 </span> 
+<span class="lineno">24 </span>            <span class="c1">// create instance</span>
+<span class="lineno">25 </span>            <span class="n">Object</span> <span class="n">dummyto</span> <span class="o">=</span> <span class="n">constr</span><span class="o">.</span><span class="na">newInstance</span><span class="o">(</span><span class="k">new</span> <span class="n">Object</span><span class="o">[]{</span><span class="s">"Java Programmer"</span><span class="o">,</span> <span class="s">"India"</span><span class="o">});</span>
+<span class="lineno">26 </span> 
+<span class="lineno">27 </span>            <span class="c1">// Arguments to be passed into method</span>
+<span class="lineno">28 </span>            <span class="n">Object</span><span class="o">[]</span> <span class="n">arglist</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Object</span><span class="o">[]{</span><span class="s">"I am"</span><span class="o">};</span>
+<span class="lineno">29 </span> 
+<span class="lineno">30 </span>            <span class="c1">// invoke method!!</span>
+<span class="lineno">31 </span>            <span class="n">String</span> <span class="n">output</span> <span class="o">=</span> <span class="o">(</span><span class="n">String</span><span class="o">)</span> <span class="n">meth</span><span class="o">.</span><span class="na">invoke</span><span class="o">(</span><span class="n">dummyto</span><span class="o">,</span> <span class="n">arglist</span><span class="o">);</span>
+<span class="lineno">32 </span>            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">output</span><span class="o">);</span>
+<span class="lineno">33 </span> 
+<span class="lineno">34 </span>        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">ClassNotFoundException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">35 </span>            <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+<span class="lineno">36 </span>        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">SecurityException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">37 </span>            <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+<span class="lineno">38 </span>        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">NoSuchMethodException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">39 </span>            <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+<span class="lineno">40 </span>        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">IllegalArgumentException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">41 </span>            <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+<span class="lineno">42 </span>        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">IllegalAccessException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">43 </span>            <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+<span class="lineno">44 </span>        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">InvocationTargetException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">45 </span>            <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+<span class="lineno">46 </span>        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">InstantiationException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">47 </span>            <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+<span class="lineno">48 </span>        <span class="o">}</span>
+<span class="lineno">49 </span>    <span class="o">}</span>
+<span class="lineno">50 </span><span class="o">}</span>
+</pre>

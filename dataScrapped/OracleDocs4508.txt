@@ -1,0 +1,8 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="hll"><span class="cm">/**</span>
+</span><span class="lineno">2 </span><span class="hll"><span class="cm"> *  A class to give an &lt;b&gt;example&lt;/b&gt; of HTML documentation.</span>
+</span><span class="lineno">3 </span><span class="hll"><span class="cm"> */</span>
+</span><span class="lineno">4 </span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Example</span> <span class="o">{</span>
+<span class="lineno">5 </span><span class="hll">    <span class="cm">/** ...Documentation of a member with the type integer named example... */</span>
+</span><span class="lineno">6 </span>    <span class="kd">public</span> <span class="kt">int</span> <span class="n">example</span><span class="o">;</span>
+<span class="lineno">7 </span><span class="o">}</span>
+</pre>

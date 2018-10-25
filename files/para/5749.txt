@@ -1,0 +1,1 @@
+Be aware that Java still interprets Unicode sequences within comments. For example, the Unicode sequence \u002a\u002f (whose codepoints correspond to */) is processed early in the Java compiler's lexical scanning of the source file, even before comments are processed, so this is a valid star-slash comment in Java:

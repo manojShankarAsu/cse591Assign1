@@ -1,0 +1,1 @@
+As there is a thrown exception at line 5, the line 6 is not executed, but the exception is caught by the catch statement so the catch block is executed. The following code is also executed. Note that the catch statement takes an exception as parameter. There is a third case: when the exception is not from the same class as the parameter:

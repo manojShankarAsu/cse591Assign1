@@ -1,0 +1,5 @@
+Code-Block-AW3<pre><span></span><span class="cm">/** Grades of courses */</span>
+  <span class="kd">enum</span> <span class="n">Grade</span> <span class="o">{</span> <span class="n">A</span><span class="o">,</span> <span class="n">B</span><span class="o">,</span> <span class="n">C</span><span class="o">,</span> <span class="n">D</span><span class="o">,</span> <span class="n">F</span> <span class="o">};</span>
+  <span class="c1">// ...</span>
+  <span class="kd">private</span> <span class="n">Grade</span> <span class="n">gradeA</span> <span class="o">=</span> <span class="n">Grade</span><span class="o">.</span><span class="na">A</span><span class="o">;</span>
+</pre>

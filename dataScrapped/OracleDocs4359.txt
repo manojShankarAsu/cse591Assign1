@@ -1,0 +1,1 @@
+Java EE stands for Java 2 Platform, Enterprise Edition. This book will describe how to build Java EE based applications. The implementation is done with the help of XDoclet which simplifies the process of building an application.

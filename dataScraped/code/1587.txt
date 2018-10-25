@@ -1,0 +1,12 @@
+Code-Block-AW3<pre><span></span><span class="lineno"> 1 </span><span class="n">Customer</span> <span class="n">cust</span> <span class="o">=</span> <span class="n">Utility</span><span class="o">.</span><span class="na">createAnyObject</span><span class="o">(</span><span class="n">Customer</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>  <span class="c1">// No casting</span>
+<span class="lineno"> 2 </span><span class="o">...</span>
+<span class="lineno"> 3 </span><span class="kd">public</span> <span class="kd">static</span> <span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">T</span> <span class="nf">createAnyObject</span><span class="o">(</span><span class="n">Class</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">cls</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 4 </span>    <span class="n">T</span> <span class="n">ret</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+<span class="lineno"> 5 </span>    <span class="k">try</span> <span class="o">{</span>
+<span class="lineno"> 6 </span>        <span class="n">ret</span> <span class="o">=</span> <span class="n">cls</span><span class="o">.</span><span class="na">newInstance</span><span class="o">();</span>
+<span class="lineno"> 7 </span>    <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">Exception</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 8 </span>        <span class="c1">// Exception Handling</span>
+<span class="lineno"> 9 </span>    <span class="o">}</span>
+<span class="lineno">10 </span>    <span class="k">return</span> <span class="n">ret</span><span class="o">;</span>
+<span class="lineno">11 </span><span class="o">}</span>
+</pre>

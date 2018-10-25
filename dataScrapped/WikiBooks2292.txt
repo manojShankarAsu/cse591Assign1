@@ -1,0 +1,30 @@
+Code-Block-AW3<pre><span></span><span class="lineno"> 1 </span><span class="kn">import</span> <span class="nn">java.applet.Applet</span><span class="o">;</span>
+<span class="lineno"> 2 </span><span class="kn">import</span> <span class="nn">java.awt.Button</span><span class="o">;</span>
+<span class="lineno"> 3 </span><span class="kn">import</span> <span class="nn">java.awt.GridLayout</span><span class="o">;</span>
+<span class="lineno"> 4 </span><span class="kn">import</span> <span class="nn">java.awt.Label</span><span class="o">;</span>
+<span class="lineno"> 5 </span><span class="kn">import</span> <span class="nn">java.awt.TextField</span><span class="o">;</span>
+<span class="lineno"> 6 </span>
+<span class="lineno"> 7 </span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">GridLayoutApplet</span> <span class="kd">extends</span> <span class="n">Applet</span> <span class="o">{</span>
+<span class="lineno"> 8 </span>
+<span class="lineno"> 9 </span>    <span class="n">Button</span> <span class="n">submitButton</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Button</span><span class="o">(</span><span class="s">"Submit"</span><span class="o">);</span>
+<span class="lineno">10 </span>    <span class="n">TextField</span> <span class="n">t1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">TextField</span><span class="o">();</span>                <span class="c1">// Blank</span>
+<span class="lineno">11 </span>    <span class="n">TextField</span> <span class="n">t2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">TextField</span><span class="o">(</span><span class="mi">5</span><span class="o">);</span>               <span class="c1">// Blank in 5 columns</span>
+<span class="lineno">12 </span>    <span class="n">TextField</span> <span class="n">t3</span> <span class="o">=</span> <span class="k">new</span> <span class="n">TextField</span><span class="o">(</span><span class="s">"Input here"</span><span class="o">);</span>    <span class="c1">// Predefined text</span>
+<span class="lineno">13 </span>    <span class="n">TextField</span> <span class="n">t4</span> <span class="o">=</span> <span class="k">new</span> <span class="n">TextField</span><span class="o">(</span><span class="s">"Input here"</span><span class="o">,</span> <span class="mi">5</span><span class="o">);</span> <span class="c1">// Predefined text in 5 columns</span>
+<span class="lineno">14 </span>    <span class="n">Label</span> <span class="n">nameLabel</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Label</span><span class="o">(</span><span class="s">"Name: "</span><span class="o">);</span>
+<span class="lineno">15 </span>
+<span class="lineno">16 </span>    <span class="cm">/**</span>
+<span class="lineno">17 </span><span class="cm">     * Init.</span>
+<span class="lineno">18 </span><span class="cm">     */</span>
+<span class="lineno">19 </span>    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">init</span><span class="o">()</span> <span class="o">{</span>
+<span class="lineno">20 </span>        <span class="c1">// 3 rows, 4 columns, 2 pixel spacing</span>
+<span class="lineno">21 </span><span class="hll">        <span class="n">setLayout</span><span class="o">(</span><span class="k">new</span> <span class="n">GridLayout</span><span class="o">(</span><span class="mi">3</span><span class="o">,</span> <span class="mi">4</span><span class="o">,</span> <span class="mi">2</span><span class="o">,</span> <span class="mi">2</span><span class="o">));</span>
+</span><span class="lineno">22 </span>        <span class="n">add</span><span class="o">(</span><span class="n">nameLabel</span><span class="o">);</span>
+<span class="lineno">23 </span>        <span class="n">add</span><span class="o">(</span><span class="n">t1</span><span class="o">);</span>
+<span class="lineno">24 </span>        <span class="n">add</span><span class="o">(</span><span class="n">t2</span><span class="o">);</span>
+<span class="lineno">25 </span>        <span class="n">add</span><span class="o">(</span><span class="n">t3</span><span class="o">);</span>
+<span class="lineno">26 </span>        <span class="n">add</span><span class="o">(</span><span class="n">t4</span><span class="o">);</span>
+<span class="lineno">27 </span>        <span class="n">add</span><span class="o">(</span><span class="n">submitButton</span><span class="o">);</span>
+<span class="lineno">28 </span>    <span class="o">}</span>
+<span class="lineno">29 </span><span class="o">}</span>
+</pre>

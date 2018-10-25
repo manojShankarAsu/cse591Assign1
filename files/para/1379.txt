@@ -1,0 +1,1 @@
+Note that the code above shouldn't be used in most applications, as it creates new Objects every time the method is run. A better alternative would be to create a separate class file to handle keyboard input.

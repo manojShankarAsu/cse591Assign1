@@ -1,0 +1,10 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="kd">public</span> <span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">AbstractClass</span> <span class="o">{</span>
+<span class="lineno">2 </span>    <span class="c1">// This method does not have a body; it is abstract.</span>
+<span class="lineno">3 </span>    <span class="kd">public</span> <span class="kd">abstract</span> <span class="kt">void</span> <span class="nf">abstractMethod</span><span class="o">();</span>
+<span class="lineno">4 </span> 
+<span class="lineno">5 </span>    <span class="c1">// This method does have a body; it is implemented in the abstract class and gives a default behavior.</span>
+<span class="lineno">6 </span>    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">concreteMethod</span><span class="o">()</span> <span class="o">{</span>
+<span class="lineno">7 </span>        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Already coded."</span><span class="o">);</span>
+<span class="lineno">8 </span>    <span class="o">}</span>
+<span class="lineno">9 </span><span class="o">}</span>
+</pre>

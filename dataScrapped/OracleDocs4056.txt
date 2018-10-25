@@ -1,0 +1,1 @@
+Start the Pico editor by typing pico at the prompt and pressing Return. If the system responds with the message pico: command not found, then Pico is most likely unavailable. Consult your system administrator for more information, or use another editor.

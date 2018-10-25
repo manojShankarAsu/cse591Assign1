@@ -1,0 +1,2 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="n">Object</span> <span class="n">result</span> <span class="o">=</span> <span class="n">mainMethod</span><span class="o">.</span><span class="na">invoke</span><span class="o">(</span><span class="kc">null</span><span class="o">,</span> <span class="n">arguments</span><span class="o">);</span>
+</pre>

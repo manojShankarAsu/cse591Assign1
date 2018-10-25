@@ -1,0 +1,1 @@
+The prime numbers are counted using currentItems. When currentItems is equal to numberOfItems (5), the program go out of the while loop. currentCandidate contains the last number, that is to say the 5th prime number:

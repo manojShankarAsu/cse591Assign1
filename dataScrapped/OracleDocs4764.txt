@@ -1,0 +1,16 @@
+Code-Block-AW3<pre><span></span><span class="lineno"> 1 </span><span class="kn">import</span> <span class="nn">java.util.Collection</span>
+<span class="lineno"> 2 </span><span class="kn">import</span> <span class="nn">java.util.Iterator</span>
+<span class="lineno"> 3 </span><span class="kn">import</span> <span class="nn">java.yourcompany.Customer</span>
+<span class="lineno"> 4 </span><span class="o">...</span>
+<span class="lineno"> 5 </span><span class="kd">public</span> <span class="n">String</span> <span class="nf">printCustomerNames</span><span class="o">(</span><span class="n">Collection</span> <span class="n">customerColl</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 6 </span>   <span class="n">StringBuffer</span> <span class="n">buf</span> <span class="o">=</span> <span class="k">new</span> <span class="n">StringBuffer</span><span class="o">();</span>
+<span class="lineno"> 7 </span>
+<span class="lineno"> 8 </span>   <span class="n">Iterator</span> <span class="n">iter</span> <span class="o">=</span> <span class="n">customerColl</span><span class="o">.</span><span class="na">iterator</span><span class="o">();</span>
+<span class="lineno"> 9 </span>   <span class="k">while</span><span class="o">(</span><span class="n">iter</span><span class="o">.</span><span class="na">hasNext</span><span class="o">())</span> <span class="o">{</span>
+<span class="lineno">10 </span>      <span class="n">Customer</span> <span class="n">cust</span> <span class="o">=</span> <span class="o">(</span><span class="n">Customer</span><span class="o">)</span> <span class="n">iter</span><span class="o">.</span><span class="na">next</span><span class="o">();</span>
+<span class="lineno">11 </span>      <span class="n">buf</span><span class="o">.</span><span class="na">append</span><span class="o">(</span><span class="n">cust</span><span class="o">.</span><span class="na">getName</span><span class="o">());</span>
+<span class="lineno">12 </span>      <span class="n">buf</span><span class="o">.</span><span class="na">append</span><span class="o">(</span> <span class="s">"\n"</span> <span class="o">);</span>
+<span class="lineno">13 </span>   <span class="o">}</span>
+<span class="lineno">14 </span>  <span class="k">return</span> <span class="n">buf</span><span class="o">.</span><span class="na">toString</span><span class="o">();</span>
+<span class="lineno">15 </span><span class="o">}</span>
+</pre>

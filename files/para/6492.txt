@@ -1,0 +1,1 @@
+The java.lang.Object.getClass() method returns the java.lang.Class object for the class that was used to instantiate the object. The class object is the base class of reflection in Java. Additional reflection support is provided in the java.lang.reflect package.

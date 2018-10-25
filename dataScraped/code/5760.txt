@@ -1,0 +1,36 @@
+Code-Block-AW3<pre>public class Bicycle {
+        
+    // <b>the Bicycle class has</b>
+    // <b>three <i>fields</i></b>
+    public int cadence;
+    public int gear;
+    public int speed;
+        
+    // <b>the Bicycle class has</b>
+    // <b>one <i>constructor</i></b>
+    public Bicycle(int startCadence, int startSpeed, int startGear) {
+        gear = startGear;
+        cadence = startCadence;
+        speed = startSpeed;
+    }
+        
+    // <b>the Bicycle class has</b>
+    // <b>four <i>methods</i></b>
+    public void setCadence(int newValue) {
+        cadence = newValue;
+    }
+        
+    public void setGear(int newValue) {
+        gear = newValue;
+    }
+        
+    public void applyBrake(int decrement) {
+        speed -= decrement;
+    }
+        
+    public void speedUp(int increment) {
+        speed += increment;
+    }
+        
+}
+</pre>

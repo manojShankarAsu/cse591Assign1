@@ -1,0 +1,6 @@
+Code-Block-AW3<pre><code><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;"><a href="/wiki/Java_Programming/Keywords/switch" title="Java Programming/Keywords/switch">switch</a></font></code>(&lt;variable&gt;) {
+  case &lt;result&gt;: &lt;statements&gt;; break;
+  case &lt;result&gt;: &lt;statements&gt;; break;
+  default: &lt;statements&gt;; break;
+}
+</pre>

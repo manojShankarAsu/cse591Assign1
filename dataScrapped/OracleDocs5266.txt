@@ -1,0 +1,1 @@
+In Java, there are several existing methods that already sort objects from any class like Collections.sort(List<T> list). However, Java needs to know the comparison rules between two objects. So when you define a new class and want the objects of your class to be sortable, you have to implement the Comparable and redefine the compareTo(Object obj) method.

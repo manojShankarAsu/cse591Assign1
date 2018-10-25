@@ -1,0 +1,5 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="kt">char</span> <span class="n">firstChar</span> <span class="o">=</span> <span class="sc">'J'</span><span class="o">;</span>
+<span class="lineno">2 </span><span class="kt">char</span> <span class="n">secondChar</span> <span class="o">=</span> <span class="sc">'o'</span><span class="o">;</span>
+<span class="lineno">3 </span><span class="kt">char</span> <span class="n">thirdChar</span> <span class="o">=</span> <span class="sc">'h'</span><span class="o">;</span>
+<span class="lineno">4 </span><span class="kt">char</span> <span class="n">fourthChar</span> <span class="o">=</span> <span class="sc">'n'</span><span class="o">;</span>
+</pre>

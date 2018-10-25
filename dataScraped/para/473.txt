@@ -1,0 +1,1 @@
+To follow these standards, the bean needs one or more properties abstractions which represent different state values of an object. A property has a name (a valid Java identifier) and a type (either a reference type, a primitive type or an array type). By default, the properties of a JavaBean class are inferred by the presence of either a getter method, a setter method, or both:

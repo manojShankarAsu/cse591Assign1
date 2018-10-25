@@ -1,0 +1,6 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="hll"><span class="cm">/**</span>
+</span><span class="lineno">2 </span><span class="hll"><span class="cm"> * This fake package is used to illustrate the Java wikibook.</span>
+</span><span class="lineno">3 </span><span class="hll"><span class="cm"> * at &lt;i&gt;en.wikibooks.org&lt;/i&gt;.</span>
+</span><span class="lineno">4 </span><span class="hll"><span class="cm"> */</span>
+</span><span class="lineno">5 </span><span class="kn">package</span> <span class="nn">org.wikibooks.en</span><span class="o">;</span>
+</pre>

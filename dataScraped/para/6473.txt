@@ -1,0 +1,1 @@
+Furthermore, if you import javax.swing.*; and import java.util.*;, and javax.swing.Queue is later added in a future version of Java, your code that uses Queue (java.util) will fail to compile. This particular example is fairly unlikely, but if you are working with non-Oracle libraries, it may be more likely to happen.

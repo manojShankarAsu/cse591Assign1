@@ -1,0 +1,14 @@
+Code-Block-AW3<pre><span></span><span class="lineno"> 1 </span><span class="o">...</span>
+<span class="lineno"> 2 </span>
+<span class="lineno"> 3 </span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">init</span><span class="o">()</span> <span class="o">{</span>
+<span class="lineno"> 4 </span><span class="hll">    <span class="n">setFont</span><span class="o">(</span><span class="k">new</span> <span class="n">Font</span><span class="o">(</span><span class="s">"Times New Roman"</span><span class="o">,</span> <span class="n">Font</span><span class="o">.</span><span class="na">PLAIN</span><span class="o">,</span> <span class="mi">24</span><span class="o">));</span>
+</span><span class="lineno"> 5 </span><span class="hll">    <span class="n">setForeground</span><span class="o">(</span><span class="n">Color</span><span class="o">.</span><span class="na">white</span><span class="o">);</span>
+</span><span class="lineno"> 6 </span><span class="hll">    <span class="n">setBackground</span><span class="o">(</span><span class="n">Color</span><span class="o">.</span><span class="na">black</span><span class="o">);</span>
+</span><span class="lineno"> 7 </span><span class="hll">    <span class="n">setLayout</span><span class="o">(</span><span class="k">new</span> <span class="n">GridLayout</span><span class="o">);</span>
+</span><span class="lineno"> 8 </span><span class="hll">   
+</span><span class="lineno"> 9 </span><span class="hll">    <span class="o">...</span>
+</span><span class="lineno">10 </span><span class="hll">   
+</span><span class="lineno">11 </span><span class="hll">    <span class="n">add</span><span class="o">(</span><span class="n">label</span><span class="o">);</span>
+</span><span class="lineno">12 </span><span class="hll">    <span class="n">add</span><span class="o">(</span><span class="n">button</span><span class="o">);</span>
+</span><span class="lineno">13 </span><span class="o">}</span>
+</pre>

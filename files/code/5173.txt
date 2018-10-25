@@ -1,0 +1,13 @@
+Code-Block-AW3<pre><span></span> <span class="k">extern</span> <span class="s">"C"</span>
+ <span class="n">JNIEXPORT</span> <span class="kt">void</span> <span class="n">JNICALL</span> <span class="n">Java_ClassName_MethodName</span>
+   <span class="p">(</span><span class="n">JNIEnv</span> <span class="o">*</span><span class="n">env</span><span class="p">,</span> <span class="n">jobject</span> <span class="n">obj</span><span class="p">,</span> <span class="n">jstring</span> <span class="n">javaString</span><span class="p">)</span>
+ <span class="p">{</span>
+     <span class="c1">//Get the native string from javaString</span>
+     <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">nativeString</span> <span class="o">=</span> <span class="n">env</span><span class="o">-&gt;</span><span class="n">GetStringUTFChars</span><span class="p">(</span><span class="n">javaString</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+
+     <span class="c1">//Do something with the nativeString</span>
+
+     <span class="c1">//DON'T FORGET THIS LINE!!!</span>
+     <span class="n">env</span><span class="o">-&gt;</span><span class="n">ReleaseStringUTFChars</span><span class="p">(</span><span class="n">javaString</span><span class="p">,</span> <span class="n">nativeString</span><span class="p">);</span>
+ <span class="p">}</span>
+</pre>

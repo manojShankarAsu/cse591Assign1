@@ -1,0 +1,1 @@
+after going through the wikibook i found that there were no section pertaining to files and I/O (except for basic command line input. I think this is a important part of the java programming language. Possible subsections would/could include text and binary files and possibly xml. this would help the book greatly. Spock431 (talk) 00:54, 18 May 2010 (UTC)

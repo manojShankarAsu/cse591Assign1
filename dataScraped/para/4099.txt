@@ -1,0 +1,1 @@
+Custom Implementations tells you why you might want to write your own collection implementation (instead of using one of the general-purpose implementations provided by the JDK), and how you'd go about it. It's easy with the JDK's abstract collection implementations!

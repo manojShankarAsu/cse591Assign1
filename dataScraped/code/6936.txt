@@ -1,0 +1,8 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="n">String</span> <span class="n">person</span> <span class="o">=</span> <span class="s">"Brown, John:100 Yonge Street, Toronto:(416)777-9999"</span><span class="o">;</span>
+<span class="lineno">2 </span><span class="o">...</span>
+<span class="lineno">3 </span><span class="hll"><span class="n">String</span><span class="o">[]</span> <span class="n">personData</span> <span class="o">=</span> <span class="n">person</span><span class="o">.</span><span class="na">split</span><span class="o">(</span><span class="s">":"</span><span class="o">);</span>
+</span><span class="lineno">4 </span><span class="o">...</span>
+<span class="lineno">5 </span><span class="n">String</span> <span class="n">name</span>    <span class="o">=</span> <span class="n">personData</span><span class="o">[</span><span class="mi">0</span><span class="o">];</span>
+<span class="lineno">6 </span><span class="n">String</span> <span class="n">address</span> <span class="o">=</span> <span class="n">personData</span><span class="o">[</span><span class="mi">1</span><span class="o">];</span>
+<span class="lineno">7 </span><span class="n">String</span> <span class="n">phone</span>   <span class="o">=</span> <span class="n">personData</span><span class="o">[</span><span class="mi">2</span><span class="o">];</span>
+</pre>

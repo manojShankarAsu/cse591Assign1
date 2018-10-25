@@ -1,0 +1,5 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="kt">byte</span> <span class="n">maxByte</span> <span class="o">=</span> <span class="mi">127</span><span class="o">;</span>
+<span class="lineno">2 </span><span class="kt">short</span> <span class="n">maxShort</span> <span class="o">=</span> <span class="mi">32767</span><span class="o">;</span>
+<span class="lineno">3 </span><span class="kt">int</span> <span class="n">maxInt</span> <span class="o">=</span> <span class="mi">2147483647</span><span class="o">;</span>
+<span class="lineno">4 </span><span class="kt">long</span> <span class="n">maxLong</span> <span class="o">=</span> <span class="mi">9223372036854775807L</span><span class="o">;</span>
+</pre>

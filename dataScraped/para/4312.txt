@@ -1,0 +1,1 @@
+Annotations can provide metadata for Java classes, attributes, and methods. Syntactically, annotations can be viewed as a special kind of modifier and can be used anywhere that other modifiers (such as public, static, or final) can be used.

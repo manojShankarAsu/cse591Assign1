@@ -1,0 +1,1 @@
+Sequences of tokens are used to construct the next building blocks of Java classes as shown above: declarations and definitions. A class declaration provides the name and visibility of a class. In our example, public class Distance is the class declaration. It consists (in this case) of two keywords, public and class followed by the identifier Distance.

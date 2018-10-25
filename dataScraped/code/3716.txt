@@ -1,0 +1,6 @@
+Code-Block-AW3<pre><span></span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">method</span><span class="o">()</span>
+ <span class="o">{</span>
+   <span class="c1">//...</span>
+   <span class="k">return</span><span class="o">;</span>   <span class="c1">// -- In this case the return is optional</span>
+ <span class="o">}</span>
+</pre>

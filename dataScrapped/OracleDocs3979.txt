@@ -1,0 +1,5 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="kd">private</span> <span class="kt">void</span> <span class="nf">modifyObject</span><span class="o">(</span><span class="n">FirstClass</span> <span class="n">anObject</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">2 </span>  <span class="n">anObject</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FirstClass</span><span class="o">();</span>
+<span class="lineno">3 </span>  <span class="n">anObject</span><span class="o">.</span><span class="na">setName</span><span class="o">(</span><span class="s">"Susan"</span><span class="o">);</span>
+<span class="lineno">4 </span><span class="o">}</span>
+</pre>

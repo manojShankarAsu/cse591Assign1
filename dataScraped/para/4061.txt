@@ -1,0 +1,1 @@
+An Overview of RMI Applications describes the RMI system and lists its advantages. Additionally, this section provides a description of a typical RMI application, composed of a server and a client, and introduces important terms.

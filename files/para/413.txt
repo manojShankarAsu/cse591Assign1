@@ -1,0 +1,1 @@
+A special kind of event are PropertyChangeEvents. They are used to restrict some properties to take only specific values, for example for a month integer values between 1 and 12. Every time, such a bound property is modified, notifications to all registered PropertyChangeListeners will be send.

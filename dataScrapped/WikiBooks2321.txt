@@ -1,0 +1,9 @@
+Code-Block-AW3<pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MyMethod</span>
+<span class="o">{</span>
+    <span class="nd">@CodeDescription</span><span class="o">(</span><span class="n">author</span> <span class="o">=</span> <span class="s">"Sysop"</span><span class="o">)</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">doSomething</span><span class="o">()</span>
+    <span class="o">{</span>
+        <span class="o">...</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre>

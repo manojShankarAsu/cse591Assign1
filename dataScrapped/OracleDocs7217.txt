@@ -1,0 +1,1 @@
+Laying Out Components Within a Container tells you how to choose a layout manager, how to use each of the layout manager classes the Java platform provides, how to use absolute positioning instead of a layout manager, and how to create your own layout manager.

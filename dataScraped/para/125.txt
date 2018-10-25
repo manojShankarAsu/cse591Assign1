@@ -1,0 +1,1 @@
+The reason we need it is because many times we need to create an object reference before the object itself is created. Object references cannot exist without a value, so we assign the null value to it.

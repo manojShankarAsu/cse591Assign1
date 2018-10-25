@@ -1,0 +1,1 @@
+will return 12, not 11. Professional code almost never contains statements that alter execution order (like return, break, continue) inside the finally block, as such code is more difficult to read and maintain.

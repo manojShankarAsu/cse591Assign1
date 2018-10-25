@@ -1,0 +1,17 @@
+Code-Block-AW3<pre><span></span><span class="lineno"> 1 </span><span class="kn">package</span> <span class="nn">org.wikibooks.en</span><span class="o">;</span>
+<span class="lineno"> 2 </span>
+<span class="lineno"> 3 </span><span class="cm">/**</span>
+<span class="lineno"> 4 </span><span class="cm"> *  An example class.</span>
+<span class="lineno"> 5 </span><span class="cm"> */</span>
+<span class="lineno"> 6 </span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Example</span> <span class="o">{</span>
+<span class="lineno"> 7 </span>    <span class="cm">/**</span>
+<span class="lineno"> 8 </span><span class="cm">    Get the sum of two integers.</span>
+<span class="lineno"> 9 </span><span class="cm">    @param a The first integer number.</span>
+<span class="lineno">10 </span><span class="cm">    @param b The second integer number.</span>
+<span class="lineno">11 </span><span class="cm">    @return The value of the sum of the two given integers.</span>
+<span class="lineno">12 </span><span class="cm">    */</span>
+<span class="lineno">13 </span>    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">sum</span><span class="o">(</span><span class="kt">int</span> <span class="n">a</span><span class="o">,</span> <span class="kt">int</span> <span class="n">b</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">14 </span>        <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="o">;</span>
+<span class="lineno">15 </span>    <span class="o">}</span>
+<span class="lineno">16 </span><span class="o">}</span>
+</pre>

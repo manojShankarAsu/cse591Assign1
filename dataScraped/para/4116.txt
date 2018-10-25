@@ -1,0 +1,1 @@
+Bring up another shell window. To compile your source file, change your current directory to the directory where your file is located. For example, if your source directory is /tmp/examples/java, type the following command at the prompt and press Return:

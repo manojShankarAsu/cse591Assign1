@@ -1,0 +1,1 @@
+The example iterates through an array of words and prints them out like a sentence. What the loop does is iterate through sentence and assign the value of each index to word, then execute the code block.

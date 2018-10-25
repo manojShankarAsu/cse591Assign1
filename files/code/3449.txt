@@ -1,0 +1,58 @@
+Code-Block-AW3<pre><span></span><span class="kn">package</span> <span class="nn">org.wikibooks.en.javaprogramming.example</span><span class="o">;</span>
+
+<span class="kn">import</span> <span class="nn">java.io.BufferedWriter</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.io.FileWriter</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.io.IOException</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.util.HashSet</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.util.Set</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">NumberReaderLoggingAdaptor</span> <span class="kd">implements</span> <span class="n">NumberReadListener</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="n">Set</span><span class="o">&lt;</span><span class="n">NumberReadListener</span><span class="o">&gt;</span> <span class="n">listeners</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="n">BufferedWriter</span> <span class="n">output</span><span class="o">;</span>
+   
+    <span class="kd">public</span> <span class="nf">NumberReaderLoggingAdaptor</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">listeners</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HashSet</span><span class="o">&lt;</span><span class="n">NumberReadListener</span><span class="o">&gt;();</span>
+        <span class="k">try</span> <span class="o">{</span>
+            <span class="n">output</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BufferedWriter</span><span class="o">(</span><span class="k">new</span> <span class="n">FileWriter</span><span class="o">(</span><span class="s">"numberLog.log"</span><span class="o">));</span>
+        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+            <span class="c1">// TODO Auto-generated catch block</span>
+            <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+   
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">addNumberReadListener</span><span class="o">(</span><span class="n">NumberReadListener</span> <span class="n">listener</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">listeners</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">listener</span><span class="o">);</span>
+    <span class="o">}</span>
+   
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">removeNumberReadListener</span><span class="o">(</span><span class="n">NumberReadListener</span> <span class="n">listener</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">listeners</span><span class="o">.</span><span class="na">remove</span><span class="o">(</span><span class="n">listener</span><span class="o">);</span>
+    <span class="o">}</span>
+   
+   
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">numberRead</span><span class="o">(</span><span class="n">NumberReadEvent</span> <span class="n">numberReadEvent</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">try</span> <span class="o">{</span>
+            <span class="n">output</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="n">numberReadEvent</span><span class="o">.</span><span class="na">getNumber</span><span class="o">()</span> <span class="o">+</span> <span class="s">"\n"</span><span class="o">);</span>
+        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">Exception</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+           
+        <span class="o">}</span>
+        <span class="k">for</span> <span class="o">(</span><span class="n">NumberReadListener</span> <span class="n">numberReadListener</span><span class="o">:</span> <span class="n">listeners</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">numberReadListener</span><span class="o">.</span><span class="na">numberRead</span><span class="o">(</span><span class="n">numberReadEvent</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">numberStreamTerminated</span><span class="o">(</span><span class="n">NumberReadEvent</span> <span class="n">numberReadEvent</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">try</span> <span class="o">{</span>
+            <span class="n">output</span><span class="o">.</span><span class="na">flush</span><span class="o">();</span>
+            <span class="n">output</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">Exception</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+           
+        <span class="o">}</span>
+        <span class="k">for</span> <span class="o">(</span><span class="n">NumberReadListener</span> <span class="n">numberReadListener</span><span class="o">:</span> <span class="n">listeners</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">numberReadListener</span><span class="o">.</span><span class="na">numberStreamTerminated</span><span class="o">(</span><span class="n">numberReadEvent</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+
+<span class="o">}</span>
+</pre>

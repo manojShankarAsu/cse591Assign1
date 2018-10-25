@@ -1,0 +1,2 @@
+Code-Block-AW3<pre><code><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;"><a href="/wiki/Java_Programming/Keywords/throw" title="Java Programming/Keywords/throw">throw</a></font></code> &lt;Exception Ref&gt;;
+</pre>

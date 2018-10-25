@@ -1,0 +1,8 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="n">InputStream</span> <span class="n">istr</span> <span class="o">=</span> <span class="n">proc</span><span class="o">.</span><span class="na">getInputStream</span><span class="o">();</span>
+<span class="lineno">2 </span><span class="n">BufferedReader</span> <span class="n">br</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BufferedReader</span><span class="o">(</span><span class="k">new</span> <span class="n">InputStreamReader</span><span class="o">(</span><span class="n">istr</span><span class="o">));</span>
+<span class="lineno">3 </span>             
+<span class="lineno">4 </span><span class="n">String</span> <span class="n">str</span><span class="o">;</span>
+<span class="lineno">5 </span><span class="k">while</span> <span class="o">((</span><span class="n">str</span> <span class="o">=</span> <span class="n">br</span><span class="o">.</span><span class="na">readLine</span><span class="o">())</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">6 </span>    <span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">str</span><span class="o">);</span>
+<span class="lineno">7 </span><span class="o">}</span>
+</pre>

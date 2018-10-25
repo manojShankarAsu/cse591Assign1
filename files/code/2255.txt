@@ -1,0 +1,2 @@
+Code-Block-AW3<pre><code><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;"><a href="/wiki/Java_Programming/Keywords/double" title="Java Programming/Keywords/double">double</a></font></code> &lt;variable-name&gt; = &lt;float-value&gt;;
+</pre>

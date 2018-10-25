@@ -1,0 +1,1 @@
+In this instance, the name of our method is walk. Notice however that the name of our method also features a set of round brackets as well. More than just being visual identifiers for methods, these round brackets are used to provide our methods with additional input information called arguments.

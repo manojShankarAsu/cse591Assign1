@@ -1,0 +1,1 @@
+Self-contained applications provide a deployment option that does not require a browser. Users install your application locally and run it similar to native applications. Self-contained applications include the JRE needed to run the application, so users always have the correct JRE.

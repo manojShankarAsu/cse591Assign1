@@ -1,0 +1,1 @@
+This trail discusses the development and deployment of RIAs and self-contained applications. See What's New for capabilities introduced in various versions of the client Java Runtime Environment (JRE) software.

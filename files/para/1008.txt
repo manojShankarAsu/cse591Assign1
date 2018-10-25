@@ -1,0 +1,1 @@
+The data types that one can use for integer numbers are byte, short, int and long but when it comes to floating point numbers, we use float or double. Now that we know that, we can modify the code in the code section 3.53 as:

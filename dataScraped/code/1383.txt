@@ -1,0 +1,8 @@
+Code-Block-AW3<pre><span></span><span class="kd">public</span> <span class="n">String</span> <span class="nf">readLine</span><span class="o">()</span> <span class="o">{</span>
+  <span class="c1">// Creates a new BufferedReader object</span>
+  <span class="n">BufferedReader</span> <span class="n">x</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BufferedReader</span><span class="o">(</span><span class="k">new</span> <span class="n">InputStreamReader</span><span class="o">(</span><span class="n">System</span><span class="o">.</span><span class="na">in</span><span class="o">));</span>
+
+  <span class="c1">// Reads a line of input and returns it directly</span>
+  <span class="k">return</span> <span class="n">x</span><span class="o">.</span><span class="na">readLine</span><span class="o">();</span>
+<span class="o">}</span>
+</pre>

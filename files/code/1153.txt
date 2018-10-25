@@ -1,0 +1,7 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Cheese</span> <span class="o">{</span>
+<span class="lineno">2 </span>  <span class="c1">// This is a constructor</span>
+<span class="lineno">3 </span><span class="hll">  <span class="kd">public</span> <span class="nf">Cheese</span><span class="o">()</span> <span class="o">{</span>
+</span><span class="lineno">4 </span><span class="hll">    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Construct an instance"</span><span class="o">);</span>
+</span><span class="lineno">5 </span><span class="hll">  <span class="o">}</span>
+</span><span class="lineno">6 </span><span class="o">}</span>
+</pre>

@@ -1,0 +1,1 @@
+During class loading all the class static variables are initialized. Also operations defined in a static { ... } block are executed. Once a class is loaded it stays in memory, and the class static variables won't be initialized again.

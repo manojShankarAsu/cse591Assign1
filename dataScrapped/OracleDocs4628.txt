@@ -1,0 +1,1 @@
+...however, you can still declare and catch such exceptions. Runtime exceptions are not business exceptions. They are usually related to hard-coded issues like data errors, arithmetic overflow, divide by zero etc. In other words, errors that can't be worked around nor anticipated. The most famous (and feared) runtime exception is the NullPointerException.

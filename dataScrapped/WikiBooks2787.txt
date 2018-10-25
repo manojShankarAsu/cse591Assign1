@@ -1,0 +1,5 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="kd">synchronized</span><span class="o">(&lt;</span><span class="n">object_reference</span><span class="o">&gt;)</span> <span class="o">{</span>
+<span class="lineno">2 </span>   <span class="c1">// Thread.currentThread() has a lock on object_reference. All other threads trying to access it will</span>
+<span class="lineno">3 </span>   <span class="c1">// be blocked until the current thread releases the lock.</span>
+<span class="lineno">4 </span><span class="o">}</span>
+</pre>

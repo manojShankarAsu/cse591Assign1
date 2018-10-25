@@ -1,0 +1,2 @@
+Code-Block-AW3<pre><span></span><span class="kt">boolean</span> <span class="nf">addAll</span><span class="o">(</span><span class="kt">int</span> <span class="n">index</span><span class="o">,</span> <span class="n">Collection</span> <span class="n">c</span><span class="o">)</span>
+</pre>

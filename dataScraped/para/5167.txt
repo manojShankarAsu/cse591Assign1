@@ -1,0 +1,1 @@
+The "Hello World!" application consists of three primary components: source code comments, the HelloWorldApp class definition, and the main method. The following explanation will provide you with a basic understanding of the code, but the deeper implications will only become apparent after you've finished reading the rest of the tutorial.

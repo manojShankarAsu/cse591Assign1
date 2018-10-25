@@ -1,0 +1,1 @@
+The variables we studied so far had a mixed case. When there are two or more words making up the names of a variable, you need to use a special case called the camel-case. Just like the humps of a camel, your words need to stand out. Using this technique, the words first and name could be written as either firstName or FirstName.

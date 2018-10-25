@@ -1,0 +1,1 @@
+Downloading and installing the Java platform on Linux machines is very easy and straight-forward. You have two choices to install the Java platforms: using a package manager such as DPKG/APT, YUM/RPM etc., or directly install them using the binary package. To use the terminal to download and install the Oracle Java SE platform, follow the instructions below.

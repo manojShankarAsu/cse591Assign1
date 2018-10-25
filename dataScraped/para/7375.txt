@@ -1,0 +1,1 @@
+Use the second form if you have different statements to execute if the boolean-condition is true or if it is false. Use the first if you only wish to execute statement1 if the condition is true and you do not wish to execute alternate statements if the condition is false.

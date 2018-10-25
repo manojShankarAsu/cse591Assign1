@@ -1,0 +1,4 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="n">Collection</span> <span class="n">ageList</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">();</span>
+<span class="lineno">2 </span><span class="hll"><span class="n">ageList</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="n">Integer</span><span class="o">(</span><span class="mi">46</span><span class="o">));</span>
+</span><span class="lineno">3 </span><span class="hll"><span class="n">ageList</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"50"</span><span class="o">);</span>
+</span></pre>

@@ -1,0 +1,1 @@
+So the book (from what I gather) as I mentioned before is geared towards being a reference book and also something for beginners. This might be difficult to achieve because if we go into depth about the java language, newbies will be lost.

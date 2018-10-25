@@ -1,0 +1,3 @@
+Code-Block-AW3<pre class="codeblock">interface Predicate&lt;<code>Person</code>&gt; {
+    boolean test(<code>Person</code> t);
+}</pre>

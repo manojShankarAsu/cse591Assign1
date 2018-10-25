@@ -1,0 +1,1 @@
+Overview of the Java 2D Graphics API introduces the key Java 2D concepts and describes the Java 2D rendering model. This lesson is more conceptual than other lessons of this trail, it enables you to get deep into basic notions and classes descriptions.

@@ -1,0 +1,1 @@
+We have passed in the try block until where the exception occurred, then we have executed the matching catch block, the finally block and we have continued the execution. Now, an uncaught exception is thrown:

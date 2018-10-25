@@ -1,0 +1,1 @@
+JDK security release documentation can be found at the Security guides page. This index page lists Specifications which present detailed information about latest security features, including architecture specifications, usage guides, API documentation, and tool documentation.

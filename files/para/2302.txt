@@ -1,0 +1,1 @@
+The static keyword makes attributes instance-agnostic. This means that you cannot reference a static attribute of a single object (because such a specific object attribute doesn't exist). Instead, only one instance of a static attribute exists, whether there is one object in the JVM or one hundred. Here is an example of using a static attribute in a static method:

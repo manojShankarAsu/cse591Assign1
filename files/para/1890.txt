@@ -1,0 +1,1 @@
+This command would convert the SomeApplication.java source file into its equivalent Java byte-code. The resultant byte-code would exist in a newly created file named SomeApplication.class. This process of converting Java source files into their equivalent byte-codes is known as compilation.

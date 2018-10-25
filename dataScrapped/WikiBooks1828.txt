@@ -1,0 +1,15 @@
+Code-Block-AW3<pre><span></span><span class="lineno"> 1 </span><span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">equals</span><span class="o">(</span><span class="n">Object</span> <span class="n">obj</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 2 </span>    <span class="kt">boolean</span> <span class="n">ret</span> <span class="o">=</span> <span class="kc">false</span><span class="o">;</span>
+<span class="lineno"> 3 </span>    <span class="k">if</span> <span class="o">(</span><span class="k">this</span> <span class="k">instanceof</span> <span class="n">Apple</span> <span class="o">&amp;&amp;</span>
+<span class="lineno"> 4 </span>          <span class="n">obj</span> <span class="k">instanceof</span> <span class="n">Apple</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 5 </span>        <span class="n">ret</span> <span class="o">=</span> <span class="k">this</span><span class="o">.</span><span class="na">appleEquals</span><span class="o">(</span><span class="n">obj</span><span class="o">);</span>
+<span class="lineno"> 6 </span>    <span class="o">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">(</span><span class="k">this</span> <span class="k">instanceof</span> <span class="n">Orange</span> <span class="o">&amp;&amp;</span>
+<span class="lineno"> 7 </span>              <span class="n">obj</span>  <span class="k">instanceof</span> <span class="n">Orange</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 8 </span>        <span class="n">ret</span> <span class="o">=</span> <span class="k">this</span><span class="o">.</span><span class="na">orangeEquals</span><span class="o">(</span><span class="n">obj</span><span class="o">);</span>  
+<span class="lineno"> 9 </span>    <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+<span class="lineno">10 </span>        <span class="c1">// Can not compare Orange to Apple</span>
+<span class="lineno">11 </span>       <span class="n">ret</span> <span class="o">=</span> <span class="kc">false</span><span class="o">;</span>
+<span class="lineno">12 </span>    <span class="o">}</span>
+<span class="lineno">13 </span>    <span class="k">return</span> <span class="n">ret</span><span class="o">;</span>
+<span class="lineno">14 </span><span class="o">}</span>
+</pre>

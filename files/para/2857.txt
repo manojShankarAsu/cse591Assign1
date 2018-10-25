@@ -1,0 +1,1 @@
+Once we have a Runnable process block, we can create various threads that can then execute the logic encased within such blocks. Multithreading capabilities in Java are utilized and manipulated using the Thread class. A Thread object therefore holds all the necessary logic and devices to create truly multithreaded programs. Consider the following program:

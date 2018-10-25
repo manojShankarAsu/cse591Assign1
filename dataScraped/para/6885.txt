@@ -1,0 +1,1 @@
+The Java Technology Phenomenon Provides an overview of Java technology as a whole. It discusses both the Java programming language and platform, providing a broad overview of what this technology can do and how it will make your life easier.

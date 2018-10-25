@@ -1,0 +1,1 @@
+When calling the method, a programmer can simply separate the points by commas, without having to explicitly create an array of Point objects. Within the method, the points can be referenced as points[0], points[1], etc. If no points are passed, the array has a length of zero.

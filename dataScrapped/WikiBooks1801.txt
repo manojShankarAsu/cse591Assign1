@@ -1,0 +1,1 @@
+The trigonometric methods of the Math class allow users to easily deal with trigonometric functions in programs. All accept only doubles. Please note that all values using these methods are initially passed and returned in radians, not degrees. However, conversions are possible.

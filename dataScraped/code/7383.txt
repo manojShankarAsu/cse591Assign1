@@ -1,0 +1,8 @@
+Code-Block-AW3<pre><code><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;"><a href="/wiki/Java_Programming/Keywords/if" title="Java Programming/Keywords/if">if</a></font></code> (<i>condition 1</i>) {
+   <i>do statements here if condition 1 is true</i>
+} <code><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;"><a href="/wiki/Java_Programming/Keywords/else" title="Java Programming/Keywords/else">else</a></font></code> <code><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;"><a href="/wiki/Java_Programming/Keywords/if" title="Java Programming/Keywords/if">if</a></font></code> (<i>condition 2</i>) {
+   <i>do statements here if condition 1 is false and condition 2 is true</i>
+} <code><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;"><a href="/wiki/Java_Programming/Keywords/else" title="Java Programming/Keywords/else">else</a></font></code> {
+  <i>do statements here if neither condition 1 nor condition 2 is true</i>
+}
+</pre>

@@ -1,0 +1,12 @@
+Code-Block-AW3<pre><span></span><span class="lineno"> 1 </span><span class="n">Map</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">,</span> <span class="n">String</span><span class="o">&gt;</span> <span class="n">map</span> <span class="o">=</span> <span class="k">new</span> <span class="n">TreeMap</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">,</span> <span class="n">String</span><span class="o">&gt;();</span>
+<span class="lineno"> 2 </span>
+<span class="lineno"> 3 </span><span class="n">map</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="k">new</span> <span class="n">Integer</span><span class="o">(</span><span class="mi">1</span><span class="o">),</span> <span class="s">"Watch"</span><span class="o">);</span>
+<span class="lineno"> 4 </span><span class="n">map</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="k">new</span> <span class="n">Integer</span><span class="o">(</span><span class="mi">2</span><span class="o">),</span> <span class="s">"out"</span><span class="o">);</span>
+<span class="lineno"> 5 </span><span class="n">map</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="k">new</span> <span class="n">Integer</span><span class="o">(</span><span class="mi">3</span><span class="o">),</span> <span class="s">"!"</span><span class="o">);</span>
+<span class="lineno"> 6 </span>
+<span class="lineno"> 7 </span><span class="hll"><span class="n">map</span><span class="o">.</span><span class="na">remove</span><span class="o">(</span><span class="s">"2"</span><span class="o">);</span>
+</span><span class="lineno"> 8 </span>
+<span class="lineno"> 9 </span><span class="k">for</span> <span class="o">(</span><span class="n">String</span> <span class="n">value</span> <span class="o">:</span> <span class="n">map</span><span class="o">.</span><span class="na">values</span><span class="o">())</span> <span class="o">{</span>
+<span class="lineno">10 </span>  <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">value</span><span class="o">);</span>
+<span class="lineno">11 </span><span class="o">}</span>
+</pre>

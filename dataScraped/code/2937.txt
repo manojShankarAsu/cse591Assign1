@@ -1,0 +1,13 @@
+Code-Block-AW3<pre><span></span><span class="lineno"> 1 </span><span class="kn">import</span> <span class="nn">java.applet.Applet</span><span class="o">;</span>
+<span class="lineno"> 2 </span><span class="kn">import</span> <span class="nn">java.awt.Graphics</span><span class="o">;</span>
+<span class="lineno"> 3 </span>
+<span class="lineno"> 4 </span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">HelloWorld</span> <span class="kd">extends</span> <span class="n">Applet</span> <span class="o">{</span>
+<span class="lineno"> 5 </span>
+<span class="lineno"> 6 </span>    <span class="cm">/**</span>
+<span class="lineno"> 7 </span><span class="cm">     * Print a message on the screen.</span>
+<span class="lineno"> 8 </span><span class="cm">     */</span>
+<span class="lineno"> 9 </span>    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">paint</span><span class="o">(</span><span class="n">Graphics</span> <span class="n">g</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">10 </span><span class="hll">        <span class="n">g</span><span class="o">.</span><span class="na">drawString</span><span class="o">(</span><span class="s">"Hello, world!"</span><span class="o">,</span> <span class="mi">20</span><span class="o">,</span> <span class="mi">10</span><span class="o">);</span>
+</span><span class="lineno">11 </span>    <span class="o">}</span>
+<span class="lineno">12 </span><span class="o">}</span>
+</pre>

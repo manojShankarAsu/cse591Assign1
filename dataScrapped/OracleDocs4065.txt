@@ -1,0 +1,1 @@
+When you first bring up the prompt, your current directory will usually be your home directory. You can change your current directory to your home directory at any time by typing cd at the prompt and then pressing Return.

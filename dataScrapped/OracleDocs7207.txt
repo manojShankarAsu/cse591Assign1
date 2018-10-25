@@ -1,0 +1,1 @@
+Using Other Swing Features tells you how to use actions, timers, and the system tray; how to integrate with the desktop class, how to support assistive technologies, how to print tables and text, how to create a splash screen, and how to use modality in dialogs.

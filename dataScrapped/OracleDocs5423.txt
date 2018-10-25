@@ -1,0 +1,2 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="k">new</span> <span class="n">Exception</span><span class="o">(</span><span class="s">"Something unexpected happened"</span><span class="o">);</span>
+</pre>

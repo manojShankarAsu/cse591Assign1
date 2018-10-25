@@ -1,0 +1,11 @@
+Code-Block-AW3<pre><span></span><span class="nd">@Inherited</span>
+<span class="nd">@interface</span> <span class="n">ForEveryone</span> <span class="o">{</span> <span class="o">}</span>
+
+<span class="nd">@interface</span> <span class="n">JustForMe</span> <span class="o">{</span> <span class="o">}</span>
+
+<span class="nd">@ForEveryone</span>
+<span class="nd">@JustForMe</span>
+<span class="kd">class</span> <span class="nc">Superclass</span> <span class="o">{</span> <span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">Subclass</span> <span class="kd">extends</span> <span class="n">Superclass</span> <span class="o">{</span> <span class="o">}</span>
+</pre>

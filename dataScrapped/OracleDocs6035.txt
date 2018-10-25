@@ -1,0 +1,1 @@
+As Java matured, the "Javadoc concept" was recognized as an excellent tool for other purposes, like generating XML descriptors, or even generating Java code, with the help of the XDoclet open source program.

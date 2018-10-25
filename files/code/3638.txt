@@ -1,0 +1,3 @@
+Code-Block-AW3<pre><span></span><span class="kn">import</span> <span class="nn">package.JavaClass</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">package.*</span><span class="o">;</span>
+</pre>

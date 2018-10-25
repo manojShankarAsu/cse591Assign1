@@ -1,0 +1,11 @@
+Code-Block-AW3<pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MyClass</span>
+ <span class="o">{</span> 
+    <span class="c1">//...</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">value</span><span class="o">;</span>
+    <span class="c1">//...</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setMemberVar</span><span class="o">(</span> <span class="n">String</span> <span class="n">value</span> <span class="o">)</span>
+    <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">value</span><span class="o">=</span> <span class="n">value</span><span class="o">;</span>
+    <span class="o">}</span>
+ <span class="o">}</span>
+</pre>

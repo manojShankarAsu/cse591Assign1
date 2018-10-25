@@ -1,0 +1,1 @@
+However, like local and anonymous classes, a lambda expression can only access local variables and parameters of the enclosing block that are final or effectively final. For example, suppose that you add the following assignment statement immediately after the methodInFirstLevel definition statement: variable and every method in your class should have.

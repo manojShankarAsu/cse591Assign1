@@ -1,0 +1,30 @@
+Code-Block-AW3<pre><span></span><span class="lineno"> 1 </span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Question8</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="o">{</span>
+<span class="lineno"> 2 </span>  <span class="kd">public</span> <span class="n">T</span> <span class="n">item</span><span class="o">;</span>
+<span class="lineno"> 3 </span> 
+<span class="lineno"> 4 </span>  <span class="kd">public</span> <span class="n">T</span> <span class="nf">getItem</span><span class="o">()</span> <span class="o">{</span>
+<span class="lineno"> 5 </span>    <span class="k">return</span> <span class="n">item</span><span class="o">;</span>
+<span class="lineno"> 6 </span>  <span class="o">}</span>
+<span class="lineno"> 7 </span> 
+<span class="lineno"> 8 </span>  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setItem</span><span class="o">(</span><span class="n">T</span> <span class="n">newItem</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 9 </span>    <span class="n">item</span> <span class="o">=</span> <span class="n">newItem</span><span class="o">;</span>
+<span class="lineno">10 </span>  <span class="o">}</span>
+<span class="lineno">11 </span>
+<span class="lineno">12 </span>  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">13 </span>    <span class="n">Question8</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">aQuestion</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Question8</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;();</span>
+<span class="lineno">14 </span>    <span class="n">aQuestion</span><span class="o">.</span><span class="na">setItem</span><span class="o">(</span><span class="s">"Open your mind."</span><span class="o">);</span>
+<span class="lineno">15 </span>    <span class="n">aQuestion</span><span class="o">.</span><span class="na">display</span><span class="o">(</span><span class="n">aQuestion</span><span class="o">.</span><span class="na">getItem</span><span class="o">());</span>
+<span class="lineno">16 </span>  <span class="o">}</span>
+<span class="lineno">17 </span>
+<span class="lineno">18 </span>  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">display</span><span class="o">(</span><span class="n">String</span> <span class="n">parameter</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">19 </span>    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Here is the text: "</span> <span class="o">+</span> <span class="n">parameter</span><span class="o">);</span>
+<span class="lineno">20 </span>  <span class="o">}</span>
+<span class="lineno">21 </span>
+<span class="lineno">22 </span>  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">display</span><span class="o">(</span><span class="n">Integer</span> <span class="n">parameter</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">23 </span>    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Here is the number: "</span> <span class="o">+</span> <span class="n">parameter</span><span class="o">);</span>
+<span class="lineno">24 </span>  <span class="o">}</span>
+<span class="lineno">25 </span>
+<span class="lineno">26 </span>  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">display</span><span class="o">(</span><span class="n">Object</span> <span class="n">parameter</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">27 </span>    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Here is the object: "</span> <span class="o">+</span> <span class="n">parameter</span><span class="o">);</span>
+<span class="lineno">28 </span>  <span class="o">}</span>
+<span class="lineno">29 </span><span class="o">}</span>
+</pre>

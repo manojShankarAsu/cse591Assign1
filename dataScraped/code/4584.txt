@@ -1,0 +1,10 @@
+Code-Block-AW3<pre class="codeblock">public static void processPersons(
+    List&lt;Person&gt; roster,
+    Predicate&lt;Person&gt; tester,
+    <strong>Consumer&lt;Person&gt; block</strong>) {
+        for (Person p : roster) {
+            if (tester.test(p)) {
+                <strong>block.accept(p);</strong>
+            }
+        }
+}</pre>

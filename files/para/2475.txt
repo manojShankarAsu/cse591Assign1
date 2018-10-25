@@ -1,0 +1,1 @@
+In the code section 3.68, the return keyword at line 5 is well placed because the instructions below can be reached when a is negative or equal to 0. However, the return keyword at line 8 is badly placed because the instructions below can't be reached.

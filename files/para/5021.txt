@@ -1,0 +1,1 @@
+The Java Management Extensions (JMX) trail provides an introduction to the JMX technology, which is included in the Java Platform, Standard Edition (Java SE platform). This trail presents examples of how to use the most important features of the JMX technology.

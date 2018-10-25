@@ -1,0 +1,1 @@
+The next step one must take when learning a new language is to learn its keywords; by combining the knowledge of keywords with an understanding of syntax rules, one can create statements, Programming Blocks, Classes, Interfaces, et al.

@@ -1,0 +1,12 @@
+Code-Block-AW3<pre><span></span><span class="kd">private</span> <span class="kt">void</span> <span class="nf">notifyListenersOfEndOfStream</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">for</span> <span class="o">(</span><span class="n">NumberReadListener</span> <span class="n">numberReadListener</span> <span class="o">:</span> <span class="n">listeners</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">numberReadListener</span><span class="o">.</span><span class="na">numberStreamTerminated</span><span class="o">(</span><span class="k">new</span> <span class="n">NumberReadEvent</span><span class="o">(</span><span class="k">this</span><span class="o">,</span> <span class="mf">0D</span><span class="o">));</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">private</span> <span class="kt">void</span> <span class="nf">notifyListeners</span><span class="o">(</span><span class="n">Double</span> <span class="n">d</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">for</span> <span class="o">(</span><span class="n">NumberReadListener</span> <span class="n">numberReadListener</span><span class="o">:</span> <span class="n">listeners</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">numberReadListener</span><span class="o">.</span><span class="na">numberRead</span><span class="o">(</span><span class="k">new</span> <span class="n">NumberReadEvent</span><span class="o">(</span><span class="k">this</span><span class="o">,</span> <span class="n">d</span><span class="o">));</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre>

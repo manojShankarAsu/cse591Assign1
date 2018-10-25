@@ -1,0 +1,1 @@
+2 A class derived from the Object class is not viable as a visible component, whereas a class derived from a Component class is a visible entity atop a Container hence a likely candidate for displaying drawings.

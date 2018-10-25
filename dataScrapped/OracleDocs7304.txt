@@ -1,0 +1,6 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="k">if</span> <span class="o">(</span><span class="n">list</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">2 </span>  <span class="c1">// This block of statements executes if the condition is true.</span>
+<span class="lineno">3 </span><span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+<span class="lineno">4 </span>  <span class="c1">// This block of statements executes if the condition is false.</span>
+<span class="lineno">5 </span><span class="o">}</span>
+</pre>

@@ -1,0 +1,1 @@
+However, if you require a robust and standalone text-editor like the Notepad++ editor on Windows, you would require the use of the minimalistic editor loaded with features – SciTE. Follow the instructions below if you wish to install SciTE:

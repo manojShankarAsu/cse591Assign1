@@ -1,0 +1,1 @@
+Now we will describe how to prevent NullPointerException. We do not describe general techniques for how you should program Java, we just hope to make you more aware of null values, and to be more careful about generating them yourself.

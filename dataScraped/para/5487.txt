@@ -1,0 +1,1 @@
+If you choose this option, you'll have to precede your javac and java commands with C:\jdk1.8.0\bin\ each time you compile or run a program. To avoid this extra typing, consult the section Updating the PATH variable in the JDK 8 installation instructions.

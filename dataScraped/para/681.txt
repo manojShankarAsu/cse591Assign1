@@ -1,0 +1,1 @@
+To do: Illustrate how the print() method works, emphasize that this method does not break up lines, but that this can be accomplished with the \n escape sequence. Talk about how it works with different data types, and then introduce the println() method as a convenience method that automatically adds the \n character.

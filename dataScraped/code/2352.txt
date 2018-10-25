@@ -1,0 +1,9 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="kd">private</span> <span class="kt">int</span> <span class="nf">myMethod</span><span class="o">(</span><span class="kt">int</span> <span class="n">a</span><span class="o">,</span> <span class="kt">int</span> <span class="n">b</span><span class="o">,</span> <span class="n">String</span> <span class="n">c</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">2 </span>  <span class="k">if</span> <span class="o">(</span><span class="n">a</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">3 </span>    <span class="n">c</span> <span class="o">=</span> <span class="s">""</span><span class="o">;</span>
+<span class="lineno">4 </span>    <span class="k">return</span> <span class="n">c</span><span class="o">;</span>
+<span class="lineno">5 </span>  <span class="o">}</span>
+<span class="lineno">6 </span>  <span class="kt">int</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span> <span class="o">+</span> <span class="mi">2</span><span class="o">;</span>
+<span class="lineno">7 </span>  <span class="k">return</span> <span class="n">b</span><span class="o">;</span>
+<span class="lineno">8 </span><span class="o">}</span>
+</pre>

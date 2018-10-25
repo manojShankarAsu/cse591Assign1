@@ -1,0 +1,4 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="n">String</span><span class="o">[][]</span> <span class="n">weirdTwoDimArray</span> <span class="o">=</span> <span class="o">{{</span><span class="s">"10"</span><span class="o">,</span> <span class="s">"11"</span><span class="o">,</span> <span class="s">"12"</span><span class="o">},</span>
+<span class="lineno">2 </span>                               <span class="kc">null</span><span class="o">,</span>
+<span class="lineno">3 </span>                               <span class="o">{</span><span class="s">"20"</span><span class="o">,</span> <span class="s">"21"</span><span class="o">,</span> <span class="s">"22"</span><span class="o">,</span> <span class="s">"23"</span><span class="o">,</span> <span class="s">"24"</span><span class="o">}};</span>
+</pre>

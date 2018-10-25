@@ -1,0 +1,1 @@
+This section describes the Java Collections Framework. Here, you will learn what collections are and how they can make your job easier and programs better. You'll learn about the core elements — interfaces, implementations, aggregate operations, and algorithms — that comprise the Java Collections Framework.

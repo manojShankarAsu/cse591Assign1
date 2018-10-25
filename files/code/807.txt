@@ -1,0 +1,4 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="hll"><span class="k">if</span> <span class="o">(</span><span class="n">objRef1</span> <span class="o">==</span> <span class="n">objRef2</span><span class="o">)</span> <span class="o">{</span>
+</span><span class="lineno">2 </span>    <span class="c1">// The two object references point to the same object</span>
+<span class="lineno">3 </span><span class="o">}</span>
+</pre>

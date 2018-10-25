@@ -1,0 +1,7 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="kt">int</span> <span class="n">firstNumber</span> <span class="o">=</span> <span class="mi">10</span><span class="o">;</span>
+<span class="lineno">2 </span><span class="kt">int</span> <span class="n">secondNumber</span> <span class="o">=</span> <span class="mi">20</span><span class="o">;</span>
+<span class="lineno">3 </span><span class="kt">int</span> <span class="n">result</span> <span class="o">=</span> <span class="n">firstNumber</span> <span class="o">+</span> <span class="n">secondNumber</span><span class="o">;</span>
+<span class="lineno">4 </span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">result</span><span class="o">);</span>
+<span class="lineno">5 </span><span class="n">secondNumber</span> <span class="o">=</span> <span class="mi">30</span><span class="o">;</span>
+<span class="lineno">6 </span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">result</span><span class="o">);</span>
+</pre>

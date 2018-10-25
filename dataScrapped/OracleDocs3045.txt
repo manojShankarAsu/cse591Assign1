@@ -1,0 +1,1 @@
+Code listing 9.1 shows the simplicity and power of the syntax for enabling the graphics functions within Java. Lets begin by understanding what a Canvas class does. A Canvas class is a derivative or a sub-class of the Component class and when placed over a Frame, displays as a blank area.

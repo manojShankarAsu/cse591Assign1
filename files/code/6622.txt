@@ -1,0 +1,14 @@
+Code-Block-AW3<pre><span></span><span class="lineno"> 1 </span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Customer</span> <span class="kd">implements</span> <span class="n">Cloneable</span> <span class="o">{</span>
+<span class="lineno"> 2 </span>  <span class="n">Activity</span> <span class="n">activity</span><span class="o">;</span>
+<span class="lineno"> 3 </span>  <span class="o">...</span>
+<span class="lineno"> 4 </span>    <span class="kd">public</span> <span class="n">Customer</span> <span class="nf">clone</span><span class="o">()</span> <span class="kd">throws</span> <span class="n">CloneNotSupportedException</span> <span class="o">{</span>
+<span class="lineno"> 5 </span>      <span class="n">Customer</span> <span class="n">clonedCustomer</span> <span class="o">=</span> <span class="o">(</span><span class="n">Customer</span><span class="o">)</span> <span class="kd">super</span><span class="o">.</span><span class="na">clone</span><span class="o">();</span>
+<span class="lineno"> 6 </span>
+<span class="lineno"> 7 </span>      <span class="c1">// Clone the object referenced objects</span>
+<span class="lineno"> 8 </span><span class="hll">      <span class="k">if</span> <span class="o">(</span><span class="n">activity</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+</span><span class="lineno"> 9 </span><span class="hll">         <span class="n">clonedCustomer</span><span class="o">.</span><span class="na">setActivity</span><span class="o">((</span><span class="n">Activity</span><span class="o">)</span> <span class="n">activity</span><span class="o">.</span><span class="na">clone</span><span class="o">());</span>
+</span><span class="lineno">10 </span><span class="hll">      <span class="o">}</span>
+</span><span class="lineno">11 </span>      <span class="k">return</span> <span class="n">clonedCustomer</span><span class="o">;</span>
+<span class="lineno">12 </span>   <span class="o">}</span>
+<span class="lineno">13 </span><span class="o">}</span>
+</pre>

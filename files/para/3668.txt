@@ -1,0 +1,1 @@
+Java rich internet applications (RIA) are applications that have traits similar to desktop applications, but are deployed via the Internet. Java RIAs may be developed and deployed as Java applets or Java Web Start applications.

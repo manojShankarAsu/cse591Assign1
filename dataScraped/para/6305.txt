@@ -1,0 +1,1 @@
+ActionListener is an interface that could be implemented in order to determine how a certain event should be handled. When implementing an interface, all methods in that interface should be implemented, ActionListener interface has one method to implement named actionPerformed().

@@ -1,0 +1,5 @@
+Code-Block-AW3<pre><span></span><span class="n">Class</span><span class="o">.</span><span class="na">forName</span><span class="o">(</span><span class="s">"sun.jdbc.odbc.JdbcOdbcDriver"</span><span class="o">);</span>
+<span class="n">String</span> <span class="n">path</span> <span class="o">=</span> <span class="s">"C:/example.mdb"</span><span class="o">;</span>
+<span class="n">String</span> <span class="n">dsn</span> <span class="o">=</span> <span class="s">"jdbc:odbc:Driver={Microsoft Access Driver (*.mdb)};DBQ="</span> <span class="o">+</span> <span class="n">path</span> <span class="o">+</span> <span class="s">";UID=admin"</span><span class="o">;</span>
+<span class="n">accessConn</span> <span class="o">=</span> <span class="n">DriverManager</span><span class="o">.</span><span class="na">getConnection</span><span class="o">(</span><span class="n">dsn</span><span class="o">,</span> <span class="s">""</span><span class="o">,</span> <span class="s">""</span><span class="o">);</span>
+</pre>

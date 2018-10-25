@@ -1,0 +1,1 @@
+There is also Writer which is a character counterpart of OutputStream, and a destination counterpart to Reader, this is also an abstract superclass. Particular implementations parallel those of Reader, eg FileWriter, StringWriter, and OutputStreamWriter, for converting a regular OutputStream into a reader so that it can take character data.

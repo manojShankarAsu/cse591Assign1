@@ -1,0 +1,1 @@
+This trail describes JNDI™ (Java Naming and Directory Interface) an API to access the directory and naming services. Here you learn about the basic naming and directory services and how to use JNDI to write simple applications to use these services. The most popular directory service LDAP is used to demostrate the use of JNDI to access the directory services.

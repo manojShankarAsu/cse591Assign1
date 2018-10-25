@@ -1,0 +1,1 @@
+An easy way to dynamically load a Class is via the java.net.URLClassLoader class. This class can be used to load a Class or a collection of classes that are accessible via a URL. This is very similar to the -classpath parameter in the java executable. To create a URLClassLoader, use the factory method (as using the constructor requires a security privilege):

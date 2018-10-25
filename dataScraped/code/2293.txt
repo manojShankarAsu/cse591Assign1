@@ -1,0 +1,5 @@
+Code-Block-AW3<pre><span></span><span class="k">if</span> <span class="o">(</span> <span class="n">obj</span> <span class="k">instanceof</span> <span class="n">Edible</span> <span class="o">)</span>
+ <span class="o">{</span>
+   <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"it is edible"</span><span class="o">);</span>
+ <span class="o">}</span>
+</pre>

@@ -1,0 +1,1 @@
+Alternatively, the java.util.Random class provides methods for generating random booleans, bytes, floats, ints, longs and 'Gaussians' (doubles from a normal distribution with mean 0.0 and standard deviation 1.0). For example, the following code is equivalent to that above:

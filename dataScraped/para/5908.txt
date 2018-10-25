@@ -1,0 +1,1 @@
+If you don't see JDK 8 (which might appear as 1.8 or 1.8.0) in the list of installed platforms, click Add Platform, navigate to your JDK 8 install directory, and click Finish. You should now see this newly added platform:

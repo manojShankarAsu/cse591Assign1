@@ -1,0 +1,20 @@
+Code-Block-AW3<pre><span></span><span class="lineno"> 1 </span><span class="n">String</span> <span class="n">word</span> <span class="o">=</span> <span class="s">"Integer"</span><span class="o">;</span>
+<span class="lineno"> 2 </span><span class="n">String</span> <span class="n">text</span> <span class="o">=</span> <span class="s">"A number without a decimal part is an integer."</span>
+<span class="lineno"> 3 </span>  <span class="o">+</span> <span class="s">" Integers are a list of digits."</span><span class="o">;</span>
+<span class="lineno"> 4 </span>
+<span class="lineno"> 5 </span><span class="o">...</span>
+<span class="lineno"> 6 </span>
+<span class="lineno"> 7 </span><span class="c1">// Remove the case</span>
+<span class="lineno"> 8 </span><span class="hll"><span class="n">String</span> <span class="n">lowerCaseWord</span> <span class="o">=</span> <span class="n">word</span><span class="o">.</span><span class="na">toLowerCase</span><span class="o">();</span>
+</span><span class="lineno"> 9 </span><span class="hll"><span class="n">String</span> <span class="n">lowerCaseText</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="na">toLowerCase</span><span class="o">();</span>
+</span><span class="lineno">10 </span>
+<span class="lineno">11 </span><span class="c1">// Search</span>
+<span class="lineno">12 </span><span class="hll"><span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="n">lowerCaseText</span><span class="o">.</span><span class="na">indexOf</span><span class="o">(</span><span class="n">lowerCaseWord</span><span class="o">);</span>
+</span><span class="lineno">13 </span><span class="k">while</span> <span class="o">(</span><span class="n">index</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">14 </span>  <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">word</span>
+<span class="lineno">15 </span>    <span class="o">+</span> <span class="s">" appears at column "</span>
+<span class="lineno">16 </span>    <span class="o">+</span> <span class="o">(</span><span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="o">)</span>
+<span class="lineno">17 </span>    <span class="o">+</span> <span class="s">"."</span><span class="o">);</span>
+<span class="lineno">18 </span><span class="hll">  <span class="n">index</span> <span class="o">=</span> <span class="n">lowerCaseText</span><span class="o">.</span><span class="na">indexOf</span><span class="o">(</span><span class="n">lowerCaseWord</span><span class="o">,</span> <span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="o">);</span>
+</span><span class="lineno">19 </span><span class="o">}</span>
+</pre>

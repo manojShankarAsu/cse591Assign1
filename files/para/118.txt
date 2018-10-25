@@ -1,0 +1,1 @@
+When learning a new language, the first step one must take is to learn its programming syntax. Programming syntax is to programming languages what grammar is to spoken languages. Therefore, in order to create effective code in the Java programming language, we need to learn its syntax — its principles and rules for constructing valid code statements and expressions.

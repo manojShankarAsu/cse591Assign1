@@ -1,0 +1,1 @@
+In order to get from class to object, we "build" our object by instantiation. Instantiation simply means to create an instance of a class. Instance and object are very similar terms and are sometimes interchangeable, but remember that an instance refers to a specific object, which was created from a class.

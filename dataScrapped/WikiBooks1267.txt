@@ -1,0 +1,1 @@
+Java SE 5.0 added syntactic support for methods with variable argument list, which simplifies the typesafe usage of methods requiring a variable number of arguments. Less formally, these parameters are called varargs[1]. The type of a variable parameter must be followed with ..., and Java will box all the arguments into an array:

@@ -1,0 +1,6 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="kd">private</span> <span class="kd">static</span> <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+<span class="lineno">2 </span>
+<span class="lineno">3 </span><span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">getNewInteger</span><span class="o">()</span> <span class="o">{</span>
+<span class="lineno">4 </span>  <span class="k">return</span> <span class="n">count</span><span class="o">++;</span>
+<span class="lineno">5 </span><span class="o">}</span>
+</pre>

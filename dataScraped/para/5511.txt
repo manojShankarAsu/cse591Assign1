@@ -1,0 +1,1 @@
+This chapter describes the concept of drawing on-screen and off-screen images, as well as surfaces and printer devices. This trail covers the most common uses of the Java 2D APIs and briefly describes some of the more advanced features.

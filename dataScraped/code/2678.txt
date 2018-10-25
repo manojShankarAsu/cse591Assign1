@@ -1,0 +1,9 @@
+Code-Block-AW3<pre><code><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;"><a href="/wiki/Java_Programming/Keywords/switch" title="Java Programming/Keywords/switch">switch</a></font></code> ( &lt;integer-var&gt; )
+{
+   <code><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;"><a href="/wiki/Java_Programming/Keywords/case" title="Java Programming/Keywords/case">case</a></font></code> &lt;label<sub>1</sub>&gt;: &lt;statements&gt;;
+   <code><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;"><a href="/wiki/Java_Programming/Keywords/case" title="Java Programming/Keywords/case">case</a></font></code> &lt;label<sub>2</sub>&gt;: &lt;statements&gt;;
+   ...
+   <code><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;"><a href="/wiki/Java_Programming/Keywords/case" title="Java Programming/Keywords/case">case</a></font></code> &lt;label<sub>n</sub>&gt;: &lt;statements&gt;;
+   <code><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;"><a href="/wiki/Java_Programming/Keywords/default" title="Java Programming/Keywords/default">default</a></font></code>: &lt;statements&gt;;
+}
+</pre>

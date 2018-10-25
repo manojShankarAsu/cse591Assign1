@@ -1,0 +1,1 @@
+The previous code only creates a connection once (at the first method call). Note that there is no automatic conversion between integer types (such as int) to boolean as is possible in some languages like C. Instead, one must use an equivalent expression such as (i != 0) which evaluates to true if i is not zero.

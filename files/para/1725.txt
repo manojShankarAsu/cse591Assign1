@@ -1,0 +1,1 @@
+You can specify a restriction on the types of classes that may be used. For example, <? extends ClassName> only allows objects of class ClassName or a subclass. For example, to create a collection that may only contain "Serializable" objects, specify:

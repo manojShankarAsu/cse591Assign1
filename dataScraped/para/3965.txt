@@ -1,0 +1,1 @@
+Java is considered as a strongly typed programming language. Thus all variables in the Java programming language ought to have a particular data type. This is either declared or inferred and the Java language only allows programs to run if they adhere to type constraints.

@@ -1,0 +1,9 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="n">MyClass</span> <span class="o">{</span>
+<span class="lineno">2 </span>  <span class="o">...</span>
+<span class="lineno">3 </span>  <span class="kd">public</span> <span class="n">ReturnType</span> <span class="nf">methodName</span><span class="o">(</span><span class="n">ParamOneType</span> <span class="n">parameter1</span><span class="o">,</span> <span class="n">ParamTwoType</span> <span class="n">parameter2</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">4 </span>      <span class="o">...</span>
+<span class="lineno">5 </span>      <span class="k">return</span> <span class="n">returnType</span><span class="o">;</span>
+<span class="lineno">6 </span>  <span class="o">}</span>
+<span class="lineno">7 </span>  <span class="o">...</span>
+<span class="lineno">8 </span><span class="o">}</span>
+</pre>

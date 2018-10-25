@@ -1,0 +1,1 @@
+The program flow begins in the main method. Just as aMethod is invoked, the flow travels to the called method. At this very point, the flow branches to the other method. Once the method is completed, the flow is returned to the point it left off and resumes at the next statement after the call to the method.

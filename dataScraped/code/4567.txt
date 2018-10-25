@@ -1,0 +1,7 @@
+Code-Block-AW3<pre class="codeblock">        btn.setOnAction(<b>new EventHandler&lt;ActionEvent&gt;() {</b>
+
+            <b>@Override</b>
+            <b>public void handle(ActionEvent event) {</b>
+                <b>System.out.println("Hello World!");</b>
+            <b>}</b>
+        <b>}</b>);</pre>

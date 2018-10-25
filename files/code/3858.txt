@@ -1,0 +1,9 @@
+Code-Block-AW3<pre><span></span><span class="n">student</span><span class="o">.</span><span class="na">assignGrade</span><span class="o">(</span><span class="n">gradeA</span><span class="o">);</span>
+  <span class="cm">/**</span>
+<span class="cm">   * Assigns the grade for this course to the student</span>
+<span class="cm">   * @param GRADE  Grade to be assigned</span>
+<span class="cm">   */</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">assignGrade</span><span class="o">(</span><span class="kd">final</span> <span class="n">Grade</span> <span class="n">GRADE</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">grade</span> <span class="o">=</span> <span class="n">GRADE</span><span class="o">;</span>
+  <span class="o">}</span>
+</pre>

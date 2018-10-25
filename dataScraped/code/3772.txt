@@ -1,0 +1,12 @@
+Code-Block-AW3<pre><span></span><span class="kd">public</span> <span class="kd">enum</span> <span class="n">DayOfWeek</span> <span class="kd">implements</span> <span class="n">Runnable</span> <span class="o">{</span>
+  <span class="n">MONDAY</span><span class="o">,</span> <span class="n">TUESDAY</span><span class="o">,</span> <span class="n">WEDNESDAY</span><span class="o">,</span> <span class="n">THURSDAY</span><span class="o">,</span> <span class="n">FRIDAY</span><span class="o">,</span> <span class="n">SATURDAY</span><span class="o">,</span> <span class="n">SUNDAY</span><span class="o">;</span>
+ 
+  <span class="cm">/**</span>
+<span class="cm">   * Run method prints all elements</span>
+<span class="cm">   */</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
+    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"name() = "</span> <span class="o">+</span> <span class="n">name</span><span class="o">()</span> <span class="o">+</span>
+      <span class="s">", toString() = \""</span> <span class="o">+</span> <span class="n">toString</span><span class="o">()</span> <span class="o">+</span> <span class="s">"\""</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre>

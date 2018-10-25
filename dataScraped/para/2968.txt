@@ -1,0 +1,1 @@
+After creating a variable, one can manipulate its value by using Java's operators: + (addition), - (subtraction), * (multiplication), / (integer division), % (modulo or remainder), ++ (pre- & postincrement by one), -- (pre- & postdecrement by one).

@@ -1,0 +1,1 @@
+The compiler issues two error messages because after it processes count++, the compiler's state indicates that it's in the middle of an expression. Without the semicolon, the compiler has no way of knowing that the statement is complete.

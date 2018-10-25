@@ -1,0 +1,1 @@
+With the help of the XDoclet program, it was possible to use additional Javadoc tags in the code that this program would understand and generate code or data. For example, Javadoc tags were introduced to generate XML descriptors for EJBs. It introduced an additional step in the build process of an EJB, and compiling the code XDoclet would generate the XML descriptors.

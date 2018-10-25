@@ -1,0 +1,7 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="lineno">2 </span><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="lineno">3 </span>  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="lineno">4 </span><span class="hll">    HTML content before the applet.<span class="p">&lt;</span><span class="nt">applet</span> <span class="na">code</span><span class="o">=</span><span class="s">"HelloWorld"</span> <span class="na">height</span><span class="o">=</span><span class="s">"40"</span> <span class="na">width</span><span class="o">=</span><span class="s">"200"</span><span class="p">&gt;&lt;/</span><span class="nt">applet</span><span class="p">&gt;</span>HTML content after the applet.
+</span><span class="lineno">5 </span>  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="lineno">6 </span><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre>

@@ -1,0 +1,1 @@
+Note that equal objects must have equal hash codes. Therefore, when overriding the equals method, you must also override the hashCode method. Failure to do so violates the general contract for the hashCode method, and any classes that use the hash code, such as HashMap will not function properly.

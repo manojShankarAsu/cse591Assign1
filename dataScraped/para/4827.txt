@@ -1,0 +1,1 @@
+This ensures that, only Integer objects can be put in the field and a ClassCastException can't occur at runtime, only compile-time error can occur. Unfortunately, it can be used only with Integer objects. If you want to use the same class in another context with Strings, you have to generalize the type like this:

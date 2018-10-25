@@ -1,0 +1,1 @@
+The invoke() method returns an Object that will contain the result that the reflected method returns. In this case, our main method is a void method, so we ignore the return type. Most of the methods in this short invokeMain method may throw various exceptions. The method declares all of them in its signatures. Here is a brief rundown of what might throw an exception:

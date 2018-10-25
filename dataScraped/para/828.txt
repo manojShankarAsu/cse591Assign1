@@ -1,0 +1,1 @@
+Next, we must define a listener interface. This interface must define methods for interesting events and must extend java.util.EventListener. We said earlier our interesting events were "number read" and "end of stream reached", so here we go:

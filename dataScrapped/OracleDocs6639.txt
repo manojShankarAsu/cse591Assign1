@@ -1,0 +1,1 @@
+A Closer Look at "Hello World!" Discusses the "Hello World!" application, describing each section of code in detail. It covers source code comments, the HelloWorldApp class definition block, and the main method.

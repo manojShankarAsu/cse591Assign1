@@ -1,0 +1,5 @@
+Code-Block-AW3<pre>class <i>MyClass extends MySuperClass implements YourInterface</i> {
+    // field, constructor, and
+    // method declarations
+}
+</pre>

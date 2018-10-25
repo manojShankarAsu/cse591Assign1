@@ -1,0 +1,14 @@
+Code-Block-AW3<pre>public double computePayment(
+                  double <b>loanAmt</b>,
+                  double <b>rate</b>,
+                  double <b>futureValue</b>,
+                  int <b>numPeriods</b>) {
+    double interest = <b>rate</b> / 100.0;
+    double partial1 = Math.pow((1 + interest), 
+                    - <b>numPeriods</b>);
+    double denominator = (1 - partial1) / interest;
+    double answer = (-<b>loanAmt</b> / denominator)
+                    - ((<b>futureValue</b> * partial1) / denominator);
+    return answer;
+}
+</pre>

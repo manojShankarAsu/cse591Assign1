@@ -1,0 +1,1 @@
+Document Object Model introduces the tree structure used by the Document Object Model (DOM) and shows you how to use the DOM functions to create nodes, remove nodes, change the contents of the nodes, and to traverse the node hierarchy.

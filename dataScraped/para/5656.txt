@@ -1,0 +1,1 @@
+Extensions are bundled as Java Archive (JAR) files, and this trail assumes that you are familiar with the JAR file format. If you're not up to speed on JAR files, you might want to review some JAR-file documentation before proceeding with the lessons in this trail:

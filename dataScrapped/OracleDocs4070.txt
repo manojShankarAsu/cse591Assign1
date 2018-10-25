@@ -1,0 +1,1 @@
+The source files you create should be kept in a separate directory. You can create a directory by using the command mkdir. For example, to create the directory examples/java in the /tmp directory, use the following commands:

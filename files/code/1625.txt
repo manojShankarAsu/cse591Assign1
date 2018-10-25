@@ -1,0 +1,6 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Plane</span> <span class="kd">extends</span> <span class="n">Vehicle</span> <span class="o">{</span>
+<span class="lineno">2 </span>    <span class="kd">public</span> <span class="nf">Plane</span><span class="o">()</span> <span class="o">{</span>
+<span class="lineno">3 </span><span class="hll">        <span class="kd">super</span><span class="o">();</span>
+</span><span class="lineno">4 </span>    <span class="o">}</span>
+<span class="lineno">5 </span><span class="o">}</span>
+</pre>

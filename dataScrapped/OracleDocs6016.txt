@@ -1,0 +1,1 @@
+Built-in security functionality protects you from malevolent programs (including viruses), maintains the privacy of your files and information about you, and authenticates the identity of each code provider. You can subject applications and applets to security controls when you need to.

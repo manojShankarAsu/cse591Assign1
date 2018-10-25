@@ -1,0 +1,9 @@
+Code-Block-AW3<pre><span></span><span class="n">Animal</span> <span class="n">animal1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Animal</span><span class="o">();</span>
+<span class="n">Animal</span> <span class="n">animal2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Animal</span><span class="o">();</span>
+
+<span class="n">animal1</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="s">"dog"</span><span class="o">;</span>
+<span class="n">animal1</span><span class="o">.</span><span class="na">legs</span> <span class="o">=</span> <span class="mi">4</span><span class="o">;</span>
+
+<span class="n">animal2</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="s">"duck"</span><span class="o">;</span>
+<span class="n">animal2</span><span class="o">.</span><span class="na">legs</span> <span class="o">=</span> <span class="mi">2</span><span class="o">;</span>
+</pre>

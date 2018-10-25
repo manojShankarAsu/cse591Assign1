@@ -1,0 +1,1 @@
+You can use any data type for a parameter of a method or a constructor. This includes primitive data types, such as doubles, floats, and integers, as you saw in the computePayment method, and reference data types, such as objects and arrays.considered as a mini book by itself. Pages that belong to the same topic can be navigated by the links on the right hand side.

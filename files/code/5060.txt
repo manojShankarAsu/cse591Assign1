@@ -1,0 +1,10 @@
+Code-Block-AW3<pre>/**
+ * The HelloWorldApp class implements an application that
+ * simply displays "Hello World!" to the standard output.
+ */
+class HelloWorldApp {
+    <b>public static void main(String[] args) {</b>
+        System.out.println("Hello World!"); //Display the string.
+    <b>}</b>
+}
+</pre>

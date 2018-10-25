@@ -1,0 +1,5 @@
+Code-Block-AW3<pre><code><font style="color:DarkGreen; text-decoration: none; font-weight: bold;">"It is a Java Object and It is a Fruit and it is an Apple"</font></code>
+<code><font style="color:DarkGreen; text-decoration: none; font-weight: bold;">"It is a Java Object and It is a Fruit and it is an Apple"</font></code>
+<code><font style="color:DarkGreen; text-decoration: none; font-weight: bold;">"It is a Java Object and It is a Fruit and it is an Orange"</font></code>
+<code><font style="color:DarkGreen; text-decoration: none; font-weight: bold;">"It is a Java Object and It is a Fruit and it is an Orange"</font></code>
+</pre>

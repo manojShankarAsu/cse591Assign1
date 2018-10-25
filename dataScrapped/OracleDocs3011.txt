@@ -1,0 +1,1 @@
+For the purpose of drawing graphics, you may use any other class derived from the Component class, for instance, JPanel or even JTextField or JButton. Why we use the Canvas class is purely to grasp the idea of drawing in Java.

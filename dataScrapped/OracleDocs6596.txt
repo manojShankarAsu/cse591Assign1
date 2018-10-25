@@ -1,0 +1,1 @@
+You surely would have noticed by now, the words public, protected and private at the beginning of class's method declarations used in this book. These keywords are called the access modifiers in the Java language syntax, and they define the scope of a given item.

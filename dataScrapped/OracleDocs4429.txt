@@ -1,0 +1,1 @@
+What look like methods in the body of the annotation definition are called annotation element declarations. These are the named entities that we used with the annotation body in the example in the previous section. However, for the sake of clarity, code below also represents the calling of the following annotation:

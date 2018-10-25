@@ -1,0 +1,1 @@
+Note: Fields are called different things in different languages. They may be called state identifiers, properties or member variables in other programming language syntax. Java uses the words fields and properties in different contexts, as would be understood from upcoming sections.

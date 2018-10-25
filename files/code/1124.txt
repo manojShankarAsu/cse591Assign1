@@ -1,0 +1,37 @@
+Code-Block-AW3<pre><span></span> 
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ArrayListDemo</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+		<span class="c1">// create an array list</span>
+		<span class="n">ArrayList</span> <span class="n">al</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">();</span>
+
+		<span class="c1">// add elements to the array list</span>
+		<span class="n">al</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"A"</span><span class="o">);</span>
+		<span class="n">al</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"B"</span><span class="o">);</span>
+		<span class="n">al</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"C"</span><span class="o">);</span>
+		<span class="n">al</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"A"</span><span class="o">);</span>
+		<span class="n">al</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"D"</span><span class="o">);</span>
+		<span class="n">al</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"A"</span><span class="o">);</span>
+		<span class="n">al</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"E"</span><span class="o">);</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Contents of al : "</span> <span class="o">+</span> <span class="n">al</span><span class="o">);</span>
+
+		<span class="c1">// find index of element in ArrayList</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Index of D : "</span> <span class="o">+</span> <span class="n">al</span><span class="o">.</span><span class="na">indexOf</span><span class="o">(</span><span class="s">"D"</span><span class="o">));</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Index of A : "</span> <span class="o">+</span> <span class="n">al</span><span class="o">.</span><span class="na">indexOf</span><span class="o">(</span><span class="s">"A"</span><span class="o">));</span>
+
+		<span class="c1">// find index of element in ArrayList</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Index of A : "</span> <span class="o">+</span> <span class="n">al</span><span class="o">.</span><span class="na">lastIndexOf</span><span class="o">(</span><span class="s">"A"</span><span class="o">));</span>
+
+		<span class="c1">// get element at given Index</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Element at Second Index : "</span> <span class="o">+</span> <span class="n">al</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="mi">2</span><span class="o">));</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Element at Sixth Index : "</span> <span class="o">+</span> <span class="n">al</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="mi">6</span><span class="o">));</span>
+		
+		<span class="c1">//set element at given Index</span>
+		<span class="n">al</span><span class="o">.</span><span class="na">set</span><span class="o">(</span><span class="mi">3</span><span class="o">,</span><span class="s">"B"</span><span class="o">);</span> <span class="c1">// replacing third index element by "B"</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Contents of al : "</span> <span class="o">+</span> <span class="n">al</span><span class="o">);</span>
+		
+		<span class="c1">//check ArrayList contains given element</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"ArrayList contain D : "</span><span class="o">+</span><span class="n">al</span><span class="o">.</span><span class="na">contains</span><span class="o">(</span><span class="s">"D"</span><span class="o">));</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"ArrayList contain F : "</span><span class="o">+</span><span class="n">al</span><span class="o">.</span><span class="na">contains</span><span class="o">(</span><span class="s">"F"</span><span class="o">));</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</pre>

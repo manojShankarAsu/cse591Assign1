@@ -1,0 +1,4 @@
+Code-Block-AW3<pre><span></span><span class="kd">protected</span> <span class="kt">int</span> <span class="nf">getAge</span><span class="o">();</span>
+
+<span class="kd">protected</span> <span class="kt">void</span> <span class="nf">setYearOfBirth</span><span class="o">(</span><span class="kt">int</span> <span class="n">year</span><span class="o">);</span>
+</pre>

@@ -1,0 +1,1 @@
+The Java package needs to be unique across Vendors to avoid name collisions. For that reason Vendors usually use their domain name in reverse order. That is guaranteed to be unique. For example a company called Your Company Inc., would use a package name something like this: com.yourcompany.yourapplicationname.yourmodule.YourClass.

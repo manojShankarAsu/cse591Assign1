@@ -19,7 +19,14 @@ from flask_bootstrap import Bootstrap
 from flask_moment import Moment
 from flask import make_response
 import json
-from search import add_to_index, remove_from_index, query_index
+import os
+from os import listdir
+import sys
+import logging
+from logging import Formatter,FileHandler
+from elasticsearch import Elasticsearch
+import pandas as pd
+from pandas import DataFrame
 
 application = Flask(__name__)
 application.config.from_object(Config)
@@ -33,7 +40,7 @@ application.elasticsearch = Elasticsearch([application.config['ELASTICSEARCH_URL
         if application.config['ELASTICSEARCH_URL'] else None
 
 action_type={"up vote":1,"down vote":"2","submit-button":3,"scroll":4,"doubleclick":5,"askQuestion":6,"questionClicked":7}
-
+application.err_count = 0
 
 class User(UserMixin,db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -306,15 +313,107 @@ def getSocialCounts():
 def crawl_files():
     pass
 
+def add_file_to_index(files, directory, index_name):
+    application.logger.info('Adding files to index')
+    for file in files:
+        filename = ''
+        if "Oracle" in file:
+            filename = 'oracle'
+        else:
+            filename = 'wikibooks'
+        filename = filename + "_"+ file
+        file_path = os.path.join(directory,file)
+        file_obj = open(file_path,"r",encoding='utf-8')
+        file_db = IndexedFile(name=file)
+        db.session.add(file_db)
+        db.session.commit()
+        add_to_index(index_name,file_db.id,filename,file_obj)
+
 def index_files():
-    pass
+    code_dir = os.path.join(os.getcwd(),"dataScrapped")
+    application.logger.info(code_dir)
+    files = os.listdir(code_dir)
+    application.logger.info('Started FIle indexing  ')
+    application.logger.info(code_dir)
+    add_file_to_index(files , code_dir,'java2')
+    application.logger.info('FIle indexing done ')
+    application.logger.error('no of files not indexed ')
+    application.logger.error(application.err_count)
 
 # run the app.
+
+def add_to_index(index, obj_id,filename,file_obj):
+    if not application.elasticsearch:
+        return    
+    payload = {}
+    #content = content.encode('utf-8')
+    try:
+        payload['text']=file_obj.read()
+        payload['name']=filename
+        application.elasticsearch.index(index=index, doc_type=index, id=obj_id,
+                                    body=payload)
+    except Exception as detail:
+        application.logger.error('cannot index')
+        application.logger.error(filename)
+        application.logger.error(detail)
+        application.err_count = application.err_count + 1
+        pass
+
+def remove_from_index(index, obj_id):
+    if not application.elasticsearch:
+        return
+    application.elasticsearch.delete(index=index, doc_type=index, id=obj_id)
+
+def query_index(index, query, page, per_page):
+    if not application.elasticsearch:
+        return [], 0
+    search = application.elasticsearch.search(
+        index=index, doc_type=index,
+        body={'query': {'multi_match': {'query': query, 'fields': ['*']}},
+              'from': (page - 1) * per_page, 'size': per_page})
+    ids = [int(hit['_id']) for hit in search['hits']['hits']]
+    return search
+
+def read_queries():
+    application.logger.info('Reading excel file ')
+    query_dir = os.path.join(os.getcwd(),"queries")    
+    files = os.listdir(query_dir)
+    for excel in files:
+        file_path = os.path.join(query_dir,excel)
+        xl = pd.read_excel(file_path)
+        xl['text'] = xl['text'].fillna('')
+        xl['code'] = xl['code'].fillna('')
+        for index, row in xl.iterrows():            
+            print('Text')
+            print(row['text'])
+            print("Search result")
+            print(query_index('java2',row['text'],1,10))
+            print('Code')
+            print(row['code'])
+            print("Search result")
+            print(query_index('java2',row['code'],1,10))
+
 if __name__ == "__main__":
     # Setting debug to True enables debug output. This line should be
     # removed before deploying a production app.
     application.debug = True
-    create_tables()
+    #create_tables()
+    file_handler = FileHandler('info.log')
+    handler = logging.StreamHandler()
+    file_handler.setLevel(logging.DEBUG)
+    handler.setLevel(logging.DEBUG)
+    file_handler.setFormatter(Formatter(
+        '%(asctime)s %(levelname)s: %(message)s '
+        '[in %(pathname)s:%(lineno)d]'
+     ))
+    handler.setFormatter(Formatter(
+        '%(asctime)s %(levelname)s: %(message)s '
+        '[in %(pathname)s:%(lineno)d]'
+     ))
+    application.logger.addHandler(handler)
+    application.logger.addHandler(file_handler)
+    application.logger.error('first test message...')
     crawl_files()
-    index_file()
-    application.run()
+    #index_files()
+    read_queries()
+    #application.run(debug=True)

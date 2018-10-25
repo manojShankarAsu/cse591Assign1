@@ -1,0 +1,4 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span>  <span class="kd">public</span> <span class="nf">MyClass</span><span class="o">()</span> <span class="o">{</span>
+<span class="lineno">2 </span><span class="hll">    <span class="k">this</span><span class="o">(</span><span class="s">"Default Value"</span><span class="o">);</span>
+</span><span class="lineno">3 </span>  <span class="o">}</span>
+</pre>

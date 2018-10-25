@@ -1,0 +1,6 @@
+Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="cm">/* This comment appears to contain /* a nested comment. */</span>
+<span class="lineno">2 </span> <span class="o">*</span> <span class="n">The</span> <span class="n">comment</span> <span class="n">ends</span> <span class="n">after</span> <span class="n">the</span> <span class="n">first</span> <span class="n">star</span><span class="o">-</span><span class="n">slash</span> <span class="n">and</span>
+<span class="lineno">3 </span> <span class="o">*</span> <span class="n">everything</span> <span class="n">after</span> <span class="n">the</span> <span class="n">star</span><span class="o">-</span><span class="n">slash</span> <span class="n">sequence</span> <span class="n">is</span> <span class="n">parsed</span>
+<span class="lineno">4 </span> <span class="o">*</span> <span class="n">as</span> <span class="n">non</span><span class="o">-</span><span class="n">comment</span> <span class="n">source</span><span class="o">.</span>
+<span class="lineno">5 </span> <span class="o">*/</span>
+</pre>

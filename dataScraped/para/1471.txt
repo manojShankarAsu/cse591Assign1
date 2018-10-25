@@ -1,0 +1,1 @@
+The description page of a package copy the description text from the file named package.html which should be placed in the given folder. In our example, we should document the package in the file C:\ProgJava\org\wikibooks\en\package.html.
