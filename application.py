@@ -172,9 +172,9 @@ def before_request():
 @application.route('/')
 @application.route('/index')
 def index():
-    #java_posts = read_queries()
-    #return render_template('index.html', title='Home', posts =  java_posts)
-    return render_template('test.html')
+    java_posts = read_queries()
+    return render_template('index.html', title='Home', posts =  java_posts)
+    #return render_template('test.html')
 
 @application.route('/login', methods=['GET', 'POST'])
 def login():
@@ -486,5 +486,5 @@ if __name__ == "__main__":
     application.logger.addHandler(file_handler)
     crawl_files()
     index_files()
-    #application.run(debug=True)
+    application.run(debug=True)
 
