@@ -27,6 +27,7 @@ from logging import Formatter,FileHandler
 from elasticsearch import Elasticsearch
 import pandas as pd
 from pandas import DataFrame
+import urllib.parse
 
 application = Flask(__name__)
 application.config.from_object(Config)
@@ -412,13 +413,16 @@ def read_queries():
             # print("Search result")            
             result = query_index('java3',row['text'],1,7)
             strings = set()
+            file_name = ''
             for post in result['hits']['hits']:
-                # print('Name:')
-                # print(post['_source']['name'])
-                # print('Content')
-                # print(post['_source']['text'])    
-                if post['_source']['text'] not in strings:                    
-                    recommendation = Recommendations(post['_id'],post['_source']['name'], post['_source']['text'],'Text')
+                
+                if post['_source']['text'] not in strings: 
+                    file_name =  post['_source']['name']
+                    res =  file_name.split(" ")
+                    file_name = res[1]
+                    file_name=urllib.parse.unquote(file_name)
+                    file_name = file_name.replace('.txt','')
+                    recommendation = Recommendations(post['_id'],file_name, post['_source']['text'],'Text')
                     strings.add(post['_source']['text'])
                     java_post.reclist.append(recommendation)
             # print('Code')
@@ -435,7 +439,12 @@ def read_queries():
                 if 'Code-Block-AW3' in post['_source']['text']:
                     doc_type = 'Code'
                 if post['_source']['text'] not in strings:
-                    recommendation = Recommendations(post['_id'],post['_source']['name'], post['_source']['text'],doc_type)
+                    file_name =  post['_source']['name']
+                    res =  file_name.split(" ")
+                    file_name = res[1]
+                    file_name=urllib.parse.unquote(file_name)
+                    file_name = file_name.replace('.txt','')
+                    recommendation = Recommendations(post['_id'],file_name, post['_source']['text'],doc_type)
                     java_post.reclist.append(recommendation)
                     strings.add(post['_source']['text'])
             java_posts.append(java_post)

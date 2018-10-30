@@ -1,28 +1,24 @@
-<table class="table table-hover">
 
-        <tr>
-            <td>          
-            	<div id={{post.id}} onclick="displayAndShow('{{post.id}}')">
-
-		            <b>Java Post:                                </b>
-		                {{ post.content }}
-		            
-		            {% if post.code %}
-		          
-		            	<br>
-		            <b>Code:                                      </b>
-		                {{ post.code }}
-		                            
+            	<div class="panel " id={{post.id}} onclick="displayAndShow('{{post.id}}')">
+        			<li class="panel-heading font-weight-bold">
+        				<h5><h3>Query:{{ post.id}}</h3><br> <br>{{ post.content }} 		           		            
+		            {% if post.code %}	          
+		            <br>
+		            <b>Code:</b><br>
+		                {{ post.code }}	                            
 		        	{% endif %}
-
-		        	<div id='recommends' style="display: none">
+					</h5>
+		        	
 			        {% if post.reclist %}
+
+			        <div id='recommends{{post.id}}' style="display: none">
+			        	<h4> Recommended posts:</h4>
+			        	<ul class="panel-body list-group">
 			        	{% for recommendations in post.reclist %}
 			        		{% include '_recommendation.html' %}
 			    		{% endfor %}
-			    	{% endif %}
+			    		<ul>
 			    	</div>
+			    	{% endif %}			    	
+			    </li>
 	    		</div>
-        	</td>
-        </tr>
-</table>

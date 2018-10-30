@@ -1,14 +1,15 @@
-<table class="table table-hover">
         
-        <tr>
-        	<td>
-             {% if recommendations.doc_type == 'Text' %}
-                Text:<br>
+        <div>
+            <li>
+                <b>Source:</b>
+                    {{ recommendations.url|safe}}
+                <br>
+                {% if recommendations.doc_type == 'Text' %}                
                 {{ recommendations.content }}
-            {% elif recommendations.doc_type == 'Code'%}
-                Code:<br>
-                {{ recommendations.content }}
-            {% endif %}   
-            </td>
-        </tr>
-</table>
+                {% elif recommendations.doc_type == 'Code'%}
+                {{ recommendations.content|safe }}
+                {% endif %}
+                <br>
+                
+            </li>
+        </div>
