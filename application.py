@@ -486,5 +486,5 @@ if __name__ == "__main__":
     application.logger.addHandler(file_handler)
     crawl_files()
     index_files()
-    application.run(debug=True)
+    #application.run(debug=True)
 
