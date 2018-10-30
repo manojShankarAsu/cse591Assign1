@@ -39,6 +39,7 @@ bootstrap = Bootstrap(application)
 moment = Moment(application)
 application.elasticsearch = Elasticsearch([application.config['ELASTICSEARCH_URL']]) \
         if application.config['ELASTICSEARCH_URL'] else None
+application.indexName = 'java3'
 
 action_type={"up vote":1,"down vote":"2","submit-button":3,"scroll":4,"doubleclick":5,"askQuestion":6,"questionClicked":7}
 application.err_count = 0
@@ -344,14 +345,20 @@ def add_file_to_index(files, directory, index_name):
         add_to_index(index_name,file_db.id,filename,file_obj)
 
 def index_files():
-    check_index = application.elasticsearch.indices.get_alias("java3")
+    check_index = None
+    try:
+        check_index = application.elasticsearch.indices.get_alias(application.indexName)
+    except Exception as detail:
+        application.logger.error(detail)
+        pass
+
     if check_index is None:
         code_dir = os.path.join(os.getcwd(),"dataScrapped_urls")
         application.logger.info(code_dir)
         files = os.listdir(code_dir)
         application.logger.info('Started FIle indexing  ')
         application.logger.info(code_dir)
-        add_file_to_index(files , code_dir,'java3')
+        add_file_to_index(files , code_dir,application.indexName)
         application.logger.info('FIle indexing done ')
         application.logger.error('no of files not indexed ')
         application.logger.error(application.err_count)
@@ -415,7 +422,7 @@ def read_queries():
             # print('Text')
             # print(row['text'])
             # print("Search result")            
-            result = query_index('java3',row['text'],1,7)
+            result = query_index(application.indexName,row['text'],1,7)
             strings = set()
             file_name = ''
             for post in result['hits']['hits']:
@@ -432,7 +439,7 @@ def read_queries():
             # print('Code')
             # print(row['code'])
             # print("Search result")
-            result = query_index('java3',row['code'],1,5)
+            result = query_index(application.indexName,row['code'],1,5)
             doc_type = ''
             for post in result['hits']['hits']:
                 # print('Name:')
@@ -477,6 +484,5 @@ if __name__ == "__main__":
     application.logger.addHandler(file_handler)
     crawl_files()
     index_files()
-    #read_queries()
     application.run(debug=True)
 
