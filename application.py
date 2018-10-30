@@ -39,7 +39,7 @@ bootstrap = Bootstrap(application)
 moment = Moment(application)
 application.elasticsearch = Elasticsearch([application.config['ELASTICSEARCH_URL']]) \
         if application.config['ELASTICSEARCH_URL'] else None
-application.indexName = 'java5'
+application.indexName = 'java3'
 
 action_type={"up vote":1,"down vote":"2","submit-button":3,"scroll":4,"doubleclick":5,"askQuestion":6,"questionClicked":7}
 application.err_count = 0
@@ -172,6 +172,7 @@ def before_request():
 @application.route('/')
 @application.route('/index')
 def index():
+    index_files()
     java_posts = read_queries()
     return render_template('index.html', title='Home', posts =  java_posts)
     #return render_template('test.html')
