@@ -172,8 +172,9 @@ def before_request():
 @application.route('/')
 @application.route('/index')
 def index():
-    java_posts = read_queries()
-    return render_template('index.html', title='Home', posts =  java_posts)
+    #java_posts = read_queries()
+    #return render_template('index.html', title='Home', posts =  java_posts)
+    return render_template('test.html')
 
 @application.route('/login', methods=['GET', 'POST'])
 def login():
