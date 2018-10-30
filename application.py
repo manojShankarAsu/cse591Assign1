@@ -346,6 +346,7 @@ def add_file_to_index(files, directory, index_name):
         add_to_index(index_name,file_db.id,filename,file_obj)
 
 def index_files():
+    application.logger.info('Inside index_files method ')
     check_index = None
     try:
         check_index = application.elasticsearch.indices.get_alias(application.indexName)
@@ -469,7 +470,7 @@ if __name__ == "__main__":
     # removed before deploying a production app.
     application.debug = True
     #create_tables()
-    file_handler = FileHandler('info.log')
+    file_handler = FileHandler('info2.log')
     handler = logging.StreamHandler()
     file_handler.setLevel(logging.DEBUG)
     handler.setLevel(logging.DEBUG)
