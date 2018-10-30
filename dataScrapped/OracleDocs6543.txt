@@ -1,1 +1,0 @@
-Generally, it is best to make data private or protected. Access to the data is controlled by setter and getter methods. This lets the programmer control access to data, allowing him/her to check for and handle invalid data.

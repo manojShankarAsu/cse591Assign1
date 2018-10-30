@@ -1,1 +1,0 @@
-A checked exception is a type of exception that must be either caught or declared in the method in which it is thrown. For example, the java.io.IOException is a checked exception. To understand what is a checked exception, consider the following code:

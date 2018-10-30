@@ -1,6 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="k">try</span> <span class="o">{</span>
-<span class="lineno">2 </span>    <span class="n">lowLevelOp</span><span class="o">();</span>
-<span class="lineno">3 </span><span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">LowLevelException</span> <span class="n">le</span><span class="o">)</span> <span class="o">{</span>
-<span class="lineno">4 </span><span class="hll">    <span class="k">throw</span> <span class="o">(</span><span class="n">HighLevelException</span><span class="o">)</span> <span class="k">new</span> <span class="n">HighLevelException</span><span class="o">().</span><span class="na">initCause</span><span class="o">(</span><span class="n">le</span><span class="o">);</span>
-</span><span class="lineno">5 </span><span class="o">}</span>
-</pre>

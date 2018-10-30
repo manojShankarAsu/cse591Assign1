@@ -1,6 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="n">String</span> <span class="n">badlyCutText</span> <span class="o">=</span> <span class="s">"     Java is great.     "</span><span class="o">;</span>
-<span class="lineno">2 </span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">badlyCutText</span><span class="o">);</span>
-<span class="lineno">3 </span>
-<span class="lineno">4 </span><span class="hll"><span class="n">badlyCutText</span> <span class="o">=</span> <span class="n">badlyCutText</span><span class="o">.</span><span class="na">trim</span><span class="o">();</span>
-</span><span class="lineno">5 </span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">badlyCutText</span><span class="o">);</span>
-</pre>

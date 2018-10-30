@@ -1,1 +1,0 @@
-The Java programming language compiler (javac) takes your source file and translates its text into instructions that the Java virtual machine can understand. The instructions contained within this .class file are known as bytecodes.

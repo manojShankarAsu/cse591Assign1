@@ -1,1 +1,0 @@
-The simplest, most elegant way to deal with this type of relationship is to read the bean properties using introspection. The jakarta BeanUtils package is a common way of handling objects that need to be related in this way, as it takes advantage of the regularity of JavaBean naming conventions.

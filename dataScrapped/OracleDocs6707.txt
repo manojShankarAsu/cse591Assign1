@@ -1,1 +1,0 @@
-By counting from there, it is apparent that the character in index 3 is the second "f" in "coffee". This is known as the beginIndex. All characters from the beginIndex until the end of the string will be copied into the new substring.

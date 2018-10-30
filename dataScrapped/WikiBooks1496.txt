@@ -1,1 +1,0 @@
-There are two types of code examples, one which displays just a small snippet of code, and another which displays a whole program or file. I think the snippets can just be held within the source tags, but sometimes I think it could be tidier if they were surrounded with a box, but it seems like a lot of effort employing css overrides(please correct me if I'm wrong).

@@ -1,1 +1,0 @@
-The above code is an example of a nesting exception. When the Exception is thrown, by passing in the ClassCastException object reference as a parameter, the ClassCastException is nested in the newly created Exception, its stack-trace is appended together. When the Exception is caught, its stack-trace contains the original ClassCastException's stack-trace.

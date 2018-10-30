@@ -1,1 +1,0 @@
-Before a Java object can be created the class byte code must be loaded from the file system (with .class extension) to memory. This process of locating the byte code for a given class name and converting that code into a Java class instance is known as class loading. There is one class created for each type of Java class.

@@ -1,1 +1,0 @@
-The main() method invokes the final method, intValue(), four times. The intValue() takes a single string parameter and returns the integer value represented in the string. For example, intValue("3") will return the integer 3.

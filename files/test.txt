@@ -1,1 +1,0 @@
-This is a text file. It contains tutorial of Java. 

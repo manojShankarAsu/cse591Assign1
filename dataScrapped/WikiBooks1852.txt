@@ -1,1 +1,0 @@
-It can be said that the execution order of the threads was manipulated to some degree using the Thread.sleep(...) method. The Thread class has such static methods that can arguably affect the execution order and manipulation of threads. Below are some useful static methods in the Thread class. These methods when called will only affect the currently running threads.

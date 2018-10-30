@@ -1,7 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">init</span><span class="o">()</span> <span class="o">{</span>
-<span class="lineno">2 </span><span class="hll">    <span class="n">setLayout</span><span class="o">(</span><span class="k">new</span> <span class="n">FlowLayout</span><span class="o">());</span>
-</span><span class="lineno">3 </span>    <span class="n">add</span><span class="o">(</span><span class="n">nameLabel</span><span class="o">);</span>
-<span class="lineno">4 </span>    <span class="n">add</span><span class="o">(</span><span class="n">t1</span><span class="o">);</span>
-<span class="lineno">5 </span>    <span class="n">add</span><span class="o">(</span><span class="n">submitButton</span><span class="o">);</span>
-<span class="lineno">6 </span><span class="o">}</span>
-</pre>

@@ -1,7 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">testInner</span><span class="o">()</span> <span class="o">{</span>
-<span class="lineno">2 </span>    <span class="o">...</span>
-<span class="lineno">3 </span><span class="hll">    <span class="n">OuterClass</span> <span class="n">outer</span> <span class="o">=</span> <span class="k">new</span> <span class="n">OuterClass</span><span class="o">();</span>
-</span><span class="lineno">4 </span><span class="hll">    <span class="n">OuterClass</span><span class="o">.</span><span class="na">InnerClass</span> <span class="n">inner</span> <span class="o">=</span> <span class="n">outer</span><span class="o">.</span><span class="na">new</span> <span class="nf">InnerClass</span><span class="o">();</span>  
-</span><span class="lineno">5 </span>    <span class="o">...</span>
-<span class="lineno">6 </span><span class="o">}</span>
-</pre>

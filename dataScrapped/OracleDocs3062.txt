@@ -1,1 +1,0 @@
-Unlike other dynamic class loading techniques, this can be used even without security permission provided the classes come from the same Web domain as the caller. Once a ClassLoader instance is obtained, a class can be loaded via the loadClass method. For example, to load the class com.example.MyClass, one would:

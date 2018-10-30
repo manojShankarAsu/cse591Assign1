@@ -1,3 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">24</span><span class="o">;</span>
-<span class="lineno">2 </span><span class="kt">long</span> <span class="n">bankBalance</span> <span class="o">=</span> <span class="mi">20000005L</span><span class="o">;</span>
-</pre>

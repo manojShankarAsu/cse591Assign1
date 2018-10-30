@@ -1,1 +1,0 @@
-Cloning is not automatically available to classes. There is some help though, as all Java objects inherit the protected Object clone() method. This base method would allocate the memory and do the bit by bit copying of the object's states.

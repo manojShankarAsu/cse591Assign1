@@ -1,2 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="kd">private</span> <span class="kd">volatile</span> <span class="n">changingVar</span><span class="o">;</span>
-</pre>

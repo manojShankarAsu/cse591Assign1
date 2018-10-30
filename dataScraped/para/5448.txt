@@ -1,1 +1,0 @@
-This Stealth Project was later named the Green Project when James Gosling and Mike Sheridan joined Patrick.[1] As the Green Project teethed, the prospects of the project started becoming clearer to the engineers working on it. No longer did it aim to create a new language far superior to the present ones, but it aimed to target devices other than the computer.

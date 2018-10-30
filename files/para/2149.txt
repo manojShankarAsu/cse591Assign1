@@ -1,1 +1,0 @@
-In the JNI framework, native functions are implemented in separate .c or .cpp files. C++ provides a slightly simpler interface with JNI. When the JVM invokes the function, it passes a JNIEnv pointer, a jobject pointer, and any Java arguments declared by the Java method. A JNI function may look like this:

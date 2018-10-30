@@ -1,2 +1,0 @@
-Code-Block-AW3<pre><code><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;"><a href="/wiki/Java_Programming/Keywords/for" title="Java Programming/Keywords/for">for</a></font></code> (<i>type</i> item&nbsp;: collection) statement;
-</pre>

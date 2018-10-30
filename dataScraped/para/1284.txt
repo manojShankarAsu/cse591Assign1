@@ -1,1 +1,0 @@
-To avoid unnecessary memory use like this, use the StringBuilder class. It provides similar functionality to Strings, but stores its data in a mutable way. Only one StringBuilder object is created. Also because object creation is time consuming, using StringBuilder produces much faster code.

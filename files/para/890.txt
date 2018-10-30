@@ -1,1 +1,0 @@
-if...else statements also allow for the use of another statement, else if. This statement is used to provide another if statement to the conditional that can only be executed if the others are not true. For example:

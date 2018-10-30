@@ -1,1 +1,0 @@
-As with instance fields, objectReference must be a reference to an object. You can use a variable name, but you also can use any expression that returns an object reference. The new operator returns an object reference, so you can use the value returned from new to invoke a new object's methods:

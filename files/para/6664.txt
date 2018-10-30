@@ -1,1 +1,0 @@
-To change to a directory on a different drive, you must type an extra command: the name of the drive. For example, to change to the myapplication directory on the D drive, you must enter D:, as follows:

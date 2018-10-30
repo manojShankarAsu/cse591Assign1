@@ -1,1 +1,0 @@
-By declaring all fields and methods public, we have ensured that they can be used outside the scope of the Animal class. This means that any other object (other than Animal) has access to these member elements. However, to restrict access to certain member elements of a class, we can always use the private access modifier (as demonstrated below).

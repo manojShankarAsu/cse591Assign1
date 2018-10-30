@@ -1,1 +1,0 @@
-To do that, fortunately, each java object has the boolean equals(Object obj), method available inherited from Object. You need to override it. That method will be called by the Set implementation to compare the two objects to see if they are equal or not.

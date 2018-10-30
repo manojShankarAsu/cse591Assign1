@@ -1,4 +1,0 @@
-Code-Block-AW3<pre>class <em>name</em> {
-    . . .
-}
-</pre>

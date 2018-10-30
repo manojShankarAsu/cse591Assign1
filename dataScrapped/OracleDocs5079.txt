@@ -1,1 +1,0 @@
-This section introduces you to some of the JAR-handling features of the Java platform. The JAR file format is an important part of the Java platform's extension mechanism. You can learn more about that aspect of JAR files in the The Extension Mechanism trail of this tutorial.

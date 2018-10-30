@@ -1,8 +1,0 @@
-Code-Block-AW3<pre><code>int <strong>cadence = 0</strong>;</code>
-<code><strong>anArray[0] = 100</strong>;</code>
-<code>System.out.println(<strong>"Element 1 at index 0: " + anArray[0]</strong>);</code>
-
-<code>int <strong>result = 1 + 2</strong>; // result is now 3</code>
-<code>if (<strong>value1 == value2</strong>) 
-    System.out.println(<strong>"value1 == value2"</strong>);</code>
-</pre>

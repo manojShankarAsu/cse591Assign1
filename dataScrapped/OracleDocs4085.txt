@@ -1,1 +1,0 @@
-This trail provides a brief overview of the RMI system and then walks through a complete client/server example that uses RMI's unique capabilities to load and to execute user-defined tasks at runtime. The server in the example implements a generic compute engine, which the client uses to compute the value of .

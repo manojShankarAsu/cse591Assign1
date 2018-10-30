@@ -1,1 +1,0 @@
-Sometimes the compiler can't guess your intent and prints a confusing error message or multiple error messages if the error cascades over several lines. For example, the following code snippet omits a semicolon (;) from the bold line:

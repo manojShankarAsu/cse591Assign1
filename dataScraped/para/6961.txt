@@ -1,1 +1,0 @@
-An object-oriented program is built from objects. A class is a "template" that is used to create objects. The class defines the values the object can contain and the operations that can be performed on the object.

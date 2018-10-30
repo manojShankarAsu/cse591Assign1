@@ -1,1 +1,0 @@
-By default, when an exception is thrown, the current method is interrupted, the calling method is interrupted too and so on till the main method. A thrown exception can also be caught using a try/catch statement. Below is how a try/catch statement works:

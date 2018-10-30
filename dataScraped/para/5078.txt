@@ -1,1 +1,0 @@
-The keyword class begins the class definition for a class named name, and the code for each class appears between the opening and closing curly braces marked in bold above. Chapter 2 provides an overview of classes in general, and Chapter 4 discusses classes in detail. For now it is enough to know that every application begins with a class definition.

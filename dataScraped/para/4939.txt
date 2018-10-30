@@ -1,1 +1,0 @@
-Such files can contain only ASCII and Latin-1 characters, but international programmers need a full range of character sets. Text using these characters can appear in properties files and resource bundles only if the non-ASCII and non-Latin-^1 characters are converted into Unicode escape sequences (\uXXXX notation).

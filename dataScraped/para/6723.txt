@@ -1,1 +1,0 @@
-You may ask why we need this clone method. Can't we create a constructor, pass in the same object and do the copying variable by variable? An example would be (note that accessing the private memberVar variable of obj is legal as this is in the same class):

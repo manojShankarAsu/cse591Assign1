@@ -1,2 +1,0 @@
-Code-Block-AW3<pre>&lt;object-reference&gt; <code><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;"><a href="/wiki/Java_Programming/Keywords/instanceof" title="Java Programming/Keywords/instanceof">instanceof</a></font></code> TypeName
-</pre>

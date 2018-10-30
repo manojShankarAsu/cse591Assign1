@@ -1,3 +1,0 @@
-Code-Block-AW3<pre class="codeblock">        btn.setOnAction(
-          <b>event -&gt; System.out.println("Hello World!")</b>
-        );</pre>

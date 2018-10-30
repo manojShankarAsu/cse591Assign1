@@ -1,1 +1,0 @@
-As StringBuilder isn't thread safe (see the chapter on Concurrency) you can't use it in more than one thread. For a multi-thread environment, use StringBuffer instead which does the same and is thread safe. However, StringBuffer is slower so only use it when it is required. Moreover, before Java 5 only StringBuffer existed.

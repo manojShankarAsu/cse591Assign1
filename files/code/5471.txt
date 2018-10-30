@@ -1,4 +1,0 @@
-Code-Block-AW3<pre>while (System.in.read() != -1)
-    <b>count++</b>
-System.out.println("Input has " + count + " chars."); 
-</pre>

@@ -1,2 +1,0 @@
-Code-Block-AW3<pre>&lt;JavaType&gt; &lt;variable&gt; = <code><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;"><a href="/wiki/Java_Programming/Keywords/new" title="Java Programming/Keywords/new">new</a></font></code> &lt;JavaObject&gt;();
-</pre>

@@ -1,1 +1,0 @@
-Inheritance is one of the most powerful mechanisms of the Object Oriented Programming. It allows the reuse of the members of a class (called the superclass or the mother class) in another class (called subclass, child class or the derived class) that inherits from it. This way, classes can be built by successive inheritance.

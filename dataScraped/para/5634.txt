@@ -1,1 +1,0 @@
-This means that the catch block order is important. As a consequence, you can't put a catch block that catches all the exception (which take a java.lang.Exception as parameter) before a catch block that catches a more specific exception as the second block could never be executed.

@@ -1,1 +1,0 @@
-abstract is a Java keyword. It can be applied to a class and methods. An abstract class cannot be directly instantiated. It must be placed before the variable type or the method return type. It is recommended to place it after the access modifier and after the static keyword. A non-abstract class is a concrete class. An abstract class cannot be final.

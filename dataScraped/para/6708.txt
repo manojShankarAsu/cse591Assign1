@@ -1,1 +1,0 @@
-By default, a class will have all of its fields serialized when converted into a data stream (with transient fields being skipped). If additional handling is required beyond the default of writing all fields, you need to provide an implementation for the following three methods:

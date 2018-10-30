@@ -1,1 +1,0 @@
-Instead of overloading, you can use a dynamic number of arguments. After the last parameter, you can pass optional unlimited parameters of the same type. These parameters are defined by adding a last parameter and adding ... after its type. The dynamic arguments will be received as an array:

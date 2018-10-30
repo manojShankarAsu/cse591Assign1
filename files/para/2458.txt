@@ -1,1 +1,0 @@
-Note that in addAll() we can add any type of collection. This is the beauty of using the Collection interface. You can have a LinkedList and just call the addAll(list) method, passing in a list. You can pass in a Vector, an ArrayList, a HashSet, a TreeSet, a YourImpOfCollection, ... All those different types of collection will be magically converted to a LinkedList.

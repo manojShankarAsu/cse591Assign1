@@ -1,4 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="n">String</span> <span class="n">text</span> <span class="o">=</span> <span class="s">"This is a String literal\n"</span>
-<span class="lineno">2 </span>            <span class="o">+</span> <span class="s">"which spans not one and not two\n"</span>
-<span class="lineno">3 </span>            <span class="o">+</span> <span class="s">"but three lines of text.\n"</span><span class="o">;</span>
-</pre>

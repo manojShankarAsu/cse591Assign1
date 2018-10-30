@@ -1,1 +1,0 @@
-Basically, you just have to write the code for your class or type definition once, and then use it to create countless numbers of objects based on that specification. Although you might not grasp the importance of doing so, this little exercise saves you a lot of time (a luxury that was not readily available to programmers in the pre-Java days).

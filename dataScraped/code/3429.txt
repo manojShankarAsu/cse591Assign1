@@ -1,2 +1,0 @@
-Code-Block-AW3<pre><code><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;"><a href="/wiki/Java_Programming/Keywords/protected" title="Java Programming/Keywords/protected">protected</a></font></code> &lt;returnType&gt; &lt;methodName&gt;(&lt;parameters&gt;);
-</pre>

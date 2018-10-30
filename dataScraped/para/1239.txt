@@ -1,1 +1,0 @@
-Please note that the endIndex is not inclusive. This means that the last character will be of the index endIndex-1. Therefore, in this example, every character from index 3 to index 6, inclusive, was copied into the substring.

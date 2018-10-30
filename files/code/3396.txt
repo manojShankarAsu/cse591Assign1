@@ -1,4 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="n">LinkedList</span> <span class="n">list</span> <span class="o">=</span> <span class="k">new</span> <span class="n">LinkedList</span><span class="o">();</span>
-<span class="kt">int</span><span class="o">[]</span> <span class="n">intArray</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="mi">10</span><span class="o">];</span>
-<span class="n">String</span><span class="o">[][]</span> <span class="n">stringMatrix</span> <span class="o">=</span> <span class="k">new</span> <span class="n">String</span><span class="o">[</span><span class="mi">5</span><span class="o">][</span><span class="mi">10</span><span class="o">];</span>
-</pre>

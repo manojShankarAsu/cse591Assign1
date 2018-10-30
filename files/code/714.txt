@@ -1,8 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">logIt</span><span class="o">(</span><span class="n">String</span> <span class="n">param</span><span class="o">,</span> <span class="n">Error</span> <span class="n">err</span><span class="o">)</span> <span class="o">{</span>
-<span class="lineno">2 </span>  <span class="o">...</span>
-<span class="lineno">3 </span><span class="o">}</span>
-<span class="lineno">4 </span>
-<span class="lineno">5 </span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">logIt</span><span class="o">(</span><span class="n">Error</span> <span class="n">err</span><span class="o">,</span> <span class="n">String</span> <span class="n">param</span><span class="o">)</span> <span class="o">{</span>
-<span class="lineno">6 </span>  <span class="o">...</span>
-<span class="lineno">7 </span><span class="o">}</span>
-</pre>

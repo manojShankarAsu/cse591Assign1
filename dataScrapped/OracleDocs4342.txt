@@ -1,4 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="o">(</span><span class="mi">2</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="o">)</span> <span class="o">?</span> <span class="kc">true</span> <span class="o">:</span> <span class="kc">false</span><span class="o">;</span>
-<span class="lineno">2 </span><span class="s">"text"</span><span class="o">.</span><span class="na">substring</span><span class="o">(</span><span class="mi">2</span><span class="o">);</span>
-<span class="lineno">3 </span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Display a hard coded float: "</span> <span class="o">+</span> <span class="mf">37.19f</span><span class="o">);</span>
-</pre>

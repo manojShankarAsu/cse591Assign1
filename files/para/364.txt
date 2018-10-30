@@ -1,1 +1,0 @@
-To run the program, you supply it with the x and y coordinates of two points on a plane separated by a space. For this version of Distance, only integer points are supported. The command sequence is java Distance <x0> <y0> <x1> <y1> to compute the distance between the points (x0, y0) and (x1, y1).

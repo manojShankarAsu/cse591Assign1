@@ -1,9 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="n">String</span> <span class="n">person1</span> <span class="o">=</span> <span class="s">"Peter"</span><span class="o">;</span>
-<span class="lineno">2 </span><span class="n">String</span> <span class="n">person2</span> <span class="o">=</span> <span class="s">"John"</span><span class="o">;</span>
-<span class="lineno">3 </span><span class="hll"><span class="k">if</span> <span class="o">(</span><span class="n">person1</span><span class="o">.</span><span class="na">compareTo</span><span class="o">(</span><span class="n">person2</span><span class="o">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
-</span><span class="lineno">4 </span>    <span class="c1">// Badly ordered</span>
-<span class="lineno">5 </span>    <span class="n">String</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">person1</span><span class="o">;</span>
-<span class="lineno">6 </span>    <span class="n">person1</span> <span class="o">=</span> <span class="n">person2</span><span class="o">;</span>
-<span class="lineno">7 </span>    <span class="n">person2</span> <span class="o">=</span> <span class="n">temp</span><span class="o">;</span>
-<span class="lineno">8 </span><span class="o">}</span>
-</pre>

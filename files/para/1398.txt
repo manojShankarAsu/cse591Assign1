@@ -1,1 +1,0 @@
-I suggest merging The Way of the Program into Java Programming. As far as I can tell, both books have exactly the same scope (Java programming) and target audience (people that don't know any programming language yet). --DavidCary (talk) 05:05, 5 June 2009 (UTC)

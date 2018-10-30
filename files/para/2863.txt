@@ -1,1 +1,0 @@
-To set the color of the fonts used in an applet, the setForeground(<color>) method is used. This method already includes some predefined colors which can be used by calling, for example, setForeground(Color.white). Here are all of the predefined colors:

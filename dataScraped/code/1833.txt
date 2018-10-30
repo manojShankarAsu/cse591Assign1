@@ -1,4 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="k">for</span> <span class="o">(;;)</span> <span class="o">{</span>
-<span class="lineno">2 </span>  <span class="c1">// Some code</span>
-<span class="lineno">3 </span><span class="o">}</span>
-</pre>

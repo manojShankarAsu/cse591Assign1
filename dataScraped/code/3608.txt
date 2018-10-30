@@ -1,4 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="k">for</span> <span class="o">(</span> <span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">maxLoopIter</span><span class="o">;</span> <span class="n">i</span><span class="o">++</span> <span class="o">)</span> <span class="o">{</span>
-    <span class="n">System</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Iter: "</span> <span class="o">+</span><span class="n">i</span><span class="o">);</span>
-<span class="o">}</span>
-</pre>

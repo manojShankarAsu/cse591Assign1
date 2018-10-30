@@ -1,4 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="c1">// Declare Strings doubleQuote1 and doubleQuote2 which both contain " (double quote):</span>
-<span class="lineno">2 </span><span class="n">String</span> <span class="n">doubleQuote1</span> <span class="o">=</span> <span class="s">"\""</span><span class="o">;</span>
-<span class="lineno">3 </span><span class="n">String</span> <span class="n">doubleQuote2</span> <span class="o">=</span> <span class="s">"\\u0022"</span><span class="o">;</span> <span class="c1">// "\u0022" doesn't work since """ doesn't work.</span>
-</pre>

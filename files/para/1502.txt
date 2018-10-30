@@ -1,1 +1,0 @@
-Symbolic Information : Symbolic resolution is done at class loading time at linking resolution step. It is the process of replacing symbolic references from the type with direct references. It is done by searching into method area to locate the referenced entity

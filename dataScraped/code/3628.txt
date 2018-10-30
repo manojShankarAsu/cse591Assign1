@@ -1,5 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MyClass</span> <span class="kd">implements</span> <span class="n">MyInterface1</span><span class="o">,</span> <span class="n">MyInterface2</span>
- <span class="o">{</span>
-   <span class="o">...</span>
- <span class="o">}</span>
-</pre>

@@ -1,1 +1,0 @@
-API and Tools Use for Secure Code and File Exchanges defines digital signatures, certificates, and keystores and discusses why they are needed. It also reviews information applicable to the next three lessons regarding the steps commonly needed for using the tools or the API to generate signatures, export/import certificates, and so on.

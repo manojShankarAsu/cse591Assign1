@@ -1,1 +1,0 @@
-Where there is an ability to re-iterate the loop, there is an ability to exit the loop when required. At any given moment, if you'd like to exit a loop and end all further work within the loop, the break ought to be used.

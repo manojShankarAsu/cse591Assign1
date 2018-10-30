@@ -1,5 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"First part"</span><span class="o">);</span>
-<span class="lineno">2 </span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">" second part"</span><span class="o">);</span>
-<span class="lineno">3 </span><span class="n">String</span> <span class="n">str</span> <span class="o">=</span> <span class="s">"First part"</span> <span class="o">+</span> <span class="s">" second part"</span><span class="o">;</span>
-<span class="lineno">4 </span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">str</span><span class="o">);</span>
-</pre>

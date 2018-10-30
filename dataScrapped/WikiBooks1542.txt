@@ -1,1 +1,0 @@
-Interesting, I thought that the front-end should be separated from the back-end(EJB). I don't know how Seam is doing the integration, I'll check it out. Thanks. Ervinn (talk) 20:37, 25 January 2008 (UTC)

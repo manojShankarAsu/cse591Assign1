@@ -1,5 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="kd">final</span> <span class="n">ArrayList</span> <span class="n">list</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">();</span>
-<span class="lineno">2 </span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">list</span><span class="o">.</span><span class="na">size</span><span class="o">());</span>
-<span class="lineno">3 </span><span class="hll"><span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"One item"</span><span class="o">);</span>
-</span><span class="lineno">4 </span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">list</span><span class="o">.</span><span class="na">size</span><span class="o">());</span>
-</pre>

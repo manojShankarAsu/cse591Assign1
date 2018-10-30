@@ -1,1 +1,0 @@
-It's time to write your first application! These detailed instructions are for users of Solaris OS and Linux. Instructions for other platforms are in "Hello World!" for Microsoft Windows and "Hello World!" for the NetBeans IDE.

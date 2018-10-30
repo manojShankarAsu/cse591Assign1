@@ -1,1 +1,0 @@
-JDK tools manage your keystore (database of keys and certificates); generate digital signatures for JAR files, and verify the authenticity of such signatures and the integrity of the signed contents; and create and modify the policy files that define your installation's security policy.

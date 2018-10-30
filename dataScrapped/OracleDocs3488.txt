@@ -1,5 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="kd">class</span> <span class="nc">Orange</span> <span class="kd">extends</span> <span class="n">Fruit</span> <span class="kd">implements</span> <span class="n">Edible</span>
- <span class="o">{</span>
-  <span class="o">...</span>
- <span class="o">}</span>
-</pre>

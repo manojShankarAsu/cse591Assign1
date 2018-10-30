@@ -1,1 +1,0 @@
-The above code is valid because the String class is serializable. Use of a class that is not serializable would cause a compilation error. The added items can be retrieved as Serializable object. You can call methods of the Serializable interface or cast it to String. The following collection can only contain objects that extend the class Animal.

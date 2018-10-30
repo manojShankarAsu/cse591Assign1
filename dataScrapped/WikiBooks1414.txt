@@ -1,1 +1,0 @@
-The java.lang.Object.notify() and java.lang.Object.notifyAll() methods remove one or more threads from an object's wait list and add them to the set of executable threads. notify removes a single thread from the wait list, while notifyAll removes all threads from the wait list. Which thread is removed by notify is unspecified and dependent on the JVM implementation.

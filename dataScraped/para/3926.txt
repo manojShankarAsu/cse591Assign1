@@ -1,1 +1,0 @@
-@Deprecated is used to flag that a method or class should no longer be used, normally because a better alternative exists. Compilers and IDEs typically raise a warning if deprecated code is invoked from non deprecated code. [1]

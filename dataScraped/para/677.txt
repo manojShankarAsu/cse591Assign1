@@ -1,1 +1,0 @@
-In the code section 4.29, we created two objects from the same class, or we can also say that obj1 and obj2 both have the same type. The difference between the two is that in the first one the memberField field is not initialized, in the second one that is initialized to "Init Value". A constructor may also be called from another constructor, see below:

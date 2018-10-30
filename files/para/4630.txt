@@ -1,1 +1,0 @@
-Because of this assignment statement, the variable FirstLevel.x is not effectively final anymore. As a result, the Java compiler generates an error message similar to "local variables referenced from a lambda expression must be final or effectively final" where the lambda expression myConsumer tries to access the FirstLevel.x variable:

@@ -1,1 +1,0 @@
-At times, you would like to re-iterate a loop without executing the remaining statement within the loop. The continue statement causes the loop to re-iterate and start over from the top most statement inside the loop.

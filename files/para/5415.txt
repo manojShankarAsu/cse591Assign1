@@ -1,1 +1,0 @@
-One of the places java tries to find your .class file is your current directory. So if your .class file is in C:\java, you should change your current directory to that. To change your directory, type the following command at the prompt and press Enter:

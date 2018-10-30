@@ -1,6 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="c1">// The constructor with no input parameter will be called</span>
-<span class="lineno">2 </span><span class="n">MyClass</span> <span class="n">obj1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MyClass</span><span class="o">();</span>
-<span class="lineno">3 </span>
-<span class="lineno">4 </span><span class="c1">// The constructor with one input param. will be called</span>
-<span class="lineno">5 </span><span class="n">MyClass</span> <span class="n">obj2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MyClass</span><span class="o">(</span><span class="s">"Init Value"</span><span class="o">);</span>
-</pre>

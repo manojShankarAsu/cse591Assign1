@@ -1,1 +1,0 @@
-This section describes security privileges and permissions that are granted to extensions on your platform. You'll see how to use the Java platform's security architecture if you're writing extensions classes of your own.

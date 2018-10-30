@@ -1,1 +1,0 @@
-isDiscounted() would be the getter method for a boolean property named discounted. Thus, the method signature of most getters is public PropertyType getPropertyName() or public boolean isPropertyName().

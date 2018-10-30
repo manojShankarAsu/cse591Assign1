@@ -1,1 +1,0 @@
-The Java VM requires that the class you execute with it have a main method at which to begin execution of your application. A Closer Look at the "Hello World!" Application discusses the main method in detail.

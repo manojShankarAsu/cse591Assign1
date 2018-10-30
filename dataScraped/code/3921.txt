@@ -1,4 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">24</span><span class="o">;</span>
-<span class="lineno">2 </span><span class="kt">int</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">365</span><span class="o">;</span>
-<span class="lineno">3 </span><span class="kt">int</span> <span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span><span class="o">;</span>
-</pre>

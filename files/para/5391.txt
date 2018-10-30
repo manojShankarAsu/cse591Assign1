@@ -1,1 +1,0 @@
-The solution is to write an interface that defines the method that should be implemented in the two classes as the SimpleInterface in the Code listing 4.14 and then the both classes can implement the interface as in the Code listing 4.15.

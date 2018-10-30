@@ -1,1 +1,0 @@
-Each Java top level class belongs to a package (covered in the chapter about Packages). This may be declared in a package statement at the beginning of the file; if that is missing, the class belongs to the unnamed package.

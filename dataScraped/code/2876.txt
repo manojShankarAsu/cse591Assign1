@@ -1,2 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="n">setLayout</span><span class="o">(</span><span class="k">new</span> <span class="n">FlowLayout</span><span class="o">());</span>
-</pre>

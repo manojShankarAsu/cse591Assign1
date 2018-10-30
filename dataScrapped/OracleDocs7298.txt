@@ -1,1 +1,0 @@
-If there is only one statement to be executed after the condition, as in the above example, it is possible to omit the curly braces, however Oracle's Java Code Conventions explicitly state that the braces should always be used.

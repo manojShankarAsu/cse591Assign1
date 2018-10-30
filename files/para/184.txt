@@ -1,1 +1,0 @@
-The intValue() method delegates its job to the Integer.parseInt() method. The main method could have called Integer.parseInt() directly; the intValue() method simply makes the main() method slightly more readable.

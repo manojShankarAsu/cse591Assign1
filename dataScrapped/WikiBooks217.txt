@@ -1,2 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Age="</span> <span class="o">+</span> <span class="k">new</span> <span class="n">Integer</span><span class="o">(</span><span class="mi">31</span><span class="o">));</span>
-</pre>

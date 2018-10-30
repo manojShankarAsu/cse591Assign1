@@ -1,1 +1,0 @@
-Introduction tells you what collections are, and how they'll make your job easier and your programs better. You'll learn about the core elements that comprise the Collections Framework: interfaces, implementations and algorithms.

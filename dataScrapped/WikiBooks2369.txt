@@ -1,9 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="kn">import</span> <span class="nn">java.util.regex.Pattern</span><span class="o">;</span>
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Regex</span> <span class="o">{</span>
-	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
-		<span class="n">String</span> <span class="n">s</span> <span class="o">=</span> <span class="s">"Test Java regex for Wikibooks."</span><span class="o">;</span>
-		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">Pattern</span><span class="o">.</span><span class="na">matches</span><span class="o">(</span><span class="s">"[a-z]* Wikibooks"</span><span class="o">,</span><span class="n">s</span><span class="o">));</span>
-    <span class="o">}</span>
-<span class="o">}</span>
-<span class="c1">// Displays: "for Wikibooks"</span>
-</pre>

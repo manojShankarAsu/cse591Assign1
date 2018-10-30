@@ -1,1 +1,0 @@
-To easily remember what can be done in method overriding, keep in mind that all you can do in an object of a class, you can also do in an object of a subclass, only the behavior can change. A subclass should be covariant.

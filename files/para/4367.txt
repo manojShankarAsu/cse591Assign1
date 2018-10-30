@@ -1,1 +1,0 @@
-JAVA 1.8 onwards: When interfaces are involved, the implementation declaration may skip a throws-clause but if one wish to have then should be compatible with the interface declarations. In other words, the implementation should throw the declared exception or it's sub-type or no exception.

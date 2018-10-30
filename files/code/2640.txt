@@ -1,2 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="n">SportsCar</span> <span class="n">car</span> <span class="o">=</span> <span class="k">new</span> <span class="n">SportsCar</span><span class="o">(</span><span class="s">"red"</span><span class="o">,</span> <span class="mi">12</span><span class="o">,</span> <span class="mi">190</span><span class="o">);</span>
-</pre>

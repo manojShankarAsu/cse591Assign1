@@ -1,1 +1,0 @@
-The natural ordering for a class C is said to be consistent with equals if and only if e1.compareTo((Object) e2) == 0 has the same boolean value as e1.equals((Object) e2) for every e1 and e2 of class C. Note that null is not an instance of any class, and e.compareTo(null) should throw a NullPointerException even though e.equals(null) returns false.

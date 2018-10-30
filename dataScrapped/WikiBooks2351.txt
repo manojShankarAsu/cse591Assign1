@@ -1,2 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="n">obj</span><span class="o">.</span><span class="na">myMethod</span><span class="o">(</span><span class="n">myParameter</span><span class="o">);</span>
-</pre>

@@ -1,1 +1,0 @@
-To deploy as a Java applet, you just need to wrap the core functionality in an Applet or JApplet and add the browser specific functionality, if necessary. To deploy as a Java Web Start application, wrap the functionality in a JFrame.

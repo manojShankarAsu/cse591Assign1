@@ -1,2 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="kt">float</span> <span class="n">age</span> <span class="o">=</span> <span class="mf">10.5f</span><span class="o">;</span>
-</pre>

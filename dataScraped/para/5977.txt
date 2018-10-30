@@ -1,1 +1,0 @@
-Quick Tour of Controlling Applications builds on the previous lesson, showing how resource accesses, such as reading or writing a file, are not permitted for applications that are run under a security manager unless explicitly allowed by a permission in a policy file.

@@ -1,4 +1,0 @@
-Code-Block-AW3<pre class="codeblock">C:\myapplication&gt;<strong>java -cp . HelloWorldApp</strong>
-Hello World!
-
-C:\myapplication&gt;</pre>

@@ -1,1 +1,0 @@
-The .NET framework borrows many of the concepts and innovations of Java — their alternative for the JVM is called the Common Language Runtime (CLR), while their alternative for the byte-code is the Common Intermediate Language (CIL). In fact, the .NET platform had an implementation of a Java-like language called Visual J# (formerly known as J++).

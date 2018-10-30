@@ -1,5 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="kd">public</span> <span class="kd">synchronized</span> <span class="kt">void</span> <span class="nf">method</span><span class="o">()</span> <span class="o">{</span>
-<span class="lineno">2 </span>   <span class="c1">// Thread.currentThread() has a lock on this object, i.e. a synchronized method is the same as</span>
-<span class="lineno">3 </span>   <span class="c1">// calling { synchronized(this) {…} }.</span>
-<span class="lineno">4 </span><span class="o">}</span>
-</pre>

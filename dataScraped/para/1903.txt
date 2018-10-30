@@ -1,1 +1,0 @@
-Now, we already know that a line is a connection of two discreet points atop a canvas. So, if one point is at ( x 1 , y 1 ) {\displaystyle (x1,y1)} and the other is at ( x 2 , y 2 ) {\displaystyle (x2,y2)} , drawing a line would require you to write a syntax like code below. For the sake of brevity, we will skim out the rest of the method unused in the example.

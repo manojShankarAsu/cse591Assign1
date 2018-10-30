@@ -1,2 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="k">assert</span> <span class="n">expression1</span> <span class="o">[:</span> <span class="n">expression2</span><span class="o">];</span>
-</pre>

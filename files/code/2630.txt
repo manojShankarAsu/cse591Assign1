@@ -1,2 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="o">(</span><span class="k">new</span> <span class="n">ClassName</span><span class="o">()).</span><span class="na">operations</span><span class="o">();</span>
-</pre>

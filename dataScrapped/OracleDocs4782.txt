@@ -1,1 +1,0 @@
-Let's have a closer look at this magic. The conversion is easy because the Collection interface defines a standard way of looping through the elements. The following code is a possible implementation of addAll() method of the LinkedList.

@@ -1,1 +1,0 @@
-In event-driven programming a program that must wait, simply goes to sleep. It no longer takes up processor time, might even be unloaded from memory and generally leaves the computer available to do useful things. But the program doesn't completely go away; instead, it makes a deal with the computer or the operating system. A deal sort of like this:

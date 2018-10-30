@@ -1,1 +1,0 @@
-We see that only the TreeMap has sorted the keys. Beware of the generics. The Map interface is tricky. The methods get() and remove() are not generic. This means that you must be careful of the type of the key:

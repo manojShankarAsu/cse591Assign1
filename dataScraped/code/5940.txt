@@ -1,4 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="hll"><span class="k">if</span> <span class="o">(</span><span class="s">"OK"</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">state</span><span class="o">))</span> <span class="o">{</span>
-</span><span class="lineno">2 </span>  <span class="o">...</span>
-<span class="lineno">3 </span><span class="o">}</span>
-</pre>

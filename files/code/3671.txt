@@ -1,5 +1,0 @@
-Code-Block-AW3<pre><code><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;"><a href="/wiki/Java_Programming/Keywords/this" title="Java Programming/Keywords/this">this</a></font></code>.method();
-or
-<code><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;"><a href="/wiki/Java_Programming/Keywords/this" title="Java Programming/Keywords/this">this</a></font></code>.variable;
-
-</pre>

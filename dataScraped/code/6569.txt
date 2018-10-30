@@ -1,2 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="lineno">1 </span>  <span class="kt">int</span> <span class="n">randomNumber</span> <span class="o">=</span> <span class="n">n</span> <span class="o">+</span> <span class="o">(</span><span class="kt">int</span><span class="o">)(</span><span class="n">Math</span><span class="o">.</span><span class="na">random</span><span class="o">()</span> <span class="o">*</span> <span class="o">(</span> <span class="n">m</span> <span class="o">-</span> <span class="n">n</span> <span class="o">));</span>
-</pre>

@@ -1,1 +1,0 @@
-In code section 6.14 we want to create the Person inside the if-else, but we also want to return the object reference to the caller, so we need to create the object reference outside of the if-else, because of the scoping rule in Java. Incorrect error-handling and poor contract design can be a pitfall with any programming language. This is also true for Java.

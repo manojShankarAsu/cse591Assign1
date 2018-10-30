@@ -1,6 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Mouse</span> <span class="o">{</span>
-<span class="lineno">2 </span>     <span class="kd">public</span> <span class="kt">void</span> <span class="nf">eatCheese</span><span class="o">()</span> <span class="o">{</span>
-<span class="lineno">3 </span><span class="hll">             <span class="n">Cheese</span> <span class="n">c</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Cheese</span><span class="o">();</span> <span class="c1">// Oops, compile time error!</span>
-</span><span class="lineno">4 </span>     <span class="o">}</span>
-<span class="lineno">5 </span><span class="o">}</span>
-</pre>

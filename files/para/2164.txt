@@ -1,1 +1,0 @@
-A best practice is to give fields private access and reserve public access to only the set of methods and final fields that define the class' public constants. This helps with encapsulation and information hiding, since it allows you to change the implementation of a class without affecting the consumers who use only the public API of the class.

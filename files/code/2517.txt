@@ -1,5 +1,0 @@
-Code-Block-AW3<pre>public myMethod() <code><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;"><a href="/wiki/Java_Programming/Keywords/throws" title="Java Programming/Keywords/throws">throws</a></font></code> MyException1, MyException2
-{MyException1
-  ...
-}
-</pre>

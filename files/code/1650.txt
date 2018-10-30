@@ -1,5 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">method</span><span class="o">(</span><span class="n">Object</span> <span class="n">argument</span><span class="o">)</span> <span class="o">{</span>
-<span class="lineno">2 </span>  <span class="n">Object</span> <span class="n">variable</span><span class="o">;</span>
-<span class="lineno">3 </span>  <span class="err">…</span>
-<span class="lineno">4 </span><span class="o">}</span>
-</pre>

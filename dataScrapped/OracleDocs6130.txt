@@ -1,1 +1,0 @@
-To specify this JDK for the current project only, select Hello World App in the Projects pane, choose File | Project Properties (Hello World App), click Libraries, then select JDK 1.8 in the Java Platform pulldown menu. You should see a screen similar to the following:

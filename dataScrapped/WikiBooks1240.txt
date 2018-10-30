@@ -1,6 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="n">MyObject</span> <span class="n">object</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MyObject</span><span class="o">();</span>
-<span class="lineno">2 </span><span class="hll"><span class="n">MyObject</span><span class="o">.</span><span class="na">ReturnObject</span> <span class="n">person</span> <span class="o">=</span> <span class="n">object</span><span class="o">.</span><span class="na">getPersonInfoById</span><span class="o">(</span><span class="mi">102</span><span class="o">);</span>
-</span><span class="lineno">3 </span>
-<span class="lineno">4 </span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Person Name="</span> <span class="o">+</span> <span class="n">person</span><span class="o">.</span><span class="na">getName</span><span class="o">());</span>
-<span class="lineno">5 </span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Person Age ="</span> <span class="o">+</span> <span class="n">person</span><span class="o">.</span><span class="na">getAge</span><span class="o">());</span>
-</pre>

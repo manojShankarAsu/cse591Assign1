@@ -1,4 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="n">SuperClass</span> <span class="n">objectRef</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ClassName</span><span class="o">();</span> <span class="c1">// features/operations list are defined by the SuperClass class</span>
-<span class="lineno">2 </span><span class="o">...</span>
-<span class="lineno">3 </span><span class="n">Interface</span> <span class="n">inter</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ClassName</span><span class="o">();</span> <span class="c1">// features/operations list are defined by the interface</span>
-</pre>

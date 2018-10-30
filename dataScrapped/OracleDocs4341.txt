@@ -1,9 +1,0 @@
-The code section 3.62 contains two number literals followed by two boolean literals at line 1, one string literal followed by one number literal at line 2, and one string literal followed by one real number literal at line 3:
-<span class="lineno">2 </span><span class="kd">static</span> <span class="kt">int</span><span class="o">[]</span> <span class="n">squares</span><span class="o">;</span>
-<span class="lineno">3 </span><span class="hll"><span class="kd">static</span> <span class="o">{</span>  <span class="c1">// a static initializer</span>
-</span><span class="lineno">4 </span><span class="hll">    <span class="n">squares</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">count</span><span class="o">];</span>
-</span><span class="lineno">5 </span><span class="hll">    <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">count</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span>
-</span><span class="lineno">6 </span><span class="hll">        <span class="n">squares</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">i</span> <span class="o">*</span> <span class="n">i</span><span class="o">;</span>
-</span><span class="lineno">7 </span><span class="hll"><span class="o">}</span>
-</span><span class="lineno">8 </span><span class="kd">static</span> <span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="n">squares</span><span class="o">[</span><span class="mi">5</span><span class="o">];</span>  <span class="c1">// x is assigned the value 25</span>
-</pre>

@@ -1,1 +1,0 @@
-It's time to write your first application! The following instructions are for users of Windows Vista, Windows 7, and Windows 8. Instructions for other platforms are in "Hello World!" for Solaris OS and Linux and "Hello World!" for the NetBeans IDE.

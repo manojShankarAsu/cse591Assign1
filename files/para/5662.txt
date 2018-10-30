@@ -1,1 +1,0 @@
-Since this mechanism extends the platform's core API, its use should be judiciously applied. Most commonly it is used for well standarized interfaces such as those defined by the Java Community Process, although it may also be appropriate for site wide interfaces.

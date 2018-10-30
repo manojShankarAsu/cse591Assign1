@@ -1,1 +1,0 @@
-Note: Instead of using the declaration with the class, the annotation is used with the method doSomething(). This might not demonstrate the power of annotations yet, but more will be explored in later chapters.

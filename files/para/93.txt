@@ -1,1 +1,0 @@
-This list is not complete — there are no rules for preventing NullPointerException entirely in Java, because the standard libraries have to be used, and they can cause NullPointerExceptions. Also, it is possible to observe an uninitialized final field in Java, so you can't even treat a final field as being completely trusted during the object's creation.

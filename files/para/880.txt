@@ -1,1 +1,0 @@
-The code section 3.13 calls two int methods, f() and y(), stores the results, then uses an if statement to test if x is less than y and if it is, the statement1 body will swap the values. The end result is x always contains the larger result and y always contains the smaller result.

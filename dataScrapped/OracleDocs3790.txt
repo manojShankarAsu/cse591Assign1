@@ -1,2 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="kd">class</span> <span class="nc">Foo</span><span class="o">&lt;</span><span class="n">T</span> <span class="kd">extends</span> <span class="n">Number</span><span class="o">&gt;</span> <span class="o">{</span> <span class="cm">/*...*/</span> <span class="o">}</span>
-</pre>

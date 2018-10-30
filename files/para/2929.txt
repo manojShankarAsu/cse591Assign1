@@ -1,1 +1,0 @@
-You can directly access the reference to the outer object from within an inner class with the syntax OuterClass.this; although this is usually unnecessary because you already have access to its fields and methods.

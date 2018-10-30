@@ -1,1 +1,0 @@
-If you look closely at a method, you'll see that a method is a named statement block that is executed by calling that particular name. An unconditional branch is created either by invoking the method or by calling break, continue, return or throw, all of which are described below.

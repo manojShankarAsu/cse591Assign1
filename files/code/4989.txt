@@ -1,2 +1,0 @@
-Code-Block-AW3<pre>CLIENT --&gt; STUB --&gt; ... <i>Network</i> ... --&gt; SKELETON --&gt; REMOTE OBJECT
-</pre>

@@ -1,1 +1,0 @@
-Speaking in terms of classes and interfaces, the most important parts of the framework are the java.util.EventObject abstract class and the java.util.EventListener interface. These two types are the centerpieces of the rules and conventions of the Java Platform Event Model, which are:

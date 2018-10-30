@@ -1,2 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="kd">private</span> <span class="n">java</span><span class="o">.</span><span class="na">awt</span><span class="o">.</span><span class="na">Point</span> <span class="n">point0</span><span class="o">,</span> <span class="n">point1</span><span class="o">;</span>
-</pre>

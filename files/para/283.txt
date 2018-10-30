@@ -1,1 +1,0 @@
-The class declaration is then followed by a block (surrounded by curly braces) which provides the class's definition (in blue in figure 2.2). The definition is the implementation of the class – the declaration and definitions of the class's members. This class contains exactly six members, which we will explain in turn.

@@ -1,3 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="k">assert</span> <span class="n">list</span> <span class="o">!=</span> <span class="kc">null</span> <span class="o">&amp;&amp;</span> <span class="n">list</span><span class="o">.</span><span class="na">size</span><span class="o">()</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">:</span> <span class="s">"list variable is null or empty"</span><span class="o">;</span>
-<span class="n">Object</span> <span class="n">value</span> <span class="o">=</span> <span class="n">list</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="mi">0</span><span class="o">);</span>
-</pre>

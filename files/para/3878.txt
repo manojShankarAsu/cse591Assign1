@@ -1,1 +1,0 @@
-We have passed in the try block until where the exception occurred and we have executed the finally block. NO CODE after the try-catch block has been executed. If there is an exception that happens before the try-catch block, the finally block is not executed.

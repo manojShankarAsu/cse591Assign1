@@ -1,4 +1,0 @@
-Code-Block-AW3<pre><code><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;"><a href="/wiki/Java_Programming/Keywords/return" title="Java Programming/Keywords/return">return</a></font></code> variable;  // --- Returns variable
-or
-<code><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;"><a href="/wiki/Java_Programming/Keywords/return" title="Java Programming/Keywords/return">return</a></font></code>;           // --- Returns nothing
-</pre>

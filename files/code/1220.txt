@@ -1,7 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="kn">import</span> <span class="nn">java.util.Map</span><span class="o">;</span>
-<span class="lineno">2 </span><span class="kn">import</span> <span class="nn">java.util.Hashtable</span><span class="o">;</span>
-<span class="lineno">3 </span><span class="o">...</span>
-<span class="lineno">4 </span><span class="n">Map</span> <span class="n">map</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Hashtable</span><span class="o">();</span>
-<span class="lineno">5 </span><span class="o">...</span>
-<span class="lineno">6 </span><span class="n">map</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="n">key</span><span class="o">,</span> <span class="n">value</span><span class="o">);</span>
-</pre>

@@ -1,1 +1,0 @@
-These special pre-defined types are called data types. The String data type is used for fields that can hold textual values like names, while the int (integer) data type is used for fields that can hold numeric values

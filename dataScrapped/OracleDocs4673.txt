@@ -1,6 +1,0 @@
-Code-Block-AW3<pre class="codeblock">printPersons(
-    roster,
-    <strong>(Person p) -&gt; p.getGender() == Person.Sex.MALE
-        &amp;&amp; p.getAge() &gt;= 18
-        &amp;&amp; p.getAge() &lt;= 25</strong>
-);</pre>

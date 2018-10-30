@@ -1,7 +1,0 @@
-Code-Block-AW3<pre>class MountainBike <strong>extends</strong> Bicycle {
-
-    // new fields and methods defining 
-    // a mountain bike would go here
-
-}
-</pre>

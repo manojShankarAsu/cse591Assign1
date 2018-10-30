@@ -1,1 +1,0 @@
-Java has the concept of cloning an object, and the end results are similar to the copy constructor. Cloning an object is faster than creation with the new keyword, because all the object memory is copied at once to the destination cloned object. This is possible by implementing the Cloneable interface, which allows the method Object.clone() to perform a field-by-field copy.

@@ -1,8 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="k">try</span> <span class="o">{</span>
-<span class="lineno">2 </span>  <span class="c1">// Some code</span>
-<span class="lineno">3 </span><span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">Exception</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
-<span class="lineno">4 </span>  <span class="c1">// Optional exception handling</span>
-<span class="lineno">5 </span><span class="o">}</span> <span class="k">finally</span> <span class="o">{</span>
-<span class="lineno">6 </span>  <span class="c1">// This code is executed no matter what</span>
-<span class="lineno">7 </span><span class="o">}</span>
-</pre>

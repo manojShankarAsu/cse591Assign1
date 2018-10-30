@@ -1,1 +1,0 @@
-We conceptualize the world around us in terms of systems. A system is a web of interconnected objects working together in tandem. In the systems theory, a system is set out as a single entity within a world surrounded by an environment. A system interacts with its surrounding environment using messages of two distinct types:

@@ -1,1 +1,0 @@
-The following chapters are designed to introduce basic input and output in Java, including reading text input from the keyboard, outputting text to the monitor, and reading/writing files from the file system. More advanced user interaction using Graphics and Graphical User Interface (GUI) programs is taken up in the later section on Swing.

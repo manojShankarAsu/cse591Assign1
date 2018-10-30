@@ -1,6 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">printDistance</span><span class="o">()</span> <span class="o">{</span>
-<span class="lineno">2 </span>  <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Distance between "</span> <span class="o">+</span> <span class="n">point0</span>
-<span class="lineno">3 </span>    <span class="o">+</span> <span class="s">" and "</span> <span class="o">+</span> <span class="n">point1</span>
-<span class="lineno">4 </span>    <span class="o">+</span> <span class="s">" is "</span> <span class="o">+</span> <span class="n">point0</span><span class="o">.</span><span class="na">distance</span><span class="o">(</span><span class="n">point1</span><span class="o">));</span>
-<span class="lineno">5 </span><span class="o">}</span>
-</pre>

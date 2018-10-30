@@ -1,1 +1,0 @@
-A class can implement several interface, separated by a comma. Java interfaces behave much like the concept of the Objective-C protocol. It is recommended to name an interface <verb>able, to mean the type of action this interface would enable on a class. However, it is not recommended to start the name of an interface by I as in C++. It is useless. Your IDE will help you instead.

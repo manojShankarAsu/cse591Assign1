@@ -1,1 +1,0 @@
-A common mistake made by beginner programmers is to try and run the java launcher on the .class file that was created by the compiler. For example, you'll get this error if you try to run your program with java HelloWorldApp.class instead of java HelloWorldApp. Remember, the argument is the name of the class that you want to use, not the filename.

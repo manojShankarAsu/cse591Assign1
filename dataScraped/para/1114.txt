@@ -1,1 +1,0 @@
-The returned object is always a valid, meaningful object, as opposed to relying on a separate initialization method. A constructor cannot be abstract, final, native, static, strictfp nor synchronized. However, a constructor, like methods, can be overloaded and take parameters.

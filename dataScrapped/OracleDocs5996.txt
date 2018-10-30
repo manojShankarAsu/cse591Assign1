@@ -1,1 +1,0 @@
-Signing Code and Granting It Permissions illustrates the use of all the security-related tools. It shows the steps that a developer would take to sign and to distribute code for others to run. The lesson also shows how someone who will run the code (or a system administrator) could add an entry in a policy file to grant the code permission for the resource accesses it needs.

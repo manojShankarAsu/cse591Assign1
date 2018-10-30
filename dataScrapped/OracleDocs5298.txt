@@ -1,2 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="n">java</span><span class="o">.</span><span class="na">util</span><span class="o">.</span><span class="na">Collections</span><span class="o">.</span><span class="na">sort</span><span class="o">(</span><span class="n">custList</span><span class="o">,</span> <span class="k">new</span> <span class="n">CustomerComparator</span><span class="o">());</span>
-</pre>

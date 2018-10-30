@@ -1,1 +1,0 @@
-Now you can tell what's happening, can't you? However, before we continue, notice the case of the variables. If a word contains CAPITAL LETTERS, it is in UPPER CASE. If a word has small letters, it is in lower case. Both cases in a word renders it as mIxEd CaSe.

@@ -1,1 +1,0 @@
-Javadoc is the Java source code document generator and was introduced with the Java language from version 1.0 . Well commented Java code is supposed to have Javadoc tags. Those tags are in the /** ... */ comment blocks, so the compiler ignores them. A separate utility would read the code and create the Java API html files.

@@ -1,1 +1,0 @@
-To understand why software components are useful, think of a worker assembling a car. Instead of building a radio from scratch, for example, she simply obtains a radio and hooks it up with the rest of the car.

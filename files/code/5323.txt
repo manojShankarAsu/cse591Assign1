@@ -1,5 +1,0 @@
-Code-Block-AW3<pre>&amp;&amp;      Conditional-AND
-||      Conditional-OR
-?:      Ternary (shorthand for 
-        <code>if-then-else</code> statement)
-</pre>

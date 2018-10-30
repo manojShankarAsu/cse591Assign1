@@ -1,1 +1,0 @@
-At line 14, we use a multi-catch clause. It is available since the JDK 7. This is a combination of several catch clauses and let's you handle exceptions in a single handler while also maintaining their types. So, instead of being boxed into a parent Exception super-class, they retain their individual types.

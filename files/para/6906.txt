@@ -1,1 +1,0 @@
-In the case of the Animal, you require your virtual representation of an animal to be able to move through its environment. Let's say, as an analogy, you want your Animal object to be able to walk in its environment. Thus, you need to add a method named walk to our object. To do so, we need to write the following code:

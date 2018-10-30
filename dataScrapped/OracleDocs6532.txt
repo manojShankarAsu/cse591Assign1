@@ -1,4 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="c1">// Declare Strings pi and quote which contain \u03C0 and \u0027 respectively:</span>
-<span class="lineno">2 </span><span class="n">String</span> <span class="n">pi</span> <span class="o">=</span> <span class="s">"\u03C0"</span><span class="o">;</span>
-<span class="lineno">3 </span><span class="n">String</span> <span class="n">quote</span> <span class="o">=</span> <span class="s">"\u0027"</span><span class="o">;</span>
-</pre>

@@ -1,1 +1,0 @@
-Now, that we know how to effectively create a Runnable process block and a Thread object that executes it, we need to understand how to start the created Thread objects. This couldn't be simpler. For this process, we will be calling the start() method on the Thread objects and voilà, our threads will begin executing their individual process tasks.

@@ -1,4 +1,0 @@
-Code-Block-AW3<pre>int <b>cadence</b> = 0;
-int <b>speed</b> = 0;
-int <b>gear</b> = 1;
-</pre>

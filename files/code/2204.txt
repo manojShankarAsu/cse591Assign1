@@ -1,2 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="kt">short</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">65</span><span class="o">;</span>
-</pre>

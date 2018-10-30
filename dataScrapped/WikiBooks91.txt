@@ -1,3 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="n">URLClassLoader</span> <span class="n">classLoader</span> <span class="o">=</span> <span class="n">URLClassLoader</span><span class="o">.</span><span class="na">newInstance</span><span class="o">(</span>
-<span class="lineno">2 </span>   <span class="k">new</span> <span class="n">URL</span><span class="o">[]{</span><span class="s">"http://example.com/javaClasses.jar"</span><span class="o">});</span>
-</pre>

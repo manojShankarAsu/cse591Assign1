@@ -1,4 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="kd">private</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">intValue</span><span class="o">(</span><span class="n">String</span> <span class="n">data</span><span class="o">)</span> <span class="o">{</span>
-<span class="lineno">2 </span>   <span class="k">return</span> <span class="n">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">data</span><span class="o">);</span>
-<span class="lineno">3 </span><span class="o">}</span>
-</pre>

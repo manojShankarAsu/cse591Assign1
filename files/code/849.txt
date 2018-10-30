@@ -1,8 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">addNumberReadListener</span><span class="o">(</span><span class="n">NumberReadListener</span> <span class="n">listener</span><span class="o">)</span> <span class="o">{</span>
-    <span class="k">this</span><span class="o">.</span><span class="na">listeners</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">listener</span><span class="o">);</span>
-<span class="o">}</span>
-
-<span class="kd">public</span> <span class="kt">void</span> <span class="nf">removeNumberReadListener</span><span class="o">(</span><span class="n">NumberReadListener</span> <span class="n">listener</span><span class="o">)</span> <span class="o">{</span>
-    <span class="k">this</span><span class="o">.</span><span class="na">listeners</span><span class="o">.</span><span class="na">remove</span><span class="o">(</span><span class="n">listener</span><span class="o">);</span>
-<span class="o">}</span>
-</pre>

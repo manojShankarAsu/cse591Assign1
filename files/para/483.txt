@@ -1,1 +1,0 @@
-Suppose a novelist, a painter and a programmer were asked to abstract (i.e., represent) a real-life object in their work. Suppose, the real-life object that needs to be abstracted is an animal. Abstraction for a novelist would include writing the description of the animal whilst the painter would draw a picture of the animal – but what about a computer programmer?

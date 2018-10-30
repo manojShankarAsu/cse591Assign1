@@ -1,1 +1,0 @@
-Extensible Stylesheet Language Transformations includes information on how to write a Document Object Model as an XML file, and how to generate a DOM from an arbitrary data file in order to convert it to XML.

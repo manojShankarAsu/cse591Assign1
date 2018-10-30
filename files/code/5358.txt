@@ -1,4 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="kd">public</span> <span class="kd">interface</span> <span class="nc">Jumpable</span> <span class="o">{</span>
-<span class="lineno">2 </span>    <span class="kt">void</span> <span class="nf">jump</span><span class="o">();</span>
-<span class="lineno">3 </span><span class="o">}</span>
-</pre>

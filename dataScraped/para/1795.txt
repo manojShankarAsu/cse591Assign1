@@ -1,1 +1,0 @@
-The loop's condition is checked before each iteration of the loop. If the condition is false at the start of the loop, the loop will not be executed at all. The code section 3.28 sets in squareHigherThan200 the smallest integer whose square exceeds 200.

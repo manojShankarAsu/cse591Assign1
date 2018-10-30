@@ -1,1 +1,0 @@
-Steps 2, 3, and 4 can be accomplished with Java reflection. Below is an example of loading the Distance class, locating the main method, (see Understanding a Java Program) and invoking it via reflection.

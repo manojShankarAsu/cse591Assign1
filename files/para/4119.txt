@@ -1,1 +1,0 @@
-We then declare the rest of the logic for the class. For the constructor, we take a String parameter that would serve as the name of the class. Then, we initialize the class member variable time with a random number between 0 and 999. To ensure the initialization of a random number, we use the Random class in the java.util package.

@@ -1,1 +1,0 @@
-Wherever XML descriptors were heavily used, now an alternative way is available that is the Java annotation. From EJB 3.0, it is possible to define EJBs without using XML. Also the new JPA (Java Persistent API) uses annotations.

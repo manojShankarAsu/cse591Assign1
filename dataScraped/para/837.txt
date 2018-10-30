@@ -1,1 +1,0 @@
-A try/catch statement can contain several catch blocks, to handle different exceptions in different ways. Each catch block must take a parameter of a different throwable class. A thrown object may match several catch block but only the first catch block that matches the object will be executed. A catch-block will catch a thrown exception if and only if:

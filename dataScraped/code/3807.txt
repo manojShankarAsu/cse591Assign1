@@ -1,5 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="c1">// A polygon needs at least three points.</span>
-<span class="lineno">2 </span><span class="hll"><span class="kd">public</span> <span class="kt">void</span> <span class="nf">drawPolygon</span><span class="o">(</span><span class="n">Point</span> <span class="n">p1</span><span class="o">,</span> <span class="n">Point</span> <span class="n">p2</span><span class="o">,</span> <span class="n">Point</span> <span class="n">p3</span><span class="o">,</span> <span class="n">Point</span><span class="o">...</span> <span class="n">otherPoints</span><span class="o">)</span> <span class="o">{</span>
-</span><span class="lineno">3 </span>  <span class="c1">//…</span>
-<span class="lineno">4 </span><span class="o">}</span>
-</pre>

@@ -1,1 +1,0 @@
-Working with Text APIs shows you how to effectively use text APIs, including how to create a Font object with desired attributes, measure text, and determine the names of the fonts available on your system.

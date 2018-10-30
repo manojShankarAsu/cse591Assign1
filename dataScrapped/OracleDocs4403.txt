@@ -1,6 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="nd">@interface</span> <span class="n">CodeDescription</span>
-<span class="o">{</span>
-    <span class="n">String</span> <span class="nf">author</span><span class="o">();</span>
-    <span class="n">String</span> <span class="nf">version</span><span class="o">();</span>
-<span class="o">}</span>
-</pre>

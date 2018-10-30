@@ -1,6 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="cm">/**</span>
-<span class="lineno">2 </span><span class="cm"> * Comments which start with slash-star-star are Javadoc comments.</span>
-<span class="lineno">3 </span><span class="cm"> * These are used to extract documentation from the Java source.</span>
-<span class="lineno">4 </span><span class="cm"> * More on javadoc will be covered later.</span>
-<span class="lineno">5 </span><span class="cm"> */</span>
-</pre>

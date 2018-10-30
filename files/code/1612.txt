@@ -1,4 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">col</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;();</span>
-<span class="lineno">2 </span><span class="n">addAtBottom</span><span class="o">(</span><span class="n">col</span><span class="o">);</span>
-<span class="lineno">3 </span><span class="hll"><span class="n">col</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="mi">0</span><span class="o">).</span><span class="na">endsWith</span><span class="o">(</span><span class="s">"."</span><span class="o">);</span>
-</span></pre>

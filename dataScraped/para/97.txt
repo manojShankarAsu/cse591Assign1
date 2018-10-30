@@ -1,1 +1,0 @@
-The absolute value method of the Math class is compatible with the int, long, float, and double types. The data returned is the absolute value of parameter (how far away it is from zero) in the same data type. For example:

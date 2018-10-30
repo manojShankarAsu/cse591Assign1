@@ -1,1 +1,0 @@
-You can use Runtime.exec() method to invoke a program from within a running Java application. Runtime.exec() also allows you to perform operations related to the program, such as control the program's standard input and output, wait until it completes execution, and get its exit status.

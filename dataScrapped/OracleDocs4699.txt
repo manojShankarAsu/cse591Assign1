@@ -1,1 +1,0 @@
-The BigInteger class represents integers of almost any size. As with other objects, they need to be constructed. Unlike regular numbers, the BigInteger represents an immutable object - methods in use by the BigInteger class will return a new copy of a BigInteger.

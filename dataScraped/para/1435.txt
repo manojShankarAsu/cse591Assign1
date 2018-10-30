@@ -1,1 +1,0 @@
-There are a few other things like warnings and notes I quite often see in programming books that can be used in this book (the C++ book seems to use them too) Notes can be highlighted with a neutral colour like blue or green, with a notebook icon at the left, and warnings more of a orange or red colour with a exclamation mark in a triangle.

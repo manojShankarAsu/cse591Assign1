@@ -1,1 +1,0 @@
-The Java Remote Method Invocation (RMI) system allows an object running in one Java Virtual Machine (VM) to invoke methods of an object running in another Java VM. RMI provides for remote communication between programs written in the Java programming language.

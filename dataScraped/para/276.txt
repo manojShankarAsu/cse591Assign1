@@ -1,1 +1,0 @@
-The elements of arrays are accessed with integer indices. The first element of an array is always element 0. This program accesses the first four elements of the args array explicitly with the indices 0, 1, 2, and 3. This program does not perform any input validation, such as verifying that the user passed at least four arguments to the program. We will fix that later.

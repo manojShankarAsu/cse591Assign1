@@ -1,3 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="kt">char</span> <span class="n">aCharPrimitiveType</span> <span class="o">=</span> <span class="sc">'A'</span><span class="o">;</span>
-<span class="lineno">2 </span><span class="n">Character</span> <span class="n">aCharacterObject</span> <span class="o">=</span> <span class="n">aCharPrimitiveType</span><span class="o">;</span>
-</pre>

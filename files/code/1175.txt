@@ -1,2 +1,0 @@
-Code-Block-AW3<pre><span></span> <span class="n">ArrayList</span><span class="o">(</span><span class="kt">int</span> <span class="n">capacity</span><span class="o">)</span>
-</pre>

@@ -1,8 +1,0 @@
-Code-Block-AW3<pre><span></span><span class="lineno">1 </span><span class="n">Object</span><span class="o">[]</span> <span class="n">loggerArray</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Object</span><span class="o">[</span><span class="mi">2</span><span class="o">];</span>
-<span class="lineno">2 </span><span class="n">loggerArray</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ConsoleLogger</span><span class="o">();</span>
-<span class="lineno">3 </span><span class="n">loggerArray</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FileLogger</span><span class="o">();</span>
-<span class="lineno">4 </span>
-<span class="lineno">5 </span><span class="k">for</span> <span class="o">(</span><span class="n">Object</span> <span class="n">logger</span> <span class="o">:</span> <span class="n">loggerArray</span><span class="o">)</span> <span class="o">{</span>
-<span class="lineno">6 </span>    <span class="c1">// logger.printLog("Check point.");</span>
-<span class="lineno">7 </span><span class="o">}</span>
-</pre>
