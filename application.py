@@ -344,15 +344,19 @@ def add_file_to_index(files, directory, index_name):
         add_to_index(index_name,file_db.id,filename,file_obj)
 
 def index_files():
-    code_dir = os.path.join(os.getcwd(),"dataScrapped_urls")
-    application.logger.info(code_dir)
-    files = os.listdir(code_dir)
-    application.logger.info('Started FIle indexing  ')
-    application.logger.info(code_dir)
-    add_file_to_index(files , code_dir,'java3')
-    application.logger.info('FIle indexing done ')
-    application.logger.error('no of files not indexed ')
-    application.logger.error(application.err_count)
+    check_index = application.elasticsearch.indices.get_alias("java3")
+    if check_index is None:
+        code_dir = os.path.join(os.getcwd(),"dataScrapped_urls")
+        application.logger.info(code_dir)
+        files = os.listdir(code_dir)
+        application.logger.info('Started FIle indexing  ')
+        application.logger.info(code_dir)
+        add_file_to_index(files , code_dir,'java3')
+        application.logger.info('FIle indexing done ')
+        application.logger.error('no of files not indexed ')
+        application.logger.error(application.err_count)
+    else:
+        application.logger.info('FIle indexing done ALREADY')
 
 # run the app.
 
@@ -395,7 +399,7 @@ def query_index(index, query, page, per_page):
     return search
 
 def read_queries():
-    application.logger.info('Reading excel file ')
+    #application.logger.info('Reading excel file ')
     query_dir = os.path.join(os.getcwd(),"queries")    
     files = os.listdir(query_dir)
     java_posts = []
@@ -472,7 +476,7 @@ if __name__ == "__main__":
     application.logger.addHandler(handler)
     application.logger.addHandler(file_handler)
     crawl_files()
-    #index_files()
+    index_files()
     #read_queries()
     application.run(debug=True)
 
