@@ -4,7 +4,7 @@
 <h1>CSE 591 Adaptive Web - Content Based Recommendation </h1>    
 <h3>ASU ID : 1213192004 </h3>
 <ul>
-	<li> <b>Content Collection : </b>
+	<li> <h4><b>Content Collection : </b></h4>
 		<ul>
 			<li>
 				The content for the recommendations were crawled from Java Programming Wikibooks. https://en.wikibooks.org/wiki/Java_Programming.
@@ -20,7 +20,7 @@
 			</li>
 		</ul>
 	</li>
-	<li> <b>Content Indexing : </b>
+	<li> <h4><b>Content Indexing :</b></h4>
 		<ul>
 			<li>
 				<b>Elastic Search</b> is used to index the crawled content for recommendations for the Java posts. 
@@ -49,17 +49,72 @@
 			</li>
 		</ul>
 	</li>
-	<li> <b>Web App : </b>
+	<li> <h4><b>Web App : </b></h4>
 		<ul>
 			<li>
-				The Web app is developed in Python using Flask framework.<br> Elastic search for Ubuntu is used for indexing. <br>The developed Python application is deployed to Amazon Web Services. 
+				The Web app is developed in Python using Flask framework.<br> Elastic search for Ubuntu is used for indexing. <br>The developed Python application is deployed to Amazon Web Services and is running in an EC2 instance.
 			</li>
-			<li> <b>Display data :</b><br> The index/home page of the application shows the Java posts provided in the data.
+			<li> <b>Display data :</b><br> The index/home page of the application shows the Java posts provided in the data. The posts are numbered Post 1, Post 2 and so on. 
+				<br> The recommendation for a given post can be viewed by clicking on the post. The recommendations are shown right below the post as soon as the user clicks on a post.
+			</li>
+			<li>
+				<b>How indexing is done  : </b>
+				<ul>
+					<li>
+						The crawled content is stored in the <b>dataScrapped_urls</b> present in the submission. The dataScrapped_urls contains all the crawled Java Wikibooks and Oracle Java Docs content.
+					</li>
+					<li>
+						<b>Indexing:</b><br>
+						When the application is loaded for the first time, the files in the dataScrapped_urls folder are read and indexed into the elastic search server in the index 'java'. Indexing is done using the Elasticsearch library in Python. 
+						Code: <br>
+						<b>Stop words filtering & Controlling Stemming  settings</b><br>
+						<i>
+						settings = {}<br>
+    					my_analyzer = {}<br>
+    					my_analyzer['type'] = 'standard'<br>
+    					my_analyzer['stopwords'] = '_english_'<br>
+    					my_analyzer['tokenizer'] = 'standard'<br>
+    					my_analyzer['filter'] = ["lowercase","no_stem","porter_stem"]<br>
+    					analysis = {}<br>
+						analysis['analyzer']=my_analyzer<br>
+    					settings['analysis'] = analysis<br>
+    					<b>Indexing code:</b>
+						elasticsearch.index(index='java', doc_type='java', id=obj_id,
+                                    body=payload,settings=settings)
+                                </i>
+                        <br>
+                        The payload contains the content of the file. Each file is read and indexed into elastic search.
+					</li>
+					<li>
+						<b>Getting recommended content:</b>
+						When the application is loaded, the queries are taken from the Excel sheet provided which is present in <b>queries folder</b>. The elastic search server is queried with the text of the Java post using the Elasticsearch library in Python.
+						Code: <br>
+						<i>
+						elasticsearch.search( index='java', doc_type='java', body={'query': {'match': {'text':query_java_post}},'from': (page - 1) * per_page, 'size': per_page})</i><br>
+						Each java post is queried in this way and the top 10 recommended content is selected and displayed to the user.
 
+					</li>
+				</ul>
 			</li>
 		</ul>
 	</li>
-	<li> <b>Originality : </b>
+	<li> <h4><b>Originality : </b></h4>
+		<ul>
+			<li>
+				<b>Optimized search in Elastic search:</b><br>
+				I have used <b>Filters and multi_match queries</b> which has increased the query result relevance by 30%.
+			</li>
+			<li>
+				<b>Stop word filtering </b> is performed while indexing to improve the query results
+			</li>
+			<li>
+				<b>Stem word controlling </b> is performed while indexing to improve the query results which has improved result relevance  by 10%
+			</li>
+			<li>
+				Each recommended posts have <b>Source </b> of the each recommended item. This will help the user to refer the original web page of the recommended item for further reading. <br>
+				This feature will be really helpful to the user to navigate through the resources.
+			</li>
+		</ul>
 	</li>
 </ul>
 {% endblock %}
