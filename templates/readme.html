@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+<h1>CSE 591 Adaptive Web - Content Based Recommendation </h1>    
+<h3>ASU ID : 1213192004 </h3>
+<ul>
+	<li> <b>Content Collection : </b>
+		<ul>
+			<li>
+				The content for the recommendations were crawled from Java Programming Wikibooks. https://en.wikibooks.org/wiki/Java_Programming.
+			</li>
+			<li>
+				The Oracle Java Docs site were also crawled to get the content for recommendations. https://docs.oracle.com/javase/tutorial/
+			</li>
+			<li>
+				jsoup-1.11.3 library was used to crawl the content with only relevant tags like body etc. The crawling is done by the contectcrawler.py file in the submission. <br>
+				The urls are listed for upto 2 depths of anchor tags. <br>
+				The paragraphs,sections, and parts of the text for each URL are scraped using CSS selector. The text is saved in a text file. <br>
+				The code from each page is scraped using CSS selector and saved as raw HTML into a file.
+			</li>
+		</ul>
+	</li>
+	<li> <b>Content Indexing : </b>
+		<ul>
+			<li>
+				<b>Elastic Search</b> is used to index the crawled content for recommendations for the Java posts. 
+			</li>
+			<li>
+				Elasticsearch is a search engine based on <b>Lucene</b>. It provides a distributed, multitenant-capable full-text search engine with an HTTP web interface and schema-free JSON documents. Elasticsearch is developed in Java and is released as open source under the terms of the Apache License. Official clients are available in Java, .NET (C#), PHP, Python, Apache Groovy, Ruby and many other languages. According to the DB-Engines ranking, Elasticsearch is the most popular enterprise search engine followed by Apache Solr, also based on Lucene. 
+				<a href="https://en.wikipedia.org/wiki/Elasticsearch">Wiki</a>
+			</li>
+			<li> <b>Stop words in Elastic Search</b><br>
+				Elasticsearch also provides a feature to remove stop and stemming words by using Porter stemming algorithm to stem and EnglishAnalyzer for the removal of stop words.<br>
+				The removal of stopwords is handled by the stop token filter which can be used when creating a custom analyzer. <a href="https://www.elastic.co/guide/en/elasticsearch/guide/current/using-stopwords.html">source</a>
+			</li>
+			<li>
+				<b>Stemming in Elastic Search</b><br>
+				Elastic Search handles stemming automatically. The Content on each page on Wikibooks and Oracle java docs was split into separate text files according to content type and fed to the Elastic Search Instance used. <br>
+				The stem_exclusion parameter for language analyzers allowed us to specify a list of words that should not be stemmed. Internally, these language analyzers use the keyword_marker token filter to mark the listed words as keywords, which prevents subsequent stemming token filters from touching those words. <a href="https://www.elastic.co/guide/en/elasticsearch/guide/current/controlling-stemming.html">source</a>
+
+			</li>
+			<li>
+				Elastic Search for Ubuntu is used for developing this application. <br>
+				<a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/deb.html"> Elastic Search Ubuntu installation</a><br>
+				The Elastic Search application runs at the url http://localhost:9200
+			</li>
+			<li>
+				The <b>python library Elasticsearch</b> imported from <b>elasticsearch module</b> is used in the Flask application to interact with the Elastic search server. 
+			</li>
+		</ul>
+	</li>
+	<li> <b>Web App : </b>
+		<ul>
+			<li>
+				The Web app is developed in Python using Flask framework.<br> Elastic search for Ubuntu is used for indexing. <br>The developed Python application is deployed to Amazon Web Services. 
+			</li>
+			<li> <b>Display data :</b><br> The index/home page of the application shows the Java posts provided in the data.
+
+			</li>
+		</ul>
+	</li>
+	<li> <b>Originality : </b>
+	</li>
+</ul>
+{% endblock %}

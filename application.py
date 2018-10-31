@@ -177,6 +177,11 @@ def index():
     return render_template('index.html', title='Home', posts =  java_posts)
     #return render_template('test.html')
 
+@application.route('/readme')
+def readme():
+    return render_template('readme.html')
+
+
 @application.route('/login', methods=['GET', 'POST'])
 def login():
     if current_user.is_authenticated:
